@@ -15,10 +15,10 @@ public class LevelManager : MonoBehaviour
     public string listValue;
 
     // Definição de listas
-    List<string> listGroupsObs = new List<string> {'Conjunto 1'};
+    List<string> listGroupsObs = new List<string> {"Conjunto1"};
 
     // Definição de objetos
-    Random rnd = new Random();
+    System.Random rnd = new System.Random();
 
 
     // Start is called before the first frame update
@@ -48,8 +48,8 @@ public class LevelManager : MonoBehaviour
 
             switch(listValue)
             {
-                case "Conjunto 1":
-                    break
+                case "Conjunto1":
+                    break;
             }
 
             groupActive = true;
