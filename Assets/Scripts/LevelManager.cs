@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    // Definição de variáveis
     public string worldName;
     public float countMs = 0f;
     public int scoreMs = 0;
-
     public Ground ground;
-
     public string velo;
+    public bool groupActive = false;
+    public int indexList;
+    public string listValue;
+
+    // Definição de listas
+    List<string> listGroupsObs = new List<string> {'Conjunto 1'};
+
+    // Definição de objetos
+    Random rnd = new Random();
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +39,20 @@ public class LevelManager : MonoBehaviour
         {
             scoreMs++;
             countMs -= 1f;
+        }
+
+        if (!groupActive)
+        {
+            indexList = rnd.Next(listGroupsObs.Count);
+            listValue = listGroupsObs[indexList];
+
+            switch(listValue)
+            {
+                case "Conjunto 1":
+                    break
+            }
+
+            groupActive = true;
         }
     }
 }
