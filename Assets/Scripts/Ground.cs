@@ -37,8 +37,12 @@ public class Ground : MonoBehaviour
     }
 
     void OnBecameInvisible()
-    {
-        level.SetGroupActive(false);
+    {   
+        if (gameObject.CompareTag("GroupGround"))
+        {
+            level.SetGroupActive(false);
+        }
+
         Destroy(gameObject);
     }
 }

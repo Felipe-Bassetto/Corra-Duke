@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour
 
     // Definição de objetos
     System.Random rnd = new System.Random();
+    public Ground soloGround;
 
 
     // Start is called before the first frame update
@@ -58,7 +59,8 @@ public class LevelManager : MonoBehaviour
         indexList = rnd.Next(arrGroupsObs.Length);
         Debug.Log(indexList);
         Debug.Log(arrGroupsObs[indexList]);
-        GameObject newObj = Instantiate(arrGroupsObs[indexList], new Vector3(21.5f,-4.5f,0), Quaternion.identity);
+        Instantiate(arrGroupsObs[indexList], new Vector3(22,-4.5f,0), Quaternion.identity);
+        Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity);
 
         SetGroupActive(true);
     }

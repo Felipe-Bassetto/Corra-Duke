@@ -13,7 +13,7 @@ public class TrapsGroups : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Instantiate(ground, new Vector3(43,-4.5f,0), Quaternion.identity);
     }
 
     // Update is called once per frame

@@ -68,13 +68,13 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-       gameOverPanel.SetActive(true); // Ativa o painel antes de destruir o jogador
+       /*gameOverPanel.SetActive(true); // Ativa o painel antes de destruir o jogador
        GameObject.Find("GameOverManager").GetComponent<GameOverManager>().ShowGameOver();
        Debug.Log("Você perdeu");
 
        Destroy(gameObject); 
 
-
+       */
 
     }
 

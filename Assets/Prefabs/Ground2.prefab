@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 5
+  level: {fileID: 0}
 --- !u!61 &6298361610424109175
 BoxCollider2D:
   m_ObjectHideFlags: 0
