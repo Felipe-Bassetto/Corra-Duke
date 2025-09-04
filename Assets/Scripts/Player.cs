@@ -68,14 +68,11 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-       /*gameOverPanel.SetActive(true); // Ativa o painel antes de destruir o jogador
+       gameOverPanel.SetActive(true); // Ativa o painel antes de destruir o jogador
        GameObject.Find("GameOverManager").GetComponent<GameOverManager>().ShowGameOver();
        Debug.Log("Você perdeu");
 
        Destroy(gameObject); 
-
-       */
-
     }
 
     void OnBecameInvisible()
@@ -83,7 +80,7 @@ public class Player : MonoBehaviour
         Die();
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other) // Verificação se o jogador está tocando no chão
     {
         if (other.tag == "Ground")
         {
@@ -93,7 +90,7 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D obj)
     {
-        if (ListPlayerUnvunerable.Contains(obj.tag))
+        if (ListPlayerUnvunerable.Contains(obj.tag)) // Verifica se o player deve morrer ou não. E então executa a ação para cada tipo de objeto.
         {
             switch (obj.tag)
             {

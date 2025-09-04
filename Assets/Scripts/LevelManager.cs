@@ -54,13 +54,13 @@ public class LevelManager : MonoBehaviour
         groupActive = isActive;
     }
 
-    public void spawnGroup()
+    public void spawnGroup() // Randomiza e gera um conjunto de obstaculos aleatório
     {
         indexList = rnd.Next(arrGroupsObs.Length);
         Debug.Log(indexList);
         Debug.Log(arrGroupsObs[indexList]);
-        Instantiate(arrGroupsObs[indexList], new Vector3(22,-4.5f,0), Quaternion.identity);
-        Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity);
+        Instantiate(arrGroupsObs[indexList], new Vector3(22,-4.5f,0), Quaternion.identity); // Gera o obstaculo
+        Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity); // Gera o chão vazio após o conjunto
 
         SetGroupActive(true);
     }

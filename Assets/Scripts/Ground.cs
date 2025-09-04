@@ -29,16 +29,11 @@ public class Ground : MonoBehaviour
         transform.Translate(Vector2.left * velocidade * Time.deltaTime);
 
         positionGroundx = transform.position.x;
-
-        /*if(positionGroundx <= -22f)
-        {
-            transform.Translate(44f,0,0);
-        }*/
     }
 
     void OnBecameInvisible()
     {   
-        if (gameObject.CompareTag("GroupGround"))
+        if (gameObject.CompareTag("GroupGround")) // Verifica se é um conjunto. Caso seja, desativa o GroupActive para gerar um novo.
         {
             level.SetGroupActive(false);
         }
