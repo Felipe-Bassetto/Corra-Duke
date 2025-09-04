@@ -5,6 +5,7 @@ public class TrapsGroups : MonoBehaviour
 
     // Definição de variáveis de outros objetos
     public Ground ground;
+    public LevelManager levelManager;
 
     //Definição de variáveis
     float positionGroupx;
@@ -26,6 +27,8 @@ public class TrapsGroups : MonoBehaviour
 
     void OnBecameInvisible()
     {
+        Debug.Log("teste");
+        //levelManager.groupActive = false;
         Destroy(gameObject);
     }
 }

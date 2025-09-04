@@ -10,12 +10,12 @@ public class LevelManager : MonoBehaviour
     public int scoreMs = 0;
     public Ground ground;
     public string velo;
-    public bool groupActive = false;
+    public bool groupActive = true;
     public int indexList;
     public string listValue;
 
-    // Definição de listas
-    List<string> listGroupsObs = new List<string> {"Conjunto1"};
+    // Definição de array
+    public GameObject[] arrGroupsObs;
 
     // Definição de objetos
     System.Random rnd = new System.Random();
@@ -30,6 +30,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         // Soma o tempo desde o último frame em MILISSEGUNDOS
 
         countMs += Time.deltaTime * ground.velocidade; 
@@ -43,16 +44,22 @@ public class LevelManager : MonoBehaviour
 
         if (!groupActive)
         {
-            indexList = rnd.Next(listGroupsObs.Count);
-            listValue = listGroupsObs[indexList];
-
-            switch(listValue)
-            {
-                case "Conjunto1":
-                    break;
-            }
-
-            groupActive = true;
+            spawnGroup();
         }
+    }
+
+    public void SetGroupActive(bool isActive)
+    {
+        groupActive = isActive;
+    }
+
+    public void spawnGroup()
+    {
+        indexList = rnd.Next(arrGroupsObs.Length);
+        Debug.Log(indexList);
+        Debug.Log(arrGroupsObs[indexList]);
+        GameObject newObj = Instantiate(arrGroupsObs[indexList], new Vector3(21.5f,-4.5f,0), Quaternion.identity);
+
+        SetGroupActive(true);
     }
 }
