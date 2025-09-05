@@ -4,13 +4,23 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    // Definição de variáveis
     public string worldName;
     public float countMs = 0f;
     public int scoreMs = 0;
-
     public Ground ground;
-
     public string velo;
+    public bool groupActive = true;
+    public int indexList;
+    public string listValue;
+
+    // Definição de array
+    public GameObject[] arrGroupsObs;
+
+    // Definição de objetos
+    System.Random rnd = new System.Random();
+    public Ground soloGround;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +31,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         // Soma o tempo desde o último frame em MILISSEGUNDOS
 
         countMs += Time.deltaTime * ground.velocidade; 
@@ -31,5 +42,26 @@ public class LevelManager : MonoBehaviour
             scoreMs++;
             countMs -= 1f;
         }
+
+        if (!groupActive)
+        {
+            spawnGroup();
+        }
+    }
+
+    public void SetGroupActive(bool isActive)
+    {
+        groupActive = isActive;
+    }
+
+    public void spawnGroup() // Randomiza e gera um conjunto de obstaculos aleatório
+    {
+        indexList = rnd.Next(arrGroupsObs.Length);
+        Debug.Log(indexList);
+        Debug.Log(arrGroupsObs[indexList]);
+        Instantiate(arrGroupsObs[indexList], new Vector3(22,-4.5f,0), Quaternion.identity); // Gera o obstaculo
+        Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity); // Gera o chão vazio após o conjunto
+
+        SetGroupActive(true);
     }
 }

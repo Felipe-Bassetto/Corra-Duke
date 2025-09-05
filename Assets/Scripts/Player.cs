@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     public bool colliding = true; // Está colidindo
 
     // Definição de Listas
-    public List<string> ListPlayerUnvunerable = new List<string>() { "Coin", "Ground" };
+    public List<string> ListPlayerVunerable = new List<string>() { "Bomb", "EnemyBullet"};
 
 
 
@@ -73,14 +73,16 @@ public class Player : MonoBehaviour
        Debug.Log("Você perdeu");
 
        Destroy(gameObject); 
-
-
-
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    void OnBecameInvisible()
     {
-        if (other.tag == "Ground")
+        Die();
+    }
+
+    private void OnTriggerExit2D(Collider2D other) // Verificação se o jogador está tocando no chão
+    {
+        if (other.tag == "Ground" || other.tag == "GroupGround")
         {
             colliding = false;
         }
@@ -88,21 +90,10 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D obj)
     {
-        if (ListPlayerUnvunerable.Contains(obj.tag))
+        Debug.Log("teste");
+        if (ListPlayerVunerable.Contains(obj.tag)) // Verifica se o player deve morrer ou não. E então executa a ação para cada tipo de objeto.
         {
-            switch (obj.tag)
-            {
-                case "Coin":
-                    coinRound++;
-                    break;
-                case "Ground":
-                    colliding = true;
-                    jumpUp = true;
-                    break;
-            }
-        }
-        else 
-        {
+            Debug.Log("teste");
             if (!powerUpdActive)
             {
                 switch (obj.tag)
@@ -111,11 +102,21 @@ public class Player : MonoBehaviour
                     case "Bomb":
                         TakeDamage(1);
                         break;
-                    case "Ground":
-                        colliding = true;
-                        jumpUp = true;
-                        break;
                 }
+            }
+        }
+        else 
+        {
+            switch (obj.tag)
+            {
+                case "Ground":
+                case "GroupGround":
+                    colliding = true;
+                    jumpUp = true;
+                    break;
+                case "Coin":
+                    coinRound++;
+                    break;
             }
         }
     }

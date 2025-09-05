@@ -38,8 +38,8 @@ public class Objetos : MonoBehaviour
            switch (gameObject.tag)
            {
                case "Bomb":
-                   Destroy(gameObject);
-                   break;
+                    Destroy(gameObject);
+                    break;
            }
         }
     }
