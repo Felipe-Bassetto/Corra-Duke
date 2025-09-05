@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     public bool colliding = true; // Está colidindo
 
     // Definição de Listas
-    public List<string> ListPlayerUnvunerable = new List<string>() { "Coin", "Ground" };
+    public List<string> ListPlayerUnvunerable = new List<string>() { "Coin", "Ground", "GroupGround" };
 
 
 
@@ -68,11 +68,11 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-       gameOverPanel.SetActive(true); // Ativa o painel antes de destruir o jogador
+       /*gameOverPanel.SetActive(true); // Ativa o painel antes de destruir o jogador
        GameObject.Find("GameOverManager").GetComponent<GameOverManager>().ShowGameOver();
        Debug.Log("Você perdeu");
 
-       Destroy(gameObject); 
+       Destroy(gameObject); */
     }
 
     void OnBecameInvisible()
@@ -82,7 +82,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other) // Verificação se o jogador está tocando no chão
     {
-        if (other.tag == "Ground")
+        if (other.tag == "Ground" || other.tag == "GroupGround")
         {
             colliding = false;
         }
@@ -92,11 +92,17 @@ public class Player : MonoBehaviour
     {
         if (ListPlayerUnvunerable.Contains(obj.tag)) // Verifica se o player deve morrer ou não. E então executa a ação para cada tipo de objeto.
         {
+            Debug.Log("teste");
             switch (obj.tag)
             {
+                case "GroupGround":
+                    colliding = true;
+                    jumpUp = true;
+                    break;
                 case "Coin":
                     coinRound++;
                     break;
+                
                 case "Ground":
                     colliding = true;
                     jumpUp = true;
@@ -112,10 +118,6 @@ public class Player : MonoBehaviour
                     case "EnemyBullet":
                     case "Bomb":
                         TakeDamage(1);
-                        break;
-                    case "Ground":
-                        colliding = true;
-                        jumpUp = true;
                         break;
                 }
             }
