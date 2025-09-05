@@ -1439,9 +1439,9 @@ MonoBehaviour:
   coinRound: 0
   jumpUp: 1
   colliding: 1
-  ListPlayerUnvunerable:
-  - Coin
-  - Ground
+  ListPlayerVunerable:
+  - Bomb
+  - EnemyBullet
 --- !u!1 &1919966983
 GameObject:
   m_ObjectHideFlags: 0

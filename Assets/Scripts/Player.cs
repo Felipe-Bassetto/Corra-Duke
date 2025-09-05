@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     public bool colliding = true; // Está colidindo
 
     // Definição de Listas
-    public List<string> ListPlayerUnvunerable = new List<string>() { "Coin", "Ground", "GroupGround" };
+    public List<string> ListPlayerVunerable = new List<string>() { "Bomb", "EnemyBullet"};
 
 
 
@@ -68,11 +68,11 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-       /*gameOverPanel.SetActive(true); // Ativa o painel antes de destruir o jogador
+       gameOverPanel.SetActive(true); // Ativa o painel antes de destruir o jogador
        GameObject.Find("GameOverManager").GetComponent<GameOverManager>().ShowGameOver();
        Debug.Log("Você perdeu");
 
-       Destroy(gameObject); */
+       Destroy(gameObject); 
     }
 
     void OnBecameInvisible()
@@ -90,27 +90,10 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D obj)
     {
-        if (ListPlayerUnvunerable.Contains(obj.tag)) // Verifica se o player deve morrer ou não. E então executa a ação para cada tipo de objeto.
+        Debug.Log("teste");
+        if (ListPlayerVunerable.Contains(obj.tag)) // Verifica se o player deve morrer ou não. E então executa a ação para cada tipo de objeto.
         {
             Debug.Log("teste");
-            switch (obj.tag)
-            {
-                case "GroupGround":
-                    colliding = true;
-                    jumpUp = true;
-                    break;
-                case "Coin":
-                    coinRound++;
-                    break;
-                
-                case "Ground":
-                    colliding = true;
-                    jumpUp = true;
-                    break;
-            }
-        }
-        else 
-        {
             if (!powerUpdActive)
             {
                 switch (obj.tag)
@@ -120,6 +103,20 @@ public class Player : MonoBehaviour
                         TakeDamage(1);
                         break;
                 }
+            }
+        }
+        else 
+        {
+            switch (obj.tag)
+            {
+                case "Ground":
+                case "GroupGround":
+                    colliding = true;
+                    jumpUp = true;
+                    break;
+                case "Coin":
+                    coinRound++;
+                    break;
             }
         }
     }
