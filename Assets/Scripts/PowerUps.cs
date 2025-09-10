@@ -4,11 +4,13 @@ public class PowerUps : MonoBehaviour
 {
     // Definição de arrays
     public string[] arrayPowerUps;
+    public float[] arrTimePowerUps;
 
     // Definição de objetos
     System.Random rnd = new System.Random();
     public Player player;
     public Ground ground;
+    public LevelManager levelManager;
 
     // Definição variáveis
     public int indexArray;
@@ -16,7 +18,14 @@ public class PowerUps : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        if (levelManager == null)
+        {
+            levelManager = FindObjectOfType<LevelManager>();
+        }
+        if (player == null)
+        {
+            player = FindObjectOfType<Player>();
+        }
     }
 
     // Update is called once per frame
@@ -27,8 +36,9 @@ public class PowerUps : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D obj)
     {
-        indexArray = rnd.Next(arrayPowerUps.Length);
-        player.alterStatus(arrayPowerUps[indexArray]);
+        indexArray = rnd.Next(arrayPowerUps.Length); // Pega o numero referente ao power up
+        player.alterStatus(arrayPowerUps[indexArray]); // Altera o status do player para o power up
+        levelManager.SetPowerUpTime(arrTimePowerUps[indexArray]); // Define a contagem de tempo no level manager
         Destroy(gameObject);
     }
 }

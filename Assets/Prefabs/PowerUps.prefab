@@ -107,7 +107,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PowerUps
   arrayPowerUps:
   - Gunner
+  arrTimePowerUps:
+  - 5
   player: {fileID: 0}
+  ground: {fileID: 3623353307232672489, guid: 417dba9413b31f34c90341aa414fca13, type: 3}
+  levelManager: {fileID: 0}
   indexArray: 0
 --- !u!61 &5176626626442105514
 BoxCollider2D:
