@@ -8,10 +8,9 @@ public class LevelManager : MonoBehaviour
     public string worldName;
     public float countMs = 0f;
     public int scoreMs = 0;
-    public Ground ground;
     public string velo;
     public bool groupActive = true;
-    public int indexList;
+    public int indexArr;
     public string listValue;
 
     // Definição de array
@@ -20,6 +19,7 @@ public class LevelManager : MonoBehaviour
     // Definição de objetos
     System.Random rnd = new System.Random();
     public Ground soloGround;
+    public Ground ground;
 
 
     // Start is called before the first frame update
@@ -56,10 +56,8 @@ public class LevelManager : MonoBehaviour
 
     public void spawnGroup() // Randomiza e gera um conjunto de obstaculos aleatório
     {
-        indexList = rnd.Next(arrGroupsObs.Length);
-        Debug.Log(indexList);
-        Debug.Log(arrGroupsObs[indexList]);
-        Instantiate(arrGroupsObs[indexList], new Vector3(22,-4.5f,0), Quaternion.identity); // Gera o obstaculo
+        indexArr = rnd.Next(arrGroupsObs.Length);
+        Instantiate(arrGroupsObs[indexArr], new Vector3(22,-4.5f,0), Quaternion.identity); // Gera o obstaculo
         Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity); // Gera o chão vazio após o conjunto
 
         SetGroupActive(true);
