@@ -20,7 +20,8 @@ public class Player : MonoBehaviour
     private bool powerUpdActive = false; // Power up shield
     public bool jumpUp = true; // Pode pular
     public bool colliding = true; // Está colidindo
-    public string playerStatus = "Basic";
+    public string playerStatus = "Basic"; // Comando do jogador
+    public float velocidadeVoo = 3f;
 
     // Definição de Listas
     public List<string> listPlayerVunerable = new List<string>() { "Bomb", "EnemyBullet"};
@@ -57,6 +58,7 @@ public class Player : MonoBehaviour
                 }
                 break;
             case "Basic":
+                rb.simulated = true;
                 if (Input.GetKeyDown(KeyCode.W) && jumpUp) // Comando W para pular
                 {
                     if (!colliding) // Caso esteja no chão
@@ -69,6 +71,24 @@ public class Player : MonoBehaviour
                         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                     }
                 }
+                break;
+            case "Flying":
+
+                rb.simulated = false;
+                if (Input.GetMouseButton(0))
+                {
+                    Debug.Log("teste");
+                    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    if (mousePos.y > transform.position.y)
+                    {
+                        transform.Translate(Vector2.up * velocidadeVoo * Time.deltaTime);
+                    }
+                    else
+                    {
+                        transform.Translate(Vector2.down * velocidadeVoo * Time.deltaTime);
+                    }
+                }
+
                 break;
         }
     }
@@ -100,7 +120,7 @@ public class Player : MonoBehaviour
 
     void OnBecameInvisible()
     {
-        Die();
+       //Die();
     }
 
     private void OnTriggerExit2D(Collider2D other) // Verificação se o jogador está tocando no chão
@@ -123,7 +143,7 @@ public class Player : MonoBehaviour
                 {
                     case "EnemyBullet":
                     case "Bomb":
-                        TakeDamage(1);
+                        //TakeDamage(1);
                         break;
                 }
             }

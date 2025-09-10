@@ -107,7 +107,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PowerUps
   arrayPowerUps:
   - Gunner
+  - Flying
   arrTimePowerUps:
+  - 5
   - 5
   player: {fileID: 0}
   ground: {fileID: 3623353307232672489, guid: 417dba9413b31f34c90341aa414fca13, type: 3}
