@@ -16,15 +16,15 @@ public class Player : MonoBehaviour
     public int jumpForce = 8; // força do pulo
     public int maxHealth = 1; // vida maxima do jogado (a pensar)
     private int currentHealth; // vida atual
-    private bool powerUpdActive = false; // Power up shield
     public int coinRound = 0; // Contador de moedas
+    private bool powerUpdActive = false; // Power up shield
     public bool jumpUp = true; // Pode pular
     public bool colliding = true; // Está colidindo
+    public string playerStatus = "Basic"; // Comando do jogador
+    public float velocidadeVoo = 3f;
 
     // Definição de Listas
-    public List<string> ListPlayerVunerable = new List<string>() { "Bomb", "EnemyBullet"};
-
-
+    public List<string> listPlayerVunerable = new List<string>() { "Bomb", "EnemyBullet"};
 
     // Start is called before the first frame update
     void Start()
@@ -36,22 +36,60 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && jumpUp)
+        switch (playerStatus)
         {
-            if (!colliding)
-            {
-                jumpUp = false;
-                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            }
-            else
-            {
-                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            }
-        }
+            case "Gunner":
+                if (Input.GetMouseButtonDown(0)) // Comando botão esquerdo para atirar
+                {
+                    Instantiate(Bala, posicaoSpawn.position, Quaternion.identity);
+                }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            Instantiate(Bala, posicaoSpawn.position, Quaternion.identity);
+                if (Input.GetKeyDown(KeyCode.W) && jumpUp) // Comando W para pular
+                {
+                    if (!colliding) // Caso esteja no chão
+                    {
+                        jumpUp = false;
+                        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                    }
+                    else // Caso esteja no ar
+                    {
+                        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                    }
+                }
+                break;
+            case "Basic":
+                rb.simulated = true;
+                if (Input.GetKeyDown(KeyCode.W) && jumpUp) // Comando W para pular
+                {
+                    if (!colliding) // Caso esteja no chão
+                    {
+                        jumpUp = false;
+                        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                    }
+                    else // Caso esteja no ar
+                    {
+                        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                    }
+                }
+                break;
+            case "Flying":
+
+                rb.simulated = false;
+                if (Input.GetMouseButton(0))
+                {
+                    Debug.Log("teste");
+                    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    if (mousePos.y > transform.position.y)
+                    {
+                        transform.Translate(Vector2.up * velocidadeVoo * Time.deltaTime);
+                    }
+                    else
+                    {
+                        transform.Translate(Vector2.down * velocidadeVoo * Time.deltaTime);
+                    }
+                }
+
+                break;
         }
     }
 
@@ -66,7 +104,12 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void Die()
+    public void alterStatus(string newStatus)
+    {
+        playerStatus = newStatus;
+    }
+
+    private void Die() // Função privada morte do jogador
     {
        gameOverPanel.SetActive(true); // Ativa o painel antes de destruir o jogador
        GameObject.Find("GameOverManager").GetComponent<GameOverManager>().ShowGameOver();
@@ -77,7 +120,7 @@ public class Player : MonoBehaviour
 
     void OnBecameInvisible()
     {
-        Die();
+       //Die();
     }
 
     private void OnTriggerExit2D(Collider2D other) // Verificação se o jogador está tocando no chão
@@ -91,7 +134,7 @@ public class Player : MonoBehaviour
     void OnTriggerEnter2D(Collider2D obj)
     {
         Debug.Log("teste");
-        if (ListPlayerVunerable.Contains(obj.tag)) // Verifica se o player deve morrer ou não. E então executa a ação para cada tipo de objeto.
+        if (listPlayerVunerable.Contains(obj.tag)) // Verifica se o player deve morrer ou não. E então executa a ação para cada tipo de objeto.
         {
             Debug.Log("teste");
             if (!powerUpdActive)
@@ -100,7 +143,7 @@ public class Player : MonoBehaviour
                 {
                     case "EnemyBullet":
                     case "Bomb":
-                        TakeDamage(1);
+                        //TakeDamage(1);
                         break;
                 }
             }
