@@ -8,11 +8,12 @@ public class LevelManager : MonoBehaviour
     public string worldName;
     public float countMs = 0f;
     public int scoreMs = 0;
-    public Ground ground;
     public string velo;
     public bool groupActive = true;
-    public int indexList;
+    public int indexArr;
     public string listValue;
+    public float counterTimePowerUp = 0f;
+    public float timePowerUp;
 
     // Definição de array
     public GameObject[] arrGroupsObs;
@@ -20,20 +21,33 @@ public class LevelManager : MonoBehaviour
     // Definição de objetos
     System.Random rnd = new System.Random();
     public Ground soloGround;
+    public Ground ground;
+    public Player player;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (player == null)
+        {
+            player = FindObjectOfType<Player>();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        // Soma o tempo desde o último frame em MILISSEGUNDOS
+        if (counterTimePowerUp > 0f) 
+        {
+            counterTimePowerUp -= Time.deltaTime;
+        }
+        else
+        {
+            player.alterStatus("Basic");
+        }
 
+        // Soma o tempo desde o último frame em MILISSEGUNDOS
         countMs += Time.deltaTime * ground.velocidade; 
 
         // Enquanto tiver pelo menos 1 ms acumulado, dá pontos
@@ -56,12 +70,16 @@ public class LevelManager : MonoBehaviour
 
     public void spawnGroup() // Randomiza e gera um conjunto de obstaculos aleatório
     {
-        indexList = rnd.Next(arrGroupsObs.Length);
-        Debug.Log(indexList);
-        Debug.Log(arrGroupsObs[indexList]);
-        Instantiate(arrGroupsObs[indexList], new Vector3(22,-4.5f,0), Quaternion.identity); // Gera o obstaculo
+        indexArr = rnd.Next(arrGroupsObs.Length);
+        Instantiate(arrGroupsObs[indexArr], new Vector3(22,-4.5f,0), Quaternion.identity); // Gera o obstaculo
         Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity); // Gera o chão vazio após o conjunto
 
         SetGroupActive(true);
+    }
+
+    public void SetPowerUpTime(float time)
+    {
+        timePowerUp = time;
+        counterTimePowerUp = time;
     }
 }
