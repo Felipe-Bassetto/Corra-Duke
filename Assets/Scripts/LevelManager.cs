@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    // Definição de variáveis
+    // Definiï¿½ï¿½o de variï¿½veis
     public string worldName;
     public float countMs = 0f;
     public int scoreMs = 0;
@@ -15,10 +15,10 @@ public class LevelManager : MonoBehaviour
     public float counterTimePowerUp = 0f;
     public float timePowerUp;
 
-    // Definição de array
+    // Definiï¿½ï¿½o de array
     public GameObject[] arrGroupsObs;
 
-    // Definição de objetos
+    // Definiï¿½ï¿½o de objetos
     System.Random rnd = new System.Random();
     public Ground soloGround;
     public Ground ground;
@@ -44,13 +44,18 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            player.alterStatus("Basic");
+            // SÃ³ reseta se o power up ativo for o Shield
+            if (player.playerStatus == "Shield")
+            {
+              player.alterStatus("Basic");
+              player.PowerUpdActive = false; 
+            }
         }
 
-        // Soma o tempo desde o último frame em MILISSEGUNDOS
+        // Soma o tempo desde o ï¿½ltimo frame em MILISSEGUNDOS
         countMs += Time.deltaTime * ground.velocidade; 
 
-        // Enquanto tiver pelo menos 1 ms acumulado, dá pontos
+        // Enquanto tiver pelo menos 1 ms acumulado, dï¿½ pontos
         while (countMs >= 1f)
         {
             scoreMs++;
@@ -68,11 +73,11 @@ public class LevelManager : MonoBehaviour
         groupActive = isActive;
     }
 
-    public void spawnGroup() // Randomiza e gera um conjunto de obstaculos aleatório
+    public void spawnGroup() // Randomiza e gera um conjunto de obstaculos aleatï¿½rio
     {
         indexArr = rnd.Next(arrGroupsObs.Length);
         Instantiate(arrGroupsObs[indexArr], new Vector3(22,-4.5f,0), Quaternion.identity); // Gera o obstaculo
-        Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity); // Gera o chão vazio após o conjunto
+        Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity); // Gera o chï¿½o vazio apï¿½s o conjunto
 
         SetGroupActive(true);
     }

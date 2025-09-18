@@ -26,6 +26,12 @@ public class Player : MonoBehaviour
     // Definição de Listas
     public List<string> listPlayerVunerable = new List<string>() { "Bomb", "EnemyBullet"};
 
+    public bool PowerUpdActive 
+    {
+        get { return powerUpdActive; }
+        set { powerUpdActive = value; }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -90,6 +96,51 @@ public class Player : MonoBehaviour
                 }
 
                 break;
+
+            case "Destroyer":
+               
+               if (Input.GetKeyDown(KeyCode.W) && jumpUp)
+               {
+                  if (!colliding)
+                  {
+                    jumpUp = false;
+                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                  }
+                    else
+                  {
+                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                  }
+               }
+               // Destruir todos os obstáculos à frente
+               Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position + Vector3.right * 5f, 
+               new Vector2(10f, 10f), 0f);
+               foreach (Collider2D col in hits)
+               {
+                 if (col.CompareTag("Bomb"))
+                 {
+                    Destroy(col.gameObject);
+                 }
+               }
+               break;
+
+               case "Shield":
+ 
+               PowerUpdActive = true; // Liga a invencibilidade 
+               if (Input.GetKeyDown(KeyCode.W) && jumpUp)
+               {
+                if (!colliding)
+                {
+                    jumpUp = false;
+                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                }
+                else
+                {
+                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                }
+               }
+               break;
+
+
         }
     }
 
@@ -137,7 +188,7 @@ public class Player : MonoBehaviour
         if (listPlayerVunerable.Contains(obj.tag)) // Verifica se o player deve morrer ou não. E então executa a ação para cada tipo de objeto.
         {
             Debug.Log("teste");
-            if (!powerUpdActive)
+            if (!PowerUpdActive)
             {
                 switch (obj.tag)
                 {
