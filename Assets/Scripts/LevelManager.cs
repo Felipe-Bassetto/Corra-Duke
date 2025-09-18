@@ -23,6 +23,7 @@ public class LevelManager : MonoBehaviour
     public Ground soloGround;
     public Ground ground;
     public Player player;
+    public int multPU; // Multiplicador do power up
 
 
     // Start is called before the first frame update
@@ -54,6 +55,7 @@ public class LevelManager : MonoBehaviour
         while (countMs >= 1f)
         {
             scoreMs++;
+            scoreMs = scoreMs * multPU;
             countMs -= 1f;
         }
 

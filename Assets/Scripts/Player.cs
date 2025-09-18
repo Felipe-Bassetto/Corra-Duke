@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
                         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                     }
                     else // Caso esteja no ar
-                    {
+                    {   
                         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                     }
                 }
@@ -89,6 +89,9 @@ public class Player : MonoBehaviour
                     }
                 }
 
+                break;
+            case "Multiple":
+                
                 break;
         }
     }
