@@ -140,6 +140,25 @@ public class Player : MonoBehaviour
                }
                break;
 
+               case "Inverted":
+
+               rb.simulated = true;
+
+               //Garantir que o jogador esteja de cabeça pra baixo
+               if (transform.localScale.y > 0)
+               {
+                    transform.localScale = new Vector3(1, -1, 1);
+
+               }
+               
+               if (Input.GetKeyDown(KeyCode.W) && jumpUp)
+               {
+                    jumpUp = false;
+                    rb.AddForce(Vector2.down * jumpForce, ForceMode2D.Impulse); // pulo invertido
+               }
+               break;
+
+
 
         }
     }
@@ -158,6 +177,12 @@ public class Player : MonoBehaviour
     public void alterStatus(string newStatus)
     {
         playerStatus = newStatus;
+        
+        // Resetar escala quando voltar ao normal
+        if (newStatus != "Inverted")
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
     }
 
     private void Die() // Função privada morte do jogador

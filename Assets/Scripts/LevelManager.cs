@@ -24,6 +24,9 @@ public class LevelManager : MonoBehaviour
     public Ground ground;
     public Player player;
 
+    // Guarda posição original do chão
+    private Vector3 groundOriginalPos;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +34,12 @@ public class LevelManager : MonoBehaviour
         if (player == null)
         {
             player = FindObjectOfType<Player>();
+        }
+        
+        if (ground != null)
+        {
+            groundOriginalPos = ground.transform.position;
+
         }
     }
 
@@ -41,14 +50,33 @@ public class LevelManager : MonoBehaviour
         if (counterTimePowerUp > 0f) 
         {
             counterTimePowerUp -= Time.deltaTime;
+
+            // Se o power up ativo for "Inverted", faz com que chão e player estejam invertidos
+            if (player.playerStatus == "Inverted")
+            {
+                // Sobe o chão (ajuste o valor Y conforme sua cena)
+                ground.transform.position = new Vector3(ground.transform.position.x,
+                    +4.5f, ground.transform.position.z);
+
+                // Inverte o jogador
+                player.transform.localScale = new Vector3(1, -1, 1);
+            }
         }
-        else
+        else 
         {
             // Só reseta se o power up ativo for o Shield
             if (player.playerStatus == "Shield")
             {
-              player.alterStatus("Basic");
-              player.PowerUpdActive = false; 
+                player.alterStatus("Basic");
+                player.PowerUpdActive = false;
+            }
+            // Só reseta se o power up ativo for o Inverted
+            else if (player.playerStatus == "Inverted")
+            {
+                // Volta o chão e jogador ao normal
+                ground.transform.position = groundOriginalPos;
+                player.transform.localScale = Vector3.one;
+                player.alterStatus("Basic");
             }
         }
 

@@ -173,11 +173,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
       propertyPath: arrayPowerUps.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
       propertyPath: arrTimePowerUps.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
       propertyPath: 'arrayPowerUps.Array.data[2]'
@@ -188,11 +188,19 @@ PrefabInstance:
       value: Shield
       objectReference: {fileID: 0}
     - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: 'arrayPowerUps.Array.data[4]'
+      value: Inverted
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
       propertyPath: 'arrTimePowerUps.Array.data[2]'
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
       propertyPath: 'arrTimePowerUps.Array.data[3]'
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: 'arrTimePowerUps.Array.data[4]'
       value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
