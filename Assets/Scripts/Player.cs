@@ -24,7 +24,13 @@ public class Player : MonoBehaviour
     public float velocidadeVoo = 3f;
 
     // Definição de Listas
-    public List<string> listPlayerVunerable = new List<string>() { "Bomb", "EnemyBullet"};
+    public List<string> listPlayerVunerable = new List<string>();
+
+    public bool PowerUpdActive 
+    {
+        get { return powerUpdActive; }
+        set { powerUpdActive = value; }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -90,6 +96,70 @@ public class Player : MonoBehaviour
                 }
 
                 break;
+
+            case "Destroyer":
+               
+               if (Input.GetKeyDown(KeyCode.W) && jumpUp)
+               {
+                  if (!colliding)
+                  {
+                    jumpUp = false;
+                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                  }
+                    else
+                  {
+                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                  }
+               }
+               // Destruir todos os obstáculos à frente
+               Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position + Vector3.right * 5f, 
+               new Vector2(10f, 10f), 0f);
+               foreach (Collider2D col in hits)
+               {
+                 if (col.CompareTag("Bomb"))
+                 {
+                    Destroy(col.gameObject);
+                 }
+               }
+               break;
+
+               case "Shield":
+ 
+               PowerUpdActive = true; // Liga a invencibilidade 
+               if (Input.GetKeyDown(KeyCode.W) && jumpUp)
+               {
+                if (!colliding)
+                {
+                    jumpUp = false;
+                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                }
+                else
+                {
+                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                }
+               }
+               break;
+
+               case "Inverted":
+
+               rb.simulated = true;
+
+               //Garantir que o jogador esteja de cabeça pra baixo
+               if (transform.localScale.y > 0)
+               {
+                    transform.localScale = new Vector3(1, -1, 1);
+
+               }
+               
+               if (Input.GetKeyDown(KeyCode.W) && jumpUp)
+               {
+                    jumpUp = false;
+                    rb.AddForce(Vector2.down * jumpForce, ForceMode2D.Impulse); // pulo invertido
+               }
+               break;
+
+
+
         }
     }
 
@@ -107,6 +177,12 @@ public class Player : MonoBehaviour
     public void alterStatus(string newStatus)
     {
         playerStatus = newStatus;
+        
+        // Resetar escala quando voltar ao normal
+        if (newStatus != "Inverted")
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
     }
 
     private void Die() // Função privada morte do jogador
@@ -120,7 +196,7 @@ public class Player : MonoBehaviour
 
     void OnBecameInvisible()
     {
-       //Die();
+       Die();
     }
 
     private void OnTriggerExit2D(Collider2D other) // Verificação se o jogador está tocando no chão
@@ -133,17 +209,16 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D obj)
     {
-        Debug.Log("teste");
         if (listPlayerVunerable.Contains(obj.tag)) // Verifica se o player deve morrer ou não. E então executa a ação para cada tipo de objeto.
         {
-            Debug.Log("teste");
-            if (!powerUpdActive)
+            if (!PowerUpdActive)
             {
                 switch (obj.tag)
                 {
                     case "EnemyBullet":
+                    case "Laser":
                     case "Bomb":
-                        //TakeDamage(1);
+                        TakeDamage(1);
                         break;
                 }
             }

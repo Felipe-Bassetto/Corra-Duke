@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    // Definição de variáveis
+    // Definiï¿½ï¿½o de variï¿½veis
     public string worldName;
     public float countMs = 0f;
     public int scoreMs = 0;
@@ -15,14 +15,18 @@ public class LevelManager : MonoBehaviour
     public float counterTimePowerUp = 0f;
     public float timePowerUp;
 
-    // Definição de array
+    // Definiï¿½ï¿½o de array
     public GameObject[] arrGroupsObs;
 
-    // Definição de objetos
+    // Definiï¿½ï¿½o de objetos
     System.Random rnd = new System.Random();
     public Ground soloGround;
     public Ground ground;
     public Player player;
+    public int multPU; // Multiplicador do power up
+
+    // Guarda posiÃ§Ã£o original do chÃ£o
+    private Vector3 groundOriginalPos;
 
 
     // Start is called before the first frame update
@@ -31,6 +35,12 @@ public class LevelManager : MonoBehaviour
         if (player == null)
         {
             player = FindObjectOfType<Player>();
+        }
+        
+        if (ground != null)
+        {
+            groundOriginalPos = ground.transform.position;
+
         }
     }
 
@@ -41,19 +51,44 @@ public class LevelManager : MonoBehaviour
         if (counterTimePowerUp > 0f) 
         {
             counterTimePowerUp -= Time.deltaTime;
+
+            // Se o power up ativo for "Inverted", faz com que chÃ£o e player estejam invertidos
+            if (player.playerStatus == "Inverted")
+            {
+                // Sobe o chÃ£o (ajuste o valor Y conforme sua cena)
+                ground.transform.position = new Vector3(ground.transform.position.x,
+                    +4.5f, ground.transform.position.z);
+
+                // Inverte o jogador
+                player.transform.localScale = new Vector3(1, -1, 1);
+            }
         }
-        else
+        else 
         {
-            player.alterStatus("Basic");
+            // SÃ³ reseta se o power up ativo for o Shield
+            if (player.playerStatus == "Shield")
+            {
+                player.alterStatus("Basic");
+                player.PowerUpdActive = false;
+            }
+            // SÃ³ reseta se o power up ativo for o Inverted
+            else if (player.playerStatus == "Inverted")
+            {
+                // Volta o chÃ£o e jogador ao normal
+                ground.transform.position = groundOriginalPos;
+                player.transform.localScale = Vector3.one;
+                player.alterStatus("Basic");
+            }
         }
 
-        // Soma o tempo desde o último frame em MILISSEGUNDOS
+        // Soma o tempo desde o ï¿½ltimo frame em MILISSEGUNDOS
         countMs += Time.deltaTime * ground.velocidade; 
 
-        // Enquanto tiver pelo menos 1 ms acumulado, dá pontos
+        // Enquanto tiver pelo menos 1 ms acumulado, dï¿½ pontos
         while (countMs >= 1f)
         {
             scoreMs++;
+            scoreMs = scoreMs * multPU;
             countMs -= 1f;
         }
 
@@ -68,11 +103,11 @@ public class LevelManager : MonoBehaviour
         groupActive = isActive;
     }
 
-    public void spawnGroup() // Randomiza e gera um conjunto de obstaculos aleatório
+    public void spawnGroup() // Randomiza e gera um conjunto de obstaculos aleatï¿½rio
     {
         indexArr = rnd.Next(arrGroupsObs.Length);
         Instantiate(arrGroupsObs[indexArr], new Vector3(22,-4.5f,0), Quaternion.identity); // Gera o obstaculo
-        Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity); // Gera o chão vazio após o conjunto
+        Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity); // Gera o chï¿½o vazio apï¿½s o conjunto
 
         SetGroupActive(true);
     }
