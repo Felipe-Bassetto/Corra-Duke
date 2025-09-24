@@ -116,18 +116,18 @@ public class Player : MonoBehaviour
                new Vector2(10f, 10f), 0f);
                foreach (Collider2D col in hits)
                {
-                 if (col.CompareTag("Bomb"))
-                 {
+                    if (col.CompareTag("Bomb"))
+                    {
                     Destroy(col.gameObject);
-                 }
+                    }
                }
                break;
 
-               case "Shield":
+            case "Shield":
  
-               PowerUpdActive = true; // Liga a invencibilidade 
-               if (Input.GetKeyDown(KeyCode.W) && jumpUp)
-               {
+                PowerUpdActive = true; // Liga a invencibilidade 
+                if (Input.GetKeyDown(KeyCode.W) && jumpUp)
+                {
                 if (!colliding)
                 {
                     jumpUp = false;
@@ -137,29 +137,24 @@ public class Player : MonoBehaviour
                 {
                     rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 }
-               }
-               break;
+                }
+                break;
+            case "Inverted":
+                rb.simulated = true;
 
-               case "Inverted":
-
-               rb.simulated = true;
-
-               //Garantir que o jogador esteja de cabeça pra baixo
-               if (transform.localScale.y > 0)
-               {
+                //Garantir que o jogador esteja de cabeça pra baixo
+                if (transform.localScale.y > 0)
+                {
                     transform.localScale = new Vector3(1, -1, 1);
 
-               }
+                }
                
-               if (Input.GetKeyDown(KeyCode.W) && jumpUp)
-               {
+                if (Input.GetKeyDown(KeyCode.W) && jumpUp)
+                {
                     jumpUp = false;
                     rb.AddForce(Vector2.down * jumpForce, ForceMode2D.Impulse); // pulo invertido
-               }
-               break;
-
-
-
+                }
+                break;
         }
     }
 
