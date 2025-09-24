@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Definição de outros objetos
+    private Animator anim;
     public GameObject Bala;
     public GameObject gameOverPanel;
     public Transform Jogador;
@@ -35,6 +36,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
+        anim.speed = 1.8f;
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
     }
