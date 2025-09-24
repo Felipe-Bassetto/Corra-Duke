@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     public float velocidadeVoo = 3f;
 
     // Definição de Listas
-    public List<string> listPlayerVunerable = new List<string>() { "Bomb", "EnemyBullet"};
+    public List<string> listPlayerVunerable = new List<string>();
 
     public bool PowerUpdActive 
     {
@@ -196,7 +196,7 @@ public class Player : MonoBehaviour
 
     void OnBecameInvisible()
     {
-       //Die();
+       Die();
     }
 
     private void OnTriggerExit2D(Collider2D other) // Verificação se o jogador está tocando no chão
@@ -209,17 +209,16 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D obj)
     {
-        Debug.Log("teste");
         if (listPlayerVunerable.Contains(obj.tag)) // Verifica se o player deve morrer ou não. E então executa a ação para cada tipo de objeto.
         {
-            Debug.Log("teste");
             if (!PowerUpdActive)
             {
                 switch (obj.tag)
                 {
                     case "EnemyBullet":
+                    case "Laser":
                     case "Bomb":
-                        //TakeDamage(1);
+                        TakeDamage(1);
                         break;
                 }
             }

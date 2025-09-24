@@ -11,6 +11,8 @@ TagManager:
   - Bomb
   - GroupGround
   - PowerUp
+  - Laser
+  - Coin
   layers:
   - Default
   - TransparentFX
