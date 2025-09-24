@@ -2001,14 +2001,11 @@ MonoBehaviour:
   counterTimePowerUp: 0
   timePowerUp: 0
   arrGroupsObs:
-  - {fileID: 2755101971793818047, guid: 320d1b84e589cd843b75d1c045003a99, type: 3}
-  - {fileID: 2126345185413134453, guid: 03e06218c7db8214da3eda9ceaf5466c, type: 3}
-  - {fileID: 4900749688789021506, guid: 4dff692c5ce577546bf5c1173ad0e8c6, type: 3}
-  - {fileID: 3351617541542321839, guid: 3811179f5d6adbb44b58f0b4724f6aca, type: 3}
+  - {fileID: 5622814296668365602, guid: d562f47473ab81f44b14cd2a5e95e882, type: 3}
   soloGround: {fileID: 3623353307232672489, guid: 417dba9413b31f34c90341aa414fca13, type: 3}
   ground: {fileID: 1268844275}
   player: {fileID: 0}
-  multPU: 0
+  multPU: 1
 --- !u!1 &2048862640
 GameObject:
   m_ObjectHideFlags: 0

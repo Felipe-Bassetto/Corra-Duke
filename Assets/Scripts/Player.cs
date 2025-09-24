@@ -191,7 +191,7 @@ public class Player : MonoBehaviour
 
     void OnBecameInvisible()
     {
-       Die();
+       //Die();
     }
 
     private void OnTriggerExit2D(Collider2D other) // Verificação se o jogador está tocando no chão
@@ -213,7 +213,7 @@ public class Player : MonoBehaviour
                     case "EnemyBullet":
                     case "Laser":
                     case "Bomb":
-                        TakeDamage(1);
+                        //TakeDamage(1);
                         break;
                 }
             }
