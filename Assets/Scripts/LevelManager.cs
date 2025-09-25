@@ -66,8 +66,11 @@ public class LevelManager : MonoBehaviour
         // Enquanto tiver pelo menos 1 ms acumulado, d� pontos
         while (countMs >= 1f)
         {
-            scoreMs++;
-            scoreMs = scoreMs * multPU;
+            if (player.doubleScoreActive)
+              scoreMs += 2; // dobra pontuação
+            else
+              scoreMs += 1;
+              
             countMs -= 1f;
         }
 
