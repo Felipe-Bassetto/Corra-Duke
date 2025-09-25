@@ -22,6 +22,9 @@ public class Player : MonoBehaviour
     public bool colliding = true; // Está colidindo
     public string playerStatus = "Basic"; // Comando do jogador
     public float velocidadeVoo = 3f;
+    public float coinMagnetRadius = 5f; // raio de atração
+    public float coinMagnetForce = 10f; // velocidade que a moeda vem
+    public bool doubleScoreActive = false; // controla o multiplicador
 
     // Definição de Listas
     public List<string> listPlayerVunerable = new List<string>();
@@ -128,15 +131,15 @@ public class Player : MonoBehaviour
                 PowerUpdActive = true; // Liga a invencibilidade 
                 if (Input.GetKeyDown(KeyCode.W) && jumpUp)
                 {
-                if (!colliding)
-                {
-                    jumpUp = false;
-                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                }
-                else
-                {
-                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                }
+                   if (!colliding)
+                   {
+                     jumpUp = false;
+                     rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                   }
+                   else
+                   {
+                     rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                   }
                 }
                 break;
             case "Inverted":
@@ -155,6 +158,35 @@ public class Player : MonoBehaviour
                     rb.AddForce(Vector2.down * jumpForce, ForceMode2D.Impulse); // pulo invertido
                 }
                 break;
+            case "CoinMagnet":
+               rb.simulated = true;
+               doubleScoreActive = true;
+
+               // Pular normal
+               if (Input.GetKeyDown(KeyCode.W) && jumpUp)
+               {
+                  if (!colliding)
+                  {
+                     jumpUp = false;
+                     rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                  }
+                  else
+                  {
+                     rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                  }
+               }
+              // Atrair moedas
+              Collider2D[] coins = Physics2D.OverlapCircleAll(transform.position, coinMagnetRadius);
+              foreach (Collider2D coin in coins) 
+              {
+                 if (coin.CompareTag("Coin"))
+                 {
+                    coin.transform.position = Vector2.MoveTowards(coin.transform.position,
+                    transform.position,coinMagnetForce * Time.deltaTime);
+                 }
+              }
+              break;
+
         }
     }
 
@@ -172,6 +204,11 @@ public class Player : MonoBehaviour
     public void alterStatus(string newStatus)
     {
         playerStatus = newStatus;
+
+        if (newStatus != "GoldRush")
+        {
+            doubleScoreActive = false; // reseta multiplicador
+        }
         
         // Resetar escala quando voltar ao normal
         if (newStatus != "Inverted")
