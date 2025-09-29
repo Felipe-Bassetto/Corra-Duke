@@ -51,45 +51,25 @@ public class LevelManager : MonoBehaviour
         if (counterTimePowerUp > 0f) 
         {
             counterTimePowerUp -= Time.deltaTime;
-
-            // Se o power up ativo for "Inverted", faz com que chão e player estejam invertidos
-            if (player.playerStatus == "Inverted")
-            {
-                // Sobe o chão (ajuste o valor Y conforme sua cena)
-                ground.transform.position = new Vector3(ground.transform.position.x,
-                    +4.5f, ground.transform.position.z);
-
-                // Inverte o jogador
-                player.transform.localScale = new Vector3(1, -1, 1);
-            }
+            
         }
         else 
         {
-            // Só reseta se o power up ativo for o Shield
-            if (player.playerStatus == "Shield")
-            {
-                player.alterStatus("Basic");
-                player.PowerUpdActive = false;
-            }
-            // Só reseta se o power up ativo for o Inverted
-            else if (player.playerStatus == "Inverted")
-            {
-                // Volta o chão e jogador ao normal
-                ground.transform.position = groundOriginalPos;
-                player.transform.localScale = Vector3.one;
-                player.alterStatus("Basic");
-            }
+            player.alterStatus("Basic");
+            player.PowerUpdActive = false;
         }
 
         // Soma o tempo desde o �ltimo frame em MILISSEGUNDOS
         countMs += Time.deltaTime * soloGround.velocidade; 
-        Debug.Log(soloGround.velocidade);
 
         // Enquanto tiver pelo menos 1 ms acumulado, d� pontos
         while (countMs >= 1f)
         {
-            scoreMs++;
-            scoreMs = scoreMs * multPU;
+            if (player.doubleScoreActive)
+              scoreMs += 2; // dobra pontuação
+            else
+              scoreMs += 1;
+              
             countMs -= 1f;
         }
 

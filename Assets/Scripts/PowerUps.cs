@@ -36,9 +36,12 @@ public class PowerUps : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D obj)
     {
-        indexArray = rnd.Next(arrayPowerUps.Length); // Pega o numero referente ao power up
-        player.alterStatus(arrayPowerUps[indexArray]); // Altera o status do player para o power up
-        levelManager.SetPowerUpTime(arrTimePowerUps[indexArray]); // Define a contagem de tempo no level manager
-        Destroy(gameObject);
+        if(obj.tag == "Player")
+        {
+            indexArray = rnd.Next(arrayPowerUps.Length); // Pega o numero referente ao power up
+            player.alterStatus(arrayPowerUps[indexArray]); // Altera o status do player para o power up
+            levelManager.SetPowerUpTime(arrTimePowerUps[indexArray]); // Define a contagem de tempo no level manager
+            Destroy(gameObject);
+        }
     }
 }

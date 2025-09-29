@@ -109,7 +109,7 @@ MonoBehaviour:
   - Gunner
   - Flying
   - Destroyer
-  - Inverted
+  - CoinMagnet
   arrTimePowerUps:
   - 5
   - 5
