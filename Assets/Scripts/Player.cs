@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Definição de outros objetos
+    private Animator anim;
     public GameObject Bala;
     public GameObject gameOverPanel;
     public Transform Jogador;
@@ -38,6 +39,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
+        anim.speed = 1.8f;
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
     }
@@ -142,22 +145,6 @@ public class Player : MonoBehaviour
                    }
                 }
                 break;
-            case "Inverted":
-                rb.simulated = true;
-
-                //Garantir que o jogador esteja de cabeça pra baixo
-                if (transform.localScale.y > 0)
-                {
-                    transform.localScale = new Vector3(1, -1, 1);
-
-                }
-               
-                if (Input.GetKeyDown(KeyCode.W) && jumpUp)
-                {
-                    jumpUp = false;
-                    rb.AddForce(Vector2.down * jumpForce, ForceMode2D.Impulse); // pulo invertido
-                }
-                break;
             case "CoinMagnet":
                rb.simulated = true;
                doubleScoreActive = true;
@@ -211,9 +198,10 @@ public class Player : MonoBehaviour
         }
         
         // Resetar escala quando voltar ao normal
-        if (newStatus != "Inverted")
+        if (newStatus == "Basic")
         {
-            transform.localScale = new Vector3(1, 1, 1);
+             //transform.localScale = new Vector3(0.5f, 0.5f, 1f);
+             rb.gravityScale = 1f;
         }
     }
 
@@ -228,7 +216,7 @@ public class Player : MonoBehaviour
 
     void OnBecameInvisible()
     {
-       //Die();
+       Die();
     }
 
     private void OnTriggerExit2D(Collider2D other) // Verificação se o jogador está tocando no chão
@@ -250,7 +238,7 @@ public class Player : MonoBehaviour
                     case "EnemyBullet":
                     case "Laser":
                     case "Bomb":
-                        //TakeDamage(1);
+                        TakeDamage(1);
                         break;
                 }
             }
