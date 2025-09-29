@@ -109,13 +109,11 @@ MonoBehaviour:
   - Gunner
   - Flying
   - Destroyer
-  - Inverted
   - CoinMagnet
   arrTimePowerUps:
   - 5
   - 5
   - 1
-  - 5
   - 5
   player: {fileID: 0}
   ground: {fileID: 3623353307232672489, guid: 417dba9413b31f34c90341aa414fca13, type: 3}
