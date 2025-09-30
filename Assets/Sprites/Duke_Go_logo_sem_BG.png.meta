@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 22cf13333c212c945b40b94a461fecf8
+guid: 7663c5cac72762748ae40d66e5ecaaf2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8103490638895962848
-    second: ExemploPato_0
+      213: 8823247829848959393
+    second: Duke_Go_logo_sem_BG_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ExemploPato_0
+      name: Duke_Go_logo_sem_BG_0
       rect:
         serializedVersion: 2
-        x: 238
-        y: 17
-        width: 228
-        height: 320
+        x: 111
+        y: 174
+        width: 303
+        height: 257
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ead81c4dc1657070800000000000000
-      internalID: 8103490638895962848
+      spriteID: 1a922675729727a70800000000000000
+      internalID: 8823247829848959393
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ExemploPato_0: 8103490638895962848
+      Duke_Go_logo_sem_BG_0: 8823247829848959393
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
