@@ -61,7 +61,6 @@ public class LevelManager : MonoBehaviour
 
         // Soma o tempo desde o �ltimo frame em MILISSEGUNDOS
         countMs += Time.deltaTime * soloGround.velocidade; 
-        Debug.Log(soloGround.velocidade);
 
         // Enquanto tiver pelo menos 1 ms acumulado, d� pontos
         while (countMs >= 1f)

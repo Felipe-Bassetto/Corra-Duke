@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -48,40 +49,30 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (playerStatus != "Flying")
+        {
+            if (Input.GetKeyDown(KeyCode.W) && jumpUp) // Comando W para pular
+            {
+                if (!colliding) // Caso esteja no ar
+                {
+                    jumpUp = false;
+                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                }
+                else // Caso esteja no chão
+                {
+                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                    anim.Play("Duke Jumping");
+                }
+            }
+        }
+
         switch (playerStatus)
         {
             case "Gunner":
                 if (Input.GetMouseButtonDown(0)) // Comando botão esquerdo para atirar
                 {
+                    Debug.Log("TIRO");
                     Instantiate(Bala, posicaoSpawn.position, Quaternion.identity);
-                }
-
-                if (Input.GetKeyDown(KeyCode.W) && jumpUp) // Comando W para pular
-                {
-                    if (!colliding) // Caso esteja no chão
-                    {
-                        jumpUp = false;
-                        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                    }
-                    else // Caso esteja no ar
-                    {
-                        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                    }
-                }
-                break;
-            case "Basic":
-                rb.simulated = true;
-                if (Input.GetKeyDown(KeyCode.W) && jumpUp) // Comando W para pular
-                {
-                    if (!colliding) // Caso esteja no chão
-                    {
-                        jumpUp = false;
-                        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                    }
-                    else // Caso esteja no ar
-                    {
-                        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                    }
                 }
                 break;
             case "Flying":
@@ -89,7 +80,6 @@ public class Player : MonoBehaviour
                 rb.simulated = false;
                 if (Input.GetMouseButton(0))
                 {
-                    Debug.Log("teste");
                     Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     if (mousePos.y > transform.position.y)
                     {
@@ -104,19 +94,6 @@ public class Player : MonoBehaviour
                 break;
 
             case "Destroyer":
-               
-               if (Input.GetKeyDown(KeyCode.W) && jumpUp)
-               {
-                  if (!colliding)
-                  {
-                    jumpUp = false;
-                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                  }
-                    else
-                  {
-                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                  }
-               }
                // Destruir todos os obstáculos à frente
                Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position + Vector3.right * 5f, 
                new Vector2(10f, 10f), 0f);
@@ -132,36 +109,11 @@ public class Player : MonoBehaviour
             case "Shield":
  
                 PowerUpdActive = true; // Liga a invencibilidade 
-                if (Input.GetKeyDown(KeyCode.W) && jumpUp)
-                {
-                   if (!colliding)
-                   {
-                     jumpUp = false;
-                     rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                   }
-                   else
-                   {
-                     rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                   }
-                }
                 break;
             case "CoinMagnet":
                rb.simulated = true;
                doubleScoreActive = true;
 
-               // Pular normal
-               if (Input.GetKeyDown(KeyCode.W) && jumpUp)
-               {
-                  if (!colliding)
-                  {
-                     jumpUp = false;
-                     rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                  }
-                  else
-                  {
-                     rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                  }
-               }
               // Atrair moedas
               Collider2D[] coins = Physics2D.OverlapCircleAll(transform.position, coinMagnetRadius);
               foreach (Collider2D coin in coins) 
@@ -251,6 +203,7 @@ public class Player : MonoBehaviour
                 case "GroupGround":
                     colliding = true;
                     jumpUp = true;
+                    anim.Play("Running Duke");
                     break;
                 case "Coin":
                     coinRound++;
