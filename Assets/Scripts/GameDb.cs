@@ -39,6 +39,22 @@ public class GameDatabase : MonoBehaviour
                 CriarPowerUps(1, name, 0, 5f);
             }
         }
+        
+        /* Exemplo de como chamar as tabelas
+        Configuracoes config = CarregarConfiguracoes();
+
+        Progresso prog = CarregarProgresso(1);
+
+        PowerUpsTable powerUp = CarregarPowerUps(1, "Gunner");
+
+        float vol = config.VolumeMusica;
+        int score = prog.ScoreRecord;
+        string dur = powerUp.NamePower;
+
+        Debug.Log(vol);
+        Debug.Log(score);
+        Debug.Log(dur);*/
+
     }
 
     // ---------------- CRIAR NOVA CONFIG -----------------------
