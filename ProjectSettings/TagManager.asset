@@ -13,6 +13,7 @@ TagManager:
   - PowerUp
   - Laser
   - Coin
+  - Collider
   layers:
   - Default
   - TransparentFX

@@ -4,33 +4,40 @@ using UnityEngine;
 
 public class Objetos : MonoBehaviour
 {
+    public GameObject music;
 
     // Start is called before the first frame update
     void Start()
     {
+        if(music == null)
+        {
+            music = GameObject.Find("MusicGame");
+        }
 
+        
     }
 
     // Update is called once per frame
     void Update()
     { 
-    
+
     }
 
     //Configuração de colisão
     void OnTriggerEnter2D(Collider2D obj)
     {
-
+        SoundManager soundManagerScript = music.GetComponent<SoundManager>();
         if(obj.CompareTag("Player"))
         {
            switch (gameObject.tag)
            {
                case "Bomb":
-                   Destroy(gameObject);
-                   break;
+                    soundManagerScript.SoundPlay(0);
+                    Destroy(gameObject);
+                    break;
                case "Coin":
-                   Destroy(gameObject);
-                   break;
+                    Destroy(gameObject);
+                    break;
            }
         }
         else if(obj.CompareTag("PlayerBullet"))
@@ -38,6 +45,7 @@ public class Objetos : MonoBehaviour
            switch (gameObject.tag)
            {
                case "Bomb":
+                    soundManagerScript.SoundPlay(0);
                     Destroy(gameObject);
                     break;
            }
