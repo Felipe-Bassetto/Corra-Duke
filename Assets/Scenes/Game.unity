@@ -2243,6 +2243,9 @@ MonoBehaviour:
   distance: 2
   jumpForce: 8
   secondJump: 6
+  extraJumpForce: 2
+  maxJumpTime: 5
+  jumpTimeCounter: 0
   maxHealth: 1
   coinRound: 0
   jumpUp: 1
