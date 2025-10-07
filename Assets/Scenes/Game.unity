@@ -2078,7 +2078,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 20
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2242,6 +2242,7 @@ MonoBehaviour:
   db: {fileID: 183729410}
   distance: 2
   jumpForce: 8
+  secondJump: 6
   maxHealth: 1
   coinRound: 0
   jumpUp: 1

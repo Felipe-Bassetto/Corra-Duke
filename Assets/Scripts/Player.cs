@@ -17,7 +17,8 @@ public class Player : MonoBehaviour
 
     //Defini��o de vari�veis
     public float distance = 2f; // distancia para calcular velocidade
-    public int jumpForce = 15; // força do pulo
+    public float jumpForce; // força do pulo
+    public float secondJump; // força segundo pulo
     public int maxHealth = 1; // vida maxima do jogado (a pensar)
     private int currentHealth; // vida atual
     public int coinRound = 0; // Contador de moedas
@@ -59,7 +60,9 @@ public class Player : MonoBehaviour
                 if (!colliding) // Caso esteja no ar
                 {
                     jumpUp = false;
-                    //rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                    // Zera a velocidade vertical ANTES de aplicar a nova força
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+                    rb.AddForce(Vector2.up * secondJump, ForceMode2D.Impulse);
                 }
                 else // Caso esteja no chão
                 {
