@@ -14,6 +14,9 @@ public class LevelManager : MonoBehaviour
     public string listValue;
     public float counterTimePowerUp = 0f;
     public float timePowerUp;
+    private float counterMult = 30f;
+    private int multScore = 1;
+    
 
     // Defini��o de array
     public GameObject[] arrGroupsObs;
@@ -66,11 +69,21 @@ public class LevelManager : MonoBehaviour
         while (countMs >= 1f)
         {
             if (player.doubleScoreActive)
-              scoreMs += 2; // dobra pontuação
+                scoreMs += 2 * multScore; // dobra pontuação
             else
-              scoreMs += 1;
+                scoreMs += 1 * multScore;
               
             countMs -= 1f;
+        }
+
+        if (counterMult > 0f)
+        {
+            counterMult -= Time.deltaTime;
+        }
+        else
+        {
+            counterMult = 30f;
+            multScore++;
         }
 
         if (!groupActive)

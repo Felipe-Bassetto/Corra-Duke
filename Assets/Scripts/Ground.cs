@@ -40,4 +40,9 @@ public class Ground : MonoBehaviour
 
         Destroy(gameObject);
     }
+
+    public void AlterarVelocidade(int multiplicador)
+    {
+        velocidade = velocidade * multiplicador;
+    }
 }

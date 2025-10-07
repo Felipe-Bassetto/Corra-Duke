@@ -12,10 +12,12 @@ public class Player : MonoBehaviour
     public Transform Jogador;
     public Transform posicaoSpawn;
     private Rigidbody2D rb;
+    public LevelManager level;
+    public GameDb db;
 
     //Defini��o de vari�veis
     public float distance = 2f; // distancia para calcular velocidade
-    public int jumpForce = 8; // força do pulo
+    public int jumpForce = 15; // força do pulo
     public int maxHealth = 1; // vida maxima do jogado (a pensar)
     private int currentHealth; // vida atual
     public int coinRound = 0; // Contador de moedas
@@ -27,6 +29,7 @@ public class Player : MonoBehaviour
     public float coinMagnetRadius = 5f; // raio de atração
     public float coinMagnetForce = 10f; // velocidade que a moeda vem
     public bool doubleScoreActive = false; // controla o multiplicador
+    private int finalScore;
 
     // Definição de Listas
     public List<string> listPlayerVunerable = new List<string>();
@@ -163,6 +166,26 @@ public class Player : MonoBehaviour
        gameOverPanel.SetActive(true); // Ativa o painel antes de destruir o jogador
        GameObject.Find("GameOverManager").GetComponent<GameOverManager>().ShowGameOver();
        Debug.Log("Você perdeu");
+       
+       finalScore = level.scoreMs; //Atualiza record se passou
+
+       Configuracoes config = db.CarregarConfiguracoes();
+
+       Progresso save = db.CarregarProgresso(config.Id);
+
+       int record = save.ScoreRecord;
+       int coins = save.Coins;
+
+       if(record < finalScore);
+       {
+           record = finalScore;
+       }
+
+       coins += coinRound;
+
+       db.SalvarProgresso(config.Id, record, finalScore);
+       
+
 
        Destroy(gameObject); 
     }

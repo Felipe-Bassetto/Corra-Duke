@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-public class GameDatabase : MonoBehaviour
+public class GameDb : MonoBehaviour
 {
     public List<string> powerUpsList = new List<string> { "Gunner", "Destroyer", "CoinMagnet" };
 
