@@ -2239,7 +2239,7 @@ MonoBehaviour:
   Jogador: {fileID: 1714215856}
   posicaoSpawn: {fileID: 1714215856}
   level: {fileID: 1973589191}
-  db: {fileID: 183729408}
+  db: {fileID: 183729410}
   distance: 2
   jumpForce: 8
   maxHealth: 1
