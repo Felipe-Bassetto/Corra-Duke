@@ -56,11 +56,12 @@ public class Player : MonoBehaviour
                 if (!colliding) // Caso esteja no ar
                 {
                     jumpUp = false;
-                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                    //rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 }
                 else // Caso esteja no chão
                 {
                     rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                    Debug.Log("pulo");
                     anim.Play("Duke Jumping");
                 }
             }
@@ -173,7 +174,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other) // Verificação se o jogador está tocando no chão
     {
-        if (other.tag == "Ground" || other.tag == "GroupGround")
+        if (other.tag == "Collider")
         {
             colliding = false;
         }
@@ -199,14 +200,13 @@ public class Player : MonoBehaviour
         {
             switch (obj.tag)
             {
-                case "Ground":
-                case "GroupGround":
+                case "Coin":
+                    coinRound++;
+                    break;
+                case "Collider":
                     colliding = true;
                     jumpUp = true;
                     anim.Play("Running Duke");
-                    break;
-                case "Coin":
-                    coinRound++;
                     break;
             }
         }
