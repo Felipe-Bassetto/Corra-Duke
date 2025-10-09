@@ -1239,6 +1239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 213856715}
   - component: {fileID: 213856714}
+  - component: {fileID: 213856716}
   m_Layer: 0
   m_Name: MusicMenu
   m_TagString: Untagged
@@ -1257,9 +1258,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5401970884651290996, guid: cfe6de6a10ed7da4398e8bc2bce324e5, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: b225eb7476de07e43a8c75c333b843a5, type: 3}
+  m_Resource: {fileID: 8300000, guid: 33a64803cdf53074ab068f8780f01357, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.081
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1358,6 +1359,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &213856716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213856713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af12bccde657c3a4f97723ff9fb3ef99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundManager
+  listSoundEffects:
+  - {fileID: 8300000, guid: b069260453259c045b422516e644a7a3, type: 3}
+  - {fileID: 8300000, guid: 3989ce581441b8345b557a450fe344eb, type: 3}
+  - {fileID: 8300000, guid: 0dfbe50fb162b0c468343437292b9bf5, type: 3}
+  audioSource: {fileID: 213856714}
 --- !u!1 &263127687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2353,9 +2371,10 @@ GameObject:
   - component: {fileID: 599635058}
   - component: {fileID: 599635057}
   - component: {fileID: 599635056}
+  - component: {fileID: 599635059}
   m_Layer: 5
   m_Name: UpgradeButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2426,6 +2445,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 926597415}
         m_TargetAssemblyTypeName: TelaInicialManager, Assembly-CSharp
+        m_MethodName: playSelectSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 926597415}
+        m_TargetAssemblyTypeName: TelaInicialManager, Assembly-CSharp
         m_MethodName: AbrirMelhorias
         m_Mode: 1
         m_Arguments:
@@ -2474,6 +2505,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599635054}
   m_CullTransparentMesh: 1
+--- !u!114 &599635059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599635054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
+  musicSource: {fileID: 213856714}
 --- !u!1 &620847534
 GameObject:
   m_ObjectHideFlags: 0
@@ -3852,6 +3896,10 @@ MonoBehaviour:
   nomeJogo: {fileID: 1784587895}
   painelMelhorias: {fileID: 41161494}
   painelInstrucoes: {fileID: 992098962}
+  musicSource: {fileID: 213856714}
+  musicTelaInicial: {fileID: 8300000, guid: 33a64803cdf53074ab068f8780f01357, type: 3}
+  musicUpgrades: {fileID: 8300000, guid: 2c9c463f05a3b4741b85a9050d3a66db, type: 3}
+  somClick: {fileID: 0}
 --- !u!1 &930048545
 GameObject:
   m_ObjectHideFlags: 0
@@ -4619,9 +4667,10 @@ GameObject:
   - component: {fileID: 1176676666}
   - component: {fileID: 1176676665}
   - component: {fileID: 1176676664}
+  - component: {fileID: 1176676667}
   m_Layer: 5
   m_Name: JogarButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4692,6 +4741,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 926597415}
         m_TargetAssemblyTypeName: TelaInicialManager, Assembly-CSharp
+        m_MethodName: playSelectSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 926597415}
+        m_TargetAssemblyTypeName: TelaInicialManager, Assembly-CSharp
         m_MethodName: Jogar
         m_Mode: 1
         m_Arguments:
@@ -4740,6 +4801,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176676662}
   m_CullTransparentMesh: 1
+--- !u!114 &1176676667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176676662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
+  musicSource: {fileID: 213856714}
 --- !u!1 &1206586545
 GameObject:
   m_ObjectHideFlags: 0
@@ -5081,9 +5155,10 @@ GameObject:
   - component: {fileID: 1294503647}
   - component: {fileID: 1294503646}
   - component: {fileID: 1294503645}
+  - component: {fileID: 1294503648}
   m_Layer: 5
   m_Name: "Op\xE7oesButton"
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5154,6 +5229,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 926597415}
         m_TargetAssemblyTypeName: TelaInicialManager, Assembly-CSharp
+        m_MethodName: playSelectSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 926597415}
+        m_TargetAssemblyTypeName: TelaInicialManager, Assembly-CSharp
         m_MethodName: AbrirOpcoes
         m_Mode: 1
         m_Arguments:
@@ -5202,6 +5289,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294503643}
   m_CullTransparentMesh: 1
+--- !u!114 &1294503648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294503643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
+  musicSource: {fileID: 213856714}
 --- !u!1 &1295252769
 GameObject:
   m_ObjectHideFlags: 0
@@ -5379,9 +5479,10 @@ GameObject:
   - component: {fileID: 1357276502}
   - component: {fileID: 1357276501}
   - component: {fileID: 1357276500}
+  - component: {fileID: 1357276503}
   m_Layer: 5
   m_Name: SairButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5452,6 +5553,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 926597415}
         m_TargetAssemblyTypeName: TelaInicialManager, Assembly-CSharp
+        m_MethodName: playSelectSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 926597415}
+        m_TargetAssemblyTypeName: TelaInicialManager, Assembly-CSharp
         m_MethodName: SairJogo
         m_Mode: 1
         m_Arguments:
@@ -5500,6 +5613,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357276498}
   m_CullTransparentMesh: 1
+--- !u!114 &1357276503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357276498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
+  musicSource: {fileID: 213856714}
 --- !u!1 &1359487544
 GameObject:
   m_ObjectHideFlags: 0
@@ -5773,9 +5899,10 @@ GameObject:
   - component: {fileID: 1418781246}
   - component: {fileID: 1418781245}
   - component: {fileID: 1418781244}
+  - component: {fileID: 1418781247}
   m_Layer: 5
   m_Name: InstrucoesButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5846,6 +5973,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 926597415}
         m_TargetAssemblyTypeName: TelaInicialManager, Assembly-CSharp
+        m_MethodName: playSelectSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 926597415}
+        m_TargetAssemblyTypeName: TelaInicialManager, Assembly-CSharp
         m_MethodName: AbrirInstrucoes
         m_Mode: 1
         m_Arguments:
@@ -5894,6 +6033,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418781242}
   m_CullTransparentMesh: 1
+--- !u!114 &1418781247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418781242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
+  musicSource: {fileID: 213856714}
 --- !u!1 &1420019920
 GameObject:
   m_ObjectHideFlags: 0
@@ -7444,9 +7596,10 @@ GameObject:
   - component: {fileID: 1785265940}
   - component: {fileID: 1785265939}
   - component: {fileID: 1785265938}
+  - component: {fileID: 1785265941}
   m_Layer: 5
   m_Name: SobreButton
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7517,6 +7670,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 926597415}
         m_TargetAssemblyTypeName: TelaInicialManager, Assembly-CSharp
+        m_MethodName: playSelectSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 926597415}
+        m_TargetAssemblyTypeName: TelaInicialManager, Assembly-CSharp
         m_MethodName: AbrirSobre
         m_Mode: 1
         m_Arguments:
@@ -7565,6 +7730,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785265936}
   m_CullTransparentMesh: 1
+--- !u!114 &1785265941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785265936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
+  musicSource: {fileID: 213856714}
 --- !u!1 &1797716477
 GameObject:
   m_ObjectHideFlags: 0
