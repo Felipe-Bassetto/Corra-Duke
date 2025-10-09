@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class TelaInicialManager : MonoBehaviour
@@ -12,6 +13,12 @@ public class TelaInicialManager : MonoBehaviour
     [SerializeField] private GameObject nomeJogo;
     [SerializeField] private GameObject painelMelhorias;
     [SerializeField] private GameObject painelInstrucoes;
+    [SerializeField] private AudioSource musicSource;  
+    [SerializeField] private AudioClip musicTelaInicial;
+    [SerializeField] private AudioClip musicUpgrades;
+    [SerializeField] private AudioClip somClick;
+
+
 
 
     public void Jogar()
@@ -49,6 +56,8 @@ public class TelaInicialManager : MonoBehaviour
 
     public void AbrirMelhorias()
     {
+        musicSource.clip = musicUpgrades;
+        musicSource.Play();
         painelMenuInicial.SetActive(false);
         painelMelhorias.SetActive(true);
         nomeJogo.SetActive(false);
@@ -56,6 +65,8 @@ public class TelaInicialManager : MonoBehaviour
 
     public void FecharMelhorias()
     {
+        musicSource.clip = musicTelaInicial;
+        musicSource.Play();
         painelMelhorias.SetActive(false);
         painelMenuInicial.SetActive(true);
         nomeJogo.SetActive(true);
@@ -79,5 +90,27 @@ public class TelaInicialManager : MonoBehaviour
     {
         Debug.Log("Sair do Jogo");
         Application.Quit();
+    }
+
+    public void playSelectSound()
+    {
+        SoundManager soundManagerScript = musicSource.GetComponent<SoundManager>();
+
+        GameObject botao = EventSystem.current.currentSelectedGameObject;
+        string nomeBotao = botao.name;
+
+        switch (nomeBotao)
+        {
+            case "JogarButton":
+            case "SobreButton":
+            case "InstrucoesButton":
+            case "OpcoesButton":
+            case "SairButton":
+                soundManagerScript.SoundPlay(0);
+                break;
+            case "UpgradeButton":
+                soundManagerScript.SoundPlay(1);
+                break;
+        }    
     }
 }

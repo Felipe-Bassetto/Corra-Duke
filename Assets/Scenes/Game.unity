@@ -2740,7 +2740,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9dd26d05a313a5e499342826e28bcc9a, type: 3}
   - {fileID: 8300000, guid: ac2d605afc252da4a9044c99df11bfdb, type: 3}
   - {fileID: 8300000, guid: c85b3ed0c4f9b934ca3bbd0de152c78c, type: 3}
-  sound: {fileID: 0}
   audioSource: {fileID: 0}
 --- !u!1001 &1740805535282277499
 PrefabInstance:
@@ -2834,9 +2833,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5401970884651290996, guid: cfe6de6a10ed7da4398e8bc2bce324e5, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: f197fe8f4e32c6a44b310b1f75365c0d, type: 3}
+  m_Resource: {fileID: 8300000, guid: b225eb7476de07e43a8c75c333b843a5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
