@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
     public float coinMagnetForce = 10f; // velocidade que a moeda vem
     public bool doubleScoreActive = false; // controla o multiplicador
     private int finalScore;
+    private bool jumpPressed, jumpHeld;
 
     // Definição de Listas
     public List<string> listPlayerVunerable = new List<string>();
@@ -53,37 +54,44 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
     }
 
+    private void FixedUpdate()
+    {
+        if (jumpPressed && jumpUp) // Comando W para pular
+        {
+            if (!colliding) // Caso esteja no ar
+            {
+                jumpUp = false;
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // Zera a velocidade vertical ANTES de aplicar a nova força
+                rb.AddForce(Vector2.up * secondJump, ForceMode2D.Impulse);
+            }
+            else // Caso esteja no chão
+            {
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                anim.Play("Duke Jumping");
+            }
+        }
+
+        jumpPressed = false;
+        
+
+        if (jumpHeld && !colliding)
+        {
+            if (jumpTimeCounter < maxJumpTime)
+            {
+                rb.AddForce(Vector2.up * extraJumpForce * Time.deltaTime, ForceMode2D.Force);
+                jumpTimeCounter += Time.deltaTime;
+            }
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        if (playerStatus != "Flying")
+        jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);
+        jumpHeld = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W);
+        
+        if (!jumpHeld)
         {
-            if (Input.GetKeyDown(KeyCode.W) && jumpUp) // Comando W para pular
-            {
-                if (!colliding) // Caso esteja no ar
-                {
-                    jumpUp = false;
-                    // Zera a velocidade vertical ANTES de aplicar a nova força
-                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
-                    rb.AddForce(Vector2.up * secondJump, ForceMode2D.Impulse);
-                }
-                else // Caso esteja no chão
-                {
-                    rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                    Debug.Log("pulo");
-                    anim.Play("Duke Jumping");
-                }
-            }
-
-            if(Input.GetKey(KeyCode.Space) && !colliding)
-            {
-                if (jumpTimeCounter < maxJumpTime)
-                {
-                    rb.AddForce(Vector2.up * extraJumpForce * Time.deltaTime, ForceMode2D.Force);
-                    jumpTimeCounter += Time.deltaTime;
-            
-                }
-            }
+            jumpTimeCounter = 0f;
         }
 
         switch (playerStatus)
@@ -185,7 +193,7 @@ public class Player : MonoBehaviour
        int record = save.ScoreRecord;
        int coins = save.Coins;
 
-       if(record < finalScore);
+       if(record < finalScore)
        {
            record = finalScore;
        }
@@ -238,7 +246,6 @@ public class Player : MonoBehaviour
                 case "Collider":
                     colliding = true;
                     jumpUp = true;
-                    jumpTimeCounter = 0;
                     anim.Play("Running Duke");
                     break;
             }

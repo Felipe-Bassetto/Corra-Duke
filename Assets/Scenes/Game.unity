@@ -2054,8 +2054,8 @@ GameObject:
   - component: {fileID: 1714215855}
   - component: {fileID: 1714215854}
   - component: {fileID: 1714215853}
-  - component: {fileID: 1714215859}
   - component: {fileID: 1714215860}
+  - component: {fileID: 1714215859}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2078,7 +2078,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 20
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2242,9 +2242,9 @@ MonoBehaviour:
   db: {fileID: 183729410}
   distance: 2
   jumpForce: 8
-  secondJump: 6
-  extraJumpForce: 2
-  maxJumpTime: 5
+  secondJump: 7
+  extraJumpForce: 1500
+  maxJumpTime: 0.25
   jumpTimeCounter: 0
   maxHealth: 1
   coinRound: 0
