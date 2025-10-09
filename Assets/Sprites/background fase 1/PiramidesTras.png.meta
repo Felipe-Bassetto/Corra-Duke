@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 2c68a4657ff0d314b97a0f4b229160bd
+guid: d7cca4c7d8e635f4aa1757284637dea7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -855298285791758126
-    second: 1_0
+      213: -3691650309153117779
+    second: PiramidesTras_0
+  - first:
+      213: 8170174565765560977
+    second: PiramidesTras_1
+  - first:
+      213: 3478167987707737254
+    second: PiramidesTras_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,23 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1_0
+      name: PiramidesTras_0
       rect:
         serializedVersion: 2
-        x: 423
-        y: 48
-        width: 438
-        height: 484
-      alignment: 9
-      pivot: {x: 0.6924681, y: 0.48755884}
+        x: 474
+        y: 0
+        width: 621
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d8b16a9dbe5124f0800000000000000
-      internalID: -855298285791758126
+      spriteID: da9a7ff5a9f94ccc0800000000000000
+      internalID: -3691650309153117779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PiramidesTras_1
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 0
+        width: 347
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a3369ea7a426170800000000000000
+      internalID: 8170174565765560977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PiramidesTras_2
+      rect:
+        serializedVersion: 2
+        x: 2428
+        y: 0
+        width: 399
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a474705b5fe44030800000000000000
+      internalID: 3478167987707737254
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b10e77b9103d6404c80870dc46d681ed
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1_0: -855298285791758126
+      PiramidesTras_0: -3691650309153117779
+      PiramidesTras_1: 8170174565765560977
+      PiramidesTras_2: 3478167987707737254
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
