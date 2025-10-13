@@ -21,7 +21,7 @@ public class GameDb : MonoBehaviour
         db.CreateTable<Progresso>();
         db.CreateTable<PowerUpsTable>();
 
-        // Se ainda não existir dados, cria com valores padrão
+        // Se ainda nï¿½o existir dados, cria com valores padrï¿½o
         if (db.Table<Configuracoes>().Count() == 0)
         {
             CriarConfiguracoes(1f, 1f, "3120x1440", true, true);
@@ -70,7 +70,7 @@ public class GameDb : MonoBehaviour
         });
     }
 
-    // ---------------- ATUALIZAR CONFIGURAÇÕES ----------------
+    // ---------------- ATUALIZAR CONFIGURAï¿½ï¿½ES ----------------
     public void AtualizarConfiguracoes(int id, float volumeMusica, float volumeEfeitos, string resolucao, bool telaCheia)
     {
         db.Execute("UPDATE Configuracoes SET VolumeMusica = ?, VolumeEfeitos = ?, Resolucao = ?, TelaCheia = ? WHERE Id = ?", volumeMusica, volumeEfeitos, resolucao, (telaCheia ? 1 : 0), id);
