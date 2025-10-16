@@ -56,13 +56,27 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (jumpPressed && jumpUp) // Comando W para pular
+
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);
+        jumpHeld = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W);
+        
+        if (!jumpHeld)
+        {
+            jumpTimeCounter = 0f;
+        }
+
+                if (jumpPressed && jumpUp) // Comando W para pular
         {
             if (!colliding) // Caso esteja no ar
             {
                 jumpUp = false;
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // Zera a velocidade vertical ANTES de aplicar a nova força
                 rb.AddForce(Vector2.up * secondJump, ForceMode2D.Impulse);
+                anim.Play("Double Jump");
             }
             else // Caso esteja no chão
             {
@@ -81,17 +95,6 @@ public class Player : MonoBehaviour
                 rb.AddForce(Vector2.up * extraJumpForce * Time.deltaTime, ForceMode2D.Force);
                 jumpTimeCounter += Time.deltaTime;
             }
-        }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);
-        jumpHeld = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W);
-        
-        if (!jumpHeld)
-        {
-            jumpTimeCounter = 0f;
         }
 
         switch (playerStatus)
