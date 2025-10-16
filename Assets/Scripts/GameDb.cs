@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-public class GameDatabase : MonoBehaviour
+public class GameDb : MonoBehaviour
 {
     public List<string> powerUpsList = new List<string> { "Gunner", "Destroyer", "CoinMagnet" };
 
@@ -21,7 +21,7 @@ public class GameDatabase : MonoBehaviour
         db.CreateTable<Progresso>();
         db.CreateTable<PowerUpsTable>();
 
-        // Se ainda não existir dados, cria com valores padrão
+        // Se ainda nï¿½o existir dados, cria com valores padrï¿½o
         if (db.Table<Configuracoes>().Count() == 0)
         {
             CriarConfiguracoes(1f, 1f, "3120x1440", true, true);
@@ -70,7 +70,7 @@ public class GameDatabase : MonoBehaviour
         });
     }
 
-    // ---------------- ATUALIZAR CONFIGURAÇÕES ----------------
+    // ---------------- ATUALIZAR CONFIGURAï¿½ï¿½ES ----------------
     public void AtualizarConfiguracoes(int id, float volumeMusica, float volumeEfeitos, string resolucao, bool telaCheia)
     {
         db.Execute("UPDATE Configuracoes SET VolumeMusica = ?, VolumeEfeitos = ?, Resolucao = ?, TelaCheia = ? WHERE Id = ?", volumeMusica, volumeEfeitos, resolucao, (telaCheia ? 1 : 0), id);
@@ -121,9 +121,34 @@ public class GameDatabase : MonoBehaviour
         db.Execute("UPDATE PowerUpsTable SET Nivel = ?, Duracao = ? WHERE IdSave = ? AND NamePower = ?", nivel, duracao, idSave, name);
     }
 
+    // ------------ CARREGAR POWER UPS --------------
     public PowerUpsTable CarregarPowerUps(int idSave, string name)
     {
         return db.Table<PowerUpsTable>().Where(p => p.IdSave == idSave && p.NamePower == name).FirstOrDefault();
+    }
+
+        // ------------ CRIAR ITEM ALMANAQUE --------------
+    public void CriarAlmanaque(int idSave, string itemName, string descricao, int liberado)
+    {
+        db.Insert(new AlmanaqueTable
+        {
+            IdSave = idSave,
+            NameItem = itemName,
+            Descricao = descricao,
+            Liberado = liberado
+        });
+    }
+
+    // ---------------- ALMANAQUE ----------------
+    public void SalvarAlmanaque(int idSave, string itemName, int liberado)
+    {
+        db.Execute("UPDATE AlmanaqueTable SET Liberado = ? WHERE IdSave = ? AND NameItem = ?", liberado, idSave, itemName);
+    }
+
+    // ------------ CARREGAR ALMANAQUE --------------
+    public AlmanaqueTable CarregarAlmanaque(int idSave, string itemName)
+    {
+        return db.Table<AlmanaqueTable>().Where(p => p.IdSave == idSave && p.NameItem == itemName).FirstOrDefault();
     }
 
     void OnDestroy()
@@ -163,4 +188,17 @@ public class PowerUpsTable
     public string NamePower { get; set; }
     public int Nivel { get; set; }
     public float Duracao { get; set; } 
+}
+
+public class AlmanaqueTable
+{
+    [PrimaryKey, AutoIncrement]
+    public int Id { get; set; }
+
+    [Indexed(Name = "UX_SaveItem", Order = 0, Unique = true)]
+    public int IdSave { get; set; }
+    [Indexed(Name = "UX_SaveItem", Order = 1, Unique = true), Collation("NOCASE")]
+    public string NameItem { get; set; }
+    public string Descricao { get; set; }
+    public int Liberado { get; set; } 
 }

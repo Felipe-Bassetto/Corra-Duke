@@ -9,7 +9,7 @@ public class SoundManager : MonoBehaviour
     public List<AudioClip> listSoundEffects = new List<AudioClip>();
 
     // Definição de variaveis audio
-    public AudioClip sound;
+    private AudioClip sound;
     public AudioSource audioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -28,6 +28,6 @@ public class SoundManager : MonoBehaviour
     public void SoundPlay(int index)
     {
         sound = listSoundEffects[index];
-        audioSource.PlayOneShot(sound, 0.5f);
+        audioSource.PlayOneShot(sound, 0.5f); 
     }
 }

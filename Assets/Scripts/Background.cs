@@ -3,7 +3,7 @@ using UnityEngine;
 public class Background : MonoBehaviour
 {
     // Definição das variáveis
-    public float velocidade = 5f;
+    public float velocidade;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
