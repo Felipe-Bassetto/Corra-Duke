@@ -3,14 +3,14 @@ using UnityEngine.EventSystems;
 
 public class MouseDetector : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private SoundManager soundManager;
     
     public void OnPointerEnter(PointerEventData eventData)
     {
+        Debug.Log("foi");
         if (CompareTag("Button"))
         {
-            SoundManager soundManagerScript = musicSource.GetComponent<SoundManager>();
-            soundManagerScript.SoundPlay(2);
+            soundManager.SoundPlay(2);
         }
     }
 

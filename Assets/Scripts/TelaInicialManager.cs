@@ -16,7 +16,6 @@ public class TelaInicialManager : MonoBehaviour
     [SerializeField] private AudioSource musicSource;  
     [SerializeField] private AudioClip musicTelaInicial;
     [SerializeField] private AudioClip musicUpgrades;
-    [SerializeField] private AudioClip somClick;
 
 
 
@@ -92,25 +91,4 @@ public class TelaInicialManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void playSelectSound()
-    {
-        SoundManager soundManagerScript = musicSource.GetComponent<SoundManager>();
-
-        GameObject botao = EventSystem.current.currentSelectedGameObject;
-        string nomeBotao = botao.name;
-
-        switch (nomeBotao)
-        {
-            case "JogarButton":
-            case "SobreButton":
-            case "InstrucoesButton":
-            case "OpcoesButton":
-            case "SairButton":
-                soundManagerScript.SoundPlay(0);
-                break;
-            case "UpgradeButton":
-                soundManagerScript.SoundPlay(1);
-                break;
-        }    
-    }
 }

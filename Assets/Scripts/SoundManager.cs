@@ -28,6 +28,6 @@ public class SoundManager : MonoBehaviour
     public void SoundPlay(int index)
     {
         sound = listSoundEffects[index];
-        audioSource.PlayOneShot(sound, 0.5f);
+        audioSource.PlayOneShot(sound, 0.5f); 
     }
 }
