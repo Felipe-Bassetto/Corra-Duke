@@ -39,7 +39,8 @@ public class GameDb : MonoBehaviour
                 CriarPowerUps(1, name, 0, 5f);
             }
         }
-        
+
+
         /* Exemplo de como chamar as tabelas
         Configuracoes config = CarregarConfiguracoes();
 
