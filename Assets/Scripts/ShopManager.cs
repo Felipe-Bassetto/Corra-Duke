@@ -1,11 +1,18 @@
 using UnityEngine;
+using static UnityEngine.Rendering.STP;
 
 public class ShopManager : MonoBehaviour
 {
+    [SerializeField] private GameDb mDb;
+
+    private Configuracoes config;
+    private int idNum;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        config = mDb.CarregarConfiguracoes();
+        idNum = config.Id;
     }
 
     // Update is called once per frame
@@ -25,6 +32,7 @@ public class ShopManager : MonoBehaviour
     }
     public void ComprarUpgrade(string powerUp)
     {
+        mDb.CarregarPowerUps(idNum, powerUp);
         
     }
 }
