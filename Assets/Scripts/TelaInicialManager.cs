@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -16,9 +17,21 @@ public class TelaInicialManager : MonoBehaviour
     [SerializeField] private AudioSource musicSource;  
     [SerializeField] private AudioClip musicTelaInicial;
     [SerializeField] private AudioClip musicUpgrades;
+    [SerializeField] private GameDb mDb;
+    [SerializeField] private TextMeshProUGUI record;
+    [SerializeField] private TextMeshProUGUI shopCoins;
 
+    private void Start()
+    {
+        Configuracoes config = mDb.CarregarConfiguracoes();
 
+        int idNum = config.Id;
 
+        Progresso progress = mDb.CarregarProgresso(idNum);
+
+        record.text = "Record: " + progress.ScoreRecord;
+        shopCoins.text = "R$ " + progress.Coins;
+    }
 
     public void Jogar()
     {

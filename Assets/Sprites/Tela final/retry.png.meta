@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 87a055691854e574584627e780b18c59
+guid: 0f6d1c7c01ef57546b4f2e44671f2822
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2380628668307084496
-    second: loja arte fundo_0
+      213: 5926721122142426173
+    second: retry_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: loja arte fundo_0
+      name: retry_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 320
+        height: 91
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0d41e842921b90120800000000000000
-      internalID: 2380628668307084496
+      spriteID: d349a10a571ff3250800000000000000
+      internalID: 5926721122142426173
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      loja arte fundo_0: 2380628668307084496
+      retry_0: 5926721122142426173
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
