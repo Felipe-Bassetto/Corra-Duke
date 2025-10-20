@@ -30,7 +30,7 @@ public class TelaInicialManager : MonoBehaviour
         Progresso progress = mDb.CarregarProgresso(idNum);
 
         record.text = "Record: " + progress.ScoreRecord;
-        shopCoins.text = "R$ " + progress.Coins;
+        shopCoins.text = "$" + progress.Coins;
     }
 
     public void Jogar()

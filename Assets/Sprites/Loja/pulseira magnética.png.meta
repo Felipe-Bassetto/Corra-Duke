@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d31cae86b812a204995e255590ef2db0
+guid: 5481bc41d8fcd1f46a3b81adb3c0a9e3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2795193246970937395
-    second: BarraCompra_7_0
+      213: 9158323321849259581
+    second: "pulseira magn\xE9tica_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BarraCompra_7_0
+      name: "pulseira magn\xE9tica_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 727
-        height: 67
+        width: 78
+        height: 131
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dcff9bb2d8a7539d0800000000000000
-      internalID: -2795193246970937395
+      spriteID: d362001d986e81f70800000000000000
+      internalID: 9158323321849259581
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BarraCompra_7_0: -2795193246970937395
+      "pulseira magn\xE9tica_0": 9158323321849259581
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

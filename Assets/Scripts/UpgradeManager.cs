@@ -60,8 +60,8 @@ public class UpgradeManager : MonoBehaviour
         powerUpData.Duracao += duracaoPorNivel;
 
         // Salva 
-        gameDb.SalvarPowerUps(1, nomePowerUp, powerUpData.Nivel, powerUpData.Duracao);
-        gameDb.SalvarProgresso(1, progresso.ScoreRecord, progresso.Coins);
+        //gameDb.SalvarPowerUps(1, nomePowerUp, powerUpData.Nivel, powerUpData.Duracao);
+        //gameDb.SalvarProgresso(1, progresso.ScoreRecord, progresso.Coins);
 
         // Atualiza a UI
         AtualizarUI();

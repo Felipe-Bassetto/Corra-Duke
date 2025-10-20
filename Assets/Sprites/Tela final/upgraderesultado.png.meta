@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ddc87be5b3c17964fa9e4c04f97c08dc
+guid: 176d4db76b90e04449965b04f3bae99c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6208167226979274863
-    second: BarraCompra_3_0
+      213: -1887995493286865626
+    second: upgraderesultado_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BarraCompra_3_0
+      name: upgraderesultado_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 727
-        height: 67
+        width: 135
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f60525e5337d72650800000000000000
-      internalID: 6208167226979274863
+      spriteID: 62519151a1e7cc5e0800000000000000
+      internalID: -1887995493286865626
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BarraCompra_3_0: 6208167226979274863
+      upgraderesultado_0: -1887995493286865626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
