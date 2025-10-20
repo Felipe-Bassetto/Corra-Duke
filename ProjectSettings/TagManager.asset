@@ -16,6 +16,8 @@ TagManager:
   - Collider
   - Ceu
   - Button
+  - Infos
+  - OpenedInfos
   layers:
   - Default
   - TransparentFX
