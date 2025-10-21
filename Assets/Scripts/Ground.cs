@@ -6,7 +6,7 @@ public class Ground : MonoBehaviour
 {
 
     // Definição das variáveis
-    public float velocidade = 5f;
+    public float velocidade = 8f;
     float positionGroundx;
 
 

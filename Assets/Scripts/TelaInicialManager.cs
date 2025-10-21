@@ -20,6 +20,8 @@ public class TelaInicialManager : MonoBehaviour
     [SerializeField] private GameDb mDb;
     [SerializeField] private TextMeshProUGUI record;
     [SerializeField] private TextMeshProUGUI shopCoins;
+    [SerializeField] private GameController gameController;
+
 
     private void Start()
     {
@@ -33,8 +35,10 @@ public class TelaInicialManager : MonoBehaviour
         shopCoins.text = "$" + progress.Coins;
     }
 
+
     public void Jogar()
     {
+        gameController.activatePanel(null);
         SceneManager.LoadScene(Game);
     }
 

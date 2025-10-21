@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
     public bool doubleScoreActive = false; // controla o multiplicador
     private int finalScore;
     private bool jumpPressed, jumpHeld;
+    private bool dead = false;
 
     // Definição de Listas
     public List<string> listPlayerVunerable = new List<string>();
@@ -183,6 +184,13 @@ public class Player : MonoBehaviour
 
     private void Die() // Função privada morte do jogador
     {
+        if (dead)
+        { 
+            return; 
+        }
+
+        dead = true;
+
        gameOverPanel.SetActive(true); // Ativa o painel antes de destruir o jogador
        GameObject.Find("GameOverManager").GetComponent<GameOverManager>().ShowGameOver();
        Debug.Log("Você perdeu");
@@ -201,9 +209,14 @@ public class Player : MonoBehaviour
            record = finalScore;
        }
 
-       coins += coinRound;
+        Debug.Log(coins);
+        Debug.Log(coinRound);
+        
 
-       db.SalvarProgresso(config.Id, record, finalScore);
+       coins += coinRound;
+        Debug.Log(coins);
+
+        db.SalvarProgresso(config.Id, record, coins);
        
 
 
