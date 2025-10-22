@@ -5,7 +5,6 @@ public class GameController : MonoBehaviour
 {
     public string activePanel;
     public static GameController instance;
-    public string test = "abc";
 
     private void Awake()
     {

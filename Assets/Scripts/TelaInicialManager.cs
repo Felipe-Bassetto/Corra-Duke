@@ -51,11 +51,6 @@ public class TelaInicialManager : MonoBehaviour
         
     }
 
-    private void awake ()
-    {
-        
-    }
-
 
     public void Jogar()
     {

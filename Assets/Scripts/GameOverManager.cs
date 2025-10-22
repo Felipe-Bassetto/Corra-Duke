@@ -10,7 +10,7 @@ public class GameOverManager : MonoBehaviour
     [SerializeField] private LevelManager scoreMs;
     [SerializeField] private TextMeshProUGUI coinHud;
     [SerializeField] private TextMeshProUGUI scoreHud;
-    private GameController gameController;
+    public GameController gameController;
     private string newScene;
 
     void Start()
@@ -31,7 +31,8 @@ public class GameOverManager : MonoBehaviour
 
     public void Retry()
     {
-        gameController.activatePanel(null);
+        newScene = "Empty";
+        gameController.activatePanel(newScene);
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -46,7 +47,6 @@ public class GameOverManager : MonoBehaviour
     {
         newScene = "PanelUpgrade";
         gameController.activatePanel(newScene);
-        gameController.test = newScene;
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainPage");
     }

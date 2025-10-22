@@ -383,6 +383,7 @@ MonoBehaviour:
   scoreMs: {fileID: 1973589191}
   coinHud: {fileID: 1756095937}
   scoreHud: {fileID: 1329121503}
+  gameController: {fileID: 0}
 --- !u!4 &301365986
 Transform:
   m_ObjectHideFlags: 0
@@ -2918,10 +2919,10 @@ RectTransform:
   - {fileID: 37947107}
   m_Father: {fileID: 1262072260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -766.6953, y: -66.869}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -397.99768, y: 0}
+  m_SizeDelta: {x: 1557.3093, y: 1373.131}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1708792778
 MonoBehaviour:
@@ -2997,7 +2998,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 3.5
+  m_GravityScale: 3.7
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3160,8 +3161,8 @@ MonoBehaviour:
   level: {fileID: 1973589191}
   db: {fileID: 183729410}
   distance: 2
-  jumpForce: 7
-  secondJump: 6
+  jumpForce: 8
+  secondJump: 10
   extraJumpForce: 1500
   maxJumpTime: 0.28
   jumpTimeCounter: 0
@@ -3174,9 +3175,7 @@ MonoBehaviour:
   coinMagnetRadius: 5
   coinMagnetForce: 10
   doubleScoreActive: 0
-  listPlayerVunerable:
-  - Bomb
-  - Laser
+  listPlayerVunerable: []
 --- !u!1 &1756095935
 GameObject:
   m_ObjectHideFlags: 0
