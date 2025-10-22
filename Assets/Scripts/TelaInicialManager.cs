@@ -22,9 +22,12 @@ public class TelaInicialManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI shopCoins;
     [SerializeField] private GameController gameController;
 
+    public string activePanel;
+
 
     private void Start()
     {
+        Debug.Log("Leu MenuManager");
         Configuracoes config = mDb.CarregarConfiguracoes();
 
         int idNum = config.Id;
@@ -33,6 +36,24 @@ public class TelaInicialManager : MonoBehaviour
 
         record.text = "Record: " + progress.ScoreRecord;
         shopCoins.text = "$" + progress.Coins;
+
+        gameController = FindObjectOfType<GameController>();
+
+        switch(gameController.activePanel)
+        {
+            case "PanelUpgrade":
+                AbrirMelhorias();
+                break;
+            case "PaneInstrucoes":
+                AbrirInstrucoes();
+                break;
+        }
+        
+    }
+
+    private void awake ()
+    {
+        
     }
 
 

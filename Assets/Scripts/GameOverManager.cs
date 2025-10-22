@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameOverManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GameOverManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI coinHud;
     [SerializeField] private TextMeshProUGUI scoreHud;
     private GameController gameController;
+    private string newScene;
 
     void Start()
     {
@@ -42,16 +44,20 @@ public class GameOverManager : MonoBehaviour
 
     public void GoToShop()
     {
-        gameController.activatePanel("PanelUpgrade");
+        newScene = "PanelUpgrade";
+        gameController.activatePanel(newScene);
+        gameController.test = newScene;
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainPage");
     }
 
     public void GoToBook()
     {
-        gameController.activatePanel("PanelInstrucoes");
+        newScene = "PaneInstrucoes";
+        gameController.activatePanel(newScene);
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainPage");
     }
+
 }
 

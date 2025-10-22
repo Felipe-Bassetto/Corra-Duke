@@ -8752,7 +8752,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d75f58b7d4a8b344683a5f1c65a4a143, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::TelaInicialManager
   Game: Game
   painelMenuInicial: {fileID: 481664468}
   painelOpcoes: {fileID: 1983971887}
@@ -8767,6 +8767,7 @@ MonoBehaviour:
   record: {fileID: 203147904}
   shopCoins: {fileID: 1430991284}
   gameController: {fileID: 1922293091}
+  activePanel: 
 --- !u!1 &930048545
 GameObject:
   m_ObjectHideFlags: 0
@@ -16433,8 +16434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
   activePanel: 
-  painelUpgrade: {fileID: 41161494}
-  painelAlma: {fileID: 992098962}
+  test: abc
 --- !u!4 &1922293092
 Transform:
   m_ObjectHideFlags: 0
@@ -18145,6 +18145,7 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1922293092}
   - {fileID: 1819574135}
   - {fileID: 1568404703}
   - {fileID: 517807766}
@@ -18152,4 +18153,3 @@ SceneRoots:
   - {fileID: 213856715}
   - {fileID: 1699249976}
   - {fileID: 1383968772}
-  - {fileID: 1922293092}
