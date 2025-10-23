@@ -35,6 +35,8 @@ public class Player : MonoBehaviour
     public bool doubleScoreActive = false; // controla o multiplicador
     private int finalScore;
     private bool jumpPressed, jumpHeld;
+    private bool dead = false;
+    public string deadReason;
 
     // Definição de Listas
     public List<string> listPlayerVunerable = new List<string>();
@@ -63,19 +65,20 @@ public class Player : MonoBehaviour
     {
         jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);
         jumpHeld = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W);
-        
+
         if (!jumpHeld)
         {
             jumpTimeCounter = 0f;
         }
 
-                if (jumpPressed && jumpUp) // Comando W para pular
+        if (jumpPressed && jumpUp) // Comando W para pular
         {
             if (!colliding) // Caso esteja no ar
             {
-                jumpUp = false;
+                
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // Zera a velocidade vertical ANTES de aplicar a nova força
                 rb.AddForce(Vector2.up * secondJump, ForceMode2D.Impulse);
+                jumpUp = false;
                 anim.Play("Double Jump");
             }
             else // Caso esteja no chão
@@ -88,7 +91,7 @@ public class Player : MonoBehaviour
         jumpPressed = false;
         
 
-        if (jumpHeld && !colliding)
+        if (jumpHeld && !colliding && jumpUp)
         {
             if (jumpTimeCounter < maxJumpTime)
             {
@@ -160,17 +163,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        Debug.Log("Vida do jogador: " + currentHealth);
-
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-    }
-
     public void alterStatus(string newStatus)
     {
         playerStatus = newStatus;
@@ -183,6 +175,13 @@ public class Player : MonoBehaviour
 
     private void Die() // Função privada morte do jogador
     {
+        if (dead)
+        { 
+            return; 
+        }
+
+        dead = true;
+
        gameOverPanel.SetActive(true); // Ativa o painel antes de destruir o jogador
        GameObject.Find("GameOverManager").GetComponent<GameOverManager>().ShowGameOver();
        Debug.Log("Você perdeu");
@@ -201,18 +200,22 @@ public class Player : MonoBehaviour
            record = finalScore;
        }
 
+       Debug.Log(coins);
+       Debug.Log(coinRound);
+        
+
        coins += coinRound;
+       Debug.Log(coins);
 
-       db.SalvarProgresso(config.Id, record, finalScore);
-       
-
+       db.SalvarProgresso(config.Id, record, coins);
 
        Destroy(gameObject); 
     }
 
     void OnBecameInvisible()
     {
-       Die();
+        deadReason = "Downfall";
+        Die();
     }
 
     private void OnTriggerExit2D(Collider2D other) // Verificação se o jogador está tocando no chão
@@ -232,11 +235,17 @@ public class Player : MonoBehaviour
                 switch (obj.tag)
                 {
                     case "EnemyBullet":
+                        deadReason = "Enemy Bullet";
+                        break;
                     case "Laser":
+                        deadReason = "Laser";
+                        break;
                     case "Bomb":
-                        TakeDamage(1);
+                        deadReason = "Bomb";
                         break;
                 }
+
+                Die();
             }
         }
         else 

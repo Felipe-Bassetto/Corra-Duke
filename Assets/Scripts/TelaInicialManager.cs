@@ -20,9 +20,14 @@ public class TelaInicialManager : MonoBehaviour
     [SerializeField] private GameDb mDb;
     [SerializeField] private TextMeshProUGUI record;
     [SerializeField] private TextMeshProUGUI shopCoins;
+    [SerializeField] private GameController gameController;
+
+    public string activePanel;
+
 
     private void Start()
     {
+        Debug.Log("Leu MenuManager");
         Configuracoes config = mDb.CarregarConfiguracoes();
 
         int idNum = config.Id;
@@ -30,11 +35,26 @@ public class TelaInicialManager : MonoBehaviour
         Progresso progress = mDb.CarregarProgresso(idNum);
 
         record.text = "Record: " + progress.ScoreRecord;
-        shopCoins.text = "R$ " + progress.Coins;
+        shopCoins.text = "$" + progress.Coins;
+
+        gameController = FindFirstObjectByType<GameController>();
+
+        switch(gameController.activePanel)
+        {
+            case "PanelUpgrade":
+                AbrirMelhorias();
+                break;
+            case "PaneInstrucoes":
+                AbrirInstrucoes();
+                break;
+        }
+        
     }
+
 
     public void Jogar()
     {
+        gameController.activatePanel(null);
         SceneManager.LoadScene(Game);
     }
 

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 public class GameDb : MonoBehaviour
 {
-    public List<string> powerUpsList = new List<string> { "Gunner", "Destroyer", "CoinMagnet" };
+    public List<string> powerUpsList = new List<string> { "Gunner", "Destroyer", "CoinMagnet", "Multipliyer"};
 
     private SQLiteConnection db;
 
@@ -36,7 +36,7 @@ public class GameDb : MonoBehaviour
         {
             foreach (string name in powerUpsList)
             {
-                CriarPowerUps(1, name, 0, 5f, 100);
+                CriarPowerUps(1, name, 0, 5f, 500);
             }
         }
 
