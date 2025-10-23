@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.UI; 
 
 public class GameOverManager : MonoBehaviour
 {
@@ -10,14 +11,28 @@ public class GameOverManager : MonoBehaviour
     [SerializeField] private LevelManager scoreMs;
     [SerializeField] private TextMeshProUGUI coinHud;
     [SerializeField] private TextMeshProUGUI scoreHud;
+    [SerializeField] private TextMeshProUGUI deadHud;
     public GameController gameController;
     private string newScene;
+    public string deadBy;
+
+    System.Random rnd = new System.Random();
+
+    // Definição variáveis
+    public int indexArray;
+
+    [SerializeField] private RawImage postIt;
+    public Texture[] arrPostIt;
+    private Sprite spritePostIt;
 
     void Start()
     {
         gameOverPanel.SetActive(false); // começa invisível
 
         gameController = FindAnyObjectByType<GameController>();
+
+        indexArray = rnd.Next(arrPostIt.Length);
+        postIt.texture = arrPostIt[indexArray];
     }
 
     public void ShowGameOver()
@@ -27,6 +42,7 @@ public class GameOverManager : MonoBehaviour
 
         coinHud.text = "x" + player.coinRound;
         scoreHud.text = "" + scoreMs.scoreMs;
+        deadHud.text = "" + player.deadReason;
     }
 
     public void Retry()

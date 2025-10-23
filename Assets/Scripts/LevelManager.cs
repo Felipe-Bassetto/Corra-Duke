@@ -15,8 +15,8 @@ public class LevelManager : MonoBehaviour
     public float counterTimePowerUp = 0f;
     public float timePowerUp;
     private float counterMult = 30f;
+    private float counterVeloc = 9f;
     private int multScore = 1;
-    
 
     // Defini��o de array
     public GameObject[] arrGroupsObs;
@@ -28,6 +28,8 @@ public class LevelManager : MonoBehaviour
     public Player player;
     public int multPU; // Multiplicador do power up
 
+    public float velocidade;
+
     // Guarda posição original do chão
     private Vector3 groundOriginalPos;
 
@@ -37,7 +39,7 @@ public class LevelManager : MonoBehaviour
     {
         if (player == null)
         {
-            player = FindObjectOfType<Player>();
+            player = FindFirstObjectByType<Player>();
         }
         
         if (ground != null)
@@ -50,7 +52,6 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (counterTimePowerUp > 0f) 
         {
             counterTimePowerUp -= Time.deltaTime;
@@ -63,7 +64,7 @@ public class LevelManager : MonoBehaviour
         }
 
         // Soma o tempo desde o �ltimo frame em MILISSEGUNDOS
-        countMs += Time.deltaTime * soloGround.velocidade; 
+        countMs += Time.deltaTime * velocidade; 
 
         // Enquanto tiver pelo menos 1 ms acumulado, d� pontos
         while (countMs >= 1f)
@@ -85,6 +86,18 @@ public class LevelManager : MonoBehaviour
             counterMult = 30f;
             multScore++;
         }
+
+        if (counterVeloc > 0f)
+        {
+            counterVeloc -= Time.deltaTime;
+            Debug.Log(counterVeloc);
+        }
+        else
+        {
+            counterVeloc = 9f;
+            velocidade += 0.2f;
+        }
+
 
         if (!groupActive)
         {

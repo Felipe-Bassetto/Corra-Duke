@@ -36,6 +36,7 @@ public class Player : MonoBehaviour
     private int finalScore;
     private bool jumpPressed, jumpHeld;
     private bool dead = false;
+    public string deadReason;
 
     // Definição de Listas
     public List<string> listPlayerVunerable = new List<string>();
@@ -162,17 +163,6 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        Debug.Log("Vida do jogador: " + currentHealth);
-
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-    }
-
     public void alterStatus(string newStatus)
     {
         playerStatus = newStatus;
@@ -210,23 +200,22 @@ public class Player : MonoBehaviour
            record = finalScore;
        }
 
-        Debug.Log(coins);
-        Debug.Log(coinRound);
+       Debug.Log(coins);
+       Debug.Log(coinRound);
         
 
        coins += coinRound;
-        Debug.Log(coins);
+       Debug.Log(coins);
 
-        db.SalvarProgresso(config.Id, record, coins);
-       
-
+       db.SalvarProgresso(config.Id, record, coins);
 
        Destroy(gameObject); 
     }
 
     void OnBecameInvisible()
     {
-       Die();
+        deadReason = "Downfall";
+        Die();
     }
 
     private void OnTriggerExit2D(Collider2D other) // Verificação se o jogador está tocando no chão
@@ -246,11 +235,17 @@ public class Player : MonoBehaviour
                 switch (obj.tag)
                 {
                     case "EnemyBullet":
+                        deadReason = "Enemy Bullet";
+                        break;
                     case "Laser":
+                        deadReason = "Laser";
+                        break;
                     case "Bomb":
-                        TakeDamage(1);
+                        deadReason = "Bomb";
                         break;
                 }
+
+                Die();
             }
         }
         else 

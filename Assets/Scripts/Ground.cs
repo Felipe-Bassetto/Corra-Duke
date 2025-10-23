@@ -6,7 +6,6 @@ public class Ground : MonoBehaviour
 {
 
     // Definição das variáveis
-    public float velocidade = 8f;
     float positionGroundx;
 
 
@@ -18,7 +17,7 @@ public class Ground : MonoBehaviour
     {
         if (level == null)
         {
-            level = FindObjectOfType<LevelManager>();
+            level = FindFirstObjectByType<LevelManager>();
         }
 
     }
@@ -26,7 +25,7 @@ public class Ground : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.left * velocidade * Time.deltaTime);
+        transform.Translate(Vector2.left * level.velocidade * Time.deltaTime);
 
         positionGroundx = transform.position.x;
     }
@@ -39,10 +38,5 @@ public class Ground : MonoBehaviour
         }
 
         Destroy(gameObject);
-    }
-
-    public void AlterarVelocidade(int multiplicador)
-    {
-        velocidade = velocidade * multiplicador;
     }
 }

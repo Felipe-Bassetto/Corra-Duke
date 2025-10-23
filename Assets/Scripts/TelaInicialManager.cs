@@ -37,7 +37,7 @@ public class TelaInicialManager : MonoBehaviour
         record.text = "Record: " + progress.ScoreRecord;
         shopCoins.text = "$" + progress.Coins;
 
-        gameController = FindObjectOfType<GameController>();
+        gameController = FindFirstObjectByType<GameController>();
 
         switch(gameController.activePanel)
         {
