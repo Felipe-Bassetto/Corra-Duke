@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c3723714cda98c946808baeaab482134
+guid: b9cd8c7b4b140894680450ca35a7c111
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4892469918050855691
-    second: "Laser ch\xE3o_0"
+      213: 7028616704906629411
+    second: 7_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Laser ch\xE3o_0"
+      name: 7_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 115
-        width: 377
-        height: 397
+        x: 292
+        y: 47
+        width: 779
+        height: 490
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f45b4ce7847a1cb0800000000000000
-      internalID: -4892469918050855691
+      spriteID: 321165667a9aa8160800000000000000
+      internalID: 7028616704906629411
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ccb6b430480ebcf4c91830e408de7182
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Laser ch\xE3o_0": -4892469918050855691
+      7_0: 7028616704906629411
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

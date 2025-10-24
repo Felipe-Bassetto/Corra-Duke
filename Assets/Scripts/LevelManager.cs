@@ -15,7 +15,9 @@ public class LevelManager : MonoBehaviour
     public float counterTimePowerUp = 0f;
     public float timePowerUp;
     private float counterMult = 30f;
+    public float counterSpawnPowerUp = 10f;
     private float counterVeloc = 9f;
+    private bool canSpawnPowerUp = false;
     private int multScore = 1;
 
     // Defini��o de array
@@ -25,6 +27,7 @@ public class LevelManager : MonoBehaviour
     System.Random rnd = new System.Random();
     public Ground soloGround;
     public Ground ground;
+    public GameObject powerUpPrefeb;
     public Player player;
     public int multPU; // Multiplicador do power up
 
@@ -77,6 +80,7 @@ public class LevelManager : MonoBehaviour
             countMs -= 1f;
         }
 
+        // Contagem de tempo para aumentar o Multiplicador da pontuação
         if (counterMult > 0f)
         {
             counterMult -= Time.deltaTime;
@@ -87,6 +91,7 @@ public class LevelManager : MonoBehaviour
             multScore++;
         }
 
+        // Contagem de tempo para aumentar a velocidade
         if (counterVeloc > 0f)
         {
             counterVeloc -= Time.deltaTime;
@@ -96,6 +101,17 @@ public class LevelManager : MonoBehaviour
         {
             counterVeloc = 9f;
             velocidade += 0.2f;
+        }
+
+        // Contagem de tempo para spawnar novo powerUp
+        if (counterSpawnPowerUp > 0f)
+        {
+            counterSpawnPowerUp -= Time.deltaTime;
+            Debug.Log(counterSpawnPowerUp);
+        }
+        else
+        {
+            canSpawnPowerUp = true;
         }
 
 
@@ -115,6 +131,13 @@ public class LevelManager : MonoBehaviour
         indexArr = rnd.Next(arrGroupsObs.Length);
         Instantiate(arrGroupsObs[indexArr], new Vector3(21f,-4.5f,0), Quaternion.identity); // Gera o obstaculo
         Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity); // Gera o ch�o vazio ap�s o conjunto
+
+        if(canSpawnPowerUp)
+        {
+            Instantiate(powerUpPrefeb, new Vector3(44,-1f,0), Quaternion.identity);
+            canSpawnPowerUp = false;
+            counterSpawnPowerUp = 50f;
+        }
 
         SetGroupActive(true);
     }
