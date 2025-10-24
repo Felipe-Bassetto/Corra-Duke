@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-public class VolumeManager : MonoBehaviour
+public class ConfigManager : MonoBehaviour
 {
     public AudioMixer audioMixer;
     public Slider musicSlider;
