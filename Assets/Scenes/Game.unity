@@ -3859,6 +3859,7 @@ MonoBehaviour:
   counterSpawnPowerUp: 10
   arrGroupsObs:
   - {fileID: 5622814296668365602, guid: d562f47473ab81f44b14cd2a5e95e882, type: 3}
+  - {fileID: 5622814296668365602, guid: d562f47473ab81f44b14cd2a5e95e882, type: 3}
   soloGround: {fileID: 3623353307232672489, guid: 417dba9413b31f34c90341aa414fca13, type: 3}
   ground: {fileID: 5558766979167196535}
   powerUpPrefeb: {fileID: 3367540434247220356, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
