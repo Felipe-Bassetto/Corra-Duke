@@ -37,6 +37,8 @@ public class Player : MonoBehaviour
     private bool jumpPressed, jumpHeld;
     private bool dead = false;
     public string deadReason;
+    private bool pausePressed;
+    public GameObject pauseMenu;
 
     // Definição de Listas
     public List<string> listPlayerVunerable = new List<string>();
@@ -56,15 +58,18 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    private void FixedUpdate()
-    {
-
-    }
     // Update is called once per frame
     void Update()
     {
+        pausePressed = Input.GetKeyDown(KeyCode.Escape);
         jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);
         jumpHeld = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W);
+
+        if(pausePressed)
+        {
+            Time.timeScale = 0f;
+            pauseMenu.SetActive(true);
+        }
 
         if (!jumpHeld)
         {
@@ -105,7 +110,6 @@ public class Player : MonoBehaviour
             case "Gunner":
                 if (Input.GetMouseButtonDown(0)) // Comando botão esquerdo para atirar
                 {
-                    Debug.Log("TIRO");
                     Instantiate(Bala, posicaoSpawn.position, Quaternion.identity);
                 }
                 break;
@@ -183,8 +187,7 @@ public class Player : MonoBehaviour
         dead = true;
 
        gameOverPanel.SetActive(true); // Ativa o painel antes de destruir o jogador
-       GameObject.Find("GameOverManager").GetComponent<GameOverManager>().ShowGameOver();
-       Debug.Log("Você perdeu");
+       GameObject.Find("GameOverPanel").GetComponent<GameOverManager>().ShowGameOver();
        
        finalScore = level.scoreMs; //Atualiza record se passou
 
@@ -198,14 +201,9 @@ public class Player : MonoBehaviour
        if(record < finalScore)
        {
            record = finalScore;
-       }
-
-       Debug.Log(coins);
-       Debug.Log(coinRound);
-        
+       }   
 
        coins += coinRound;
-       Debug.Log(coins);
 
        db.SalvarProgresso(config.Id, record, coins);
 

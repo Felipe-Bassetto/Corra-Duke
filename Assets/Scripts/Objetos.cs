@@ -11,10 +11,8 @@ public class Objetos : MonoBehaviour
     {
         if(music == null)
         {
-            music = GameObject.Find("MusicGame");
+            music = GameObject.Find("EffectsManager");
         }
-
-        
     }
 
     // Update is called once per frame
@@ -27,6 +25,7 @@ public class Objetos : MonoBehaviour
     void OnTriggerEnter2D(Collider2D obj)
     {
         SoundManager soundManagerScript = music.GetComponent<SoundManager>();
+        Debug.Log("cathc");
         if(obj.CompareTag("Player"))
         {
            switch (gameObject.tag)

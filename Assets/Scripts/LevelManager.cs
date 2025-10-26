@@ -95,7 +95,6 @@ public class LevelManager : MonoBehaviour
         if (counterVeloc > 0f)
         {
             counterVeloc -= Time.deltaTime;
-            Debug.Log(counterVeloc);
         }
         else
         {
@@ -107,7 +106,6 @@ public class LevelManager : MonoBehaviour
         if (counterSpawnPowerUp > 0f)
         {
             counterSpawnPowerUp -= Time.deltaTime;
-            Debug.Log(counterSpawnPowerUp);
         }
         else
         {

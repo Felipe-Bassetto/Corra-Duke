@@ -653,7 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!114 &97258790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -698,7 +698,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 213856716}
+      - m_Target: {fileID: 2074371968}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: SoundPlay
         m_Mode: 3
@@ -1220,7 +1220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!114 &183875138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1265,7 +1265,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 213856716}
+      - m_Target: {fileID: 2074371968}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: SoundPlay
         m_Mode: 3
@@ -1423,7 +1423,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 213856716}
+      - m_Target: {fileID: 2074371968}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: SoundPlay
         m_Mode: 3
@@ -1485,7 +1485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!1 &203147902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,7 +1674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!114 &208070987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1731,7 +1731,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 213856716}
+      - m_Target: {fileID: 2074371968}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: SoundPlay
         m_Mode: 3
@@ -1791,7 +1791,6 @@ GameObject:
   m_Component:
   - component: {fileID: 213856715}
   - component: {fileID: 213856714}
-  - component: {fileID: 213856716}
   m_Layer: 0
   m_Name: MusicManager
   m_TagString: Untagged
@@ -1911,24 +1910,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &213856716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213856713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af12bccde657c3a4f97723ff9fb3ef99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SoundManager
-  listSoundEffects:
-  - {fileID: 8300000, guid: b069260453259c045b422516e644a7a3, type: 3}
-  - {fileID: 8300000, guid: 3989ce581441b8345b557a450fe344eb, type: 3}
-  - {fileID: 8300000, guid: 0dfbe50fb162b0c468343437292b9bf5, type: 3}
-  audioSource: {fileID: 213856714}
-  audioMixer: {fileID: 24100000, guid: cfe6de6a10ed7da4398e8bc2bce324e5, type: 2}
 --- !u!1 &222895533
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,7 +2378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!114 &344390054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2600,7 +2581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!114 &420613743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2657,7 +2638,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 213856716}
+      - m_Target: {fileID: 2074371968}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: SoundPlay
         m_Mode: 3
@@ -3508,7 +3489,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 213856716}
+      - m_Target: {fileID: 2074371968}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: SoundPlay
         m_Mode: 3
@@ -3570,7 +3551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!1 &599635054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3728,7 +3709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!1 &610226115
 GameObject:
   m_ObjectHideFlags: 0
@@ -3825,7 +3806,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 213856716}
+      - m_Target: {fileID: 2074371968}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: SoundPlay
         m_Mode: 3
@@ -3887,7 +3868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!1 &620847534
 GameObject:
   m_ObjectHideFlags: 0
@@ -4576,7 +4557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!114 &702725588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4633,7 +4614,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 213856716}
+      - m_Target: {fileID: 2074371968}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: SoundPlay
         m_Mode: 3
@@ -5690,7 +5671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!1 &905141486
 GameObject:
   m_ObjectHideFlags: 0
@@ -6075,7 +6056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!114 &932942855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6120,7 +6101,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 213856716}
+      - m_Target: {fileID: 2074371968}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: SoundPlay
         m_Mode: 3
@@ -6745,7 +6726,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 213856716}
+      - m_Target: {fileID: 2074371968}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: SoundPlay
         m_Mode: 3
@@ -6807,7 +6788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!1 &1044304581
 GameObject:
   m_ObjectHideFlags: 0
@@ -7076,7 +7057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!114 &1069610476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7239,7 +7220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!114 &1131525979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7568,7 +7549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!1 &1183147480
 GameObject:
   m_ObjectHideFlags: 0
@@ -7905,7 +7886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!114 &1278668717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7950,7 +7931,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 213856716}
+      - m_Target: {fileID: 2074371968}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: SoundPlay
         m_Mode: 3
@@ -8064,7 +8045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!114 &1280498079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8257,7 +8238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!1 &1295252769
 GameObject:
   m_ObjectHideFlags: 0
@@ -8633,7 +8614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!1 &1359487544
 GameObject:
   m_ObjectHideFlags: 0
@@ -8917,7 +8898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!1 &1430991282
 GameObject:
   m_ObjectHideFlags: 0
@@ -9850,7 +9831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!1 &1755457441
 GameObject:
   m_ObjectHideFlags: 0
@@ -10216,7 +10197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!1 &1787764328
 GameObject:
   m_ObjectHideFlags: 0
@@ -10999,7 +10980,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 213856716}
+      - m_Target: {fileID: 2074371968}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: SoundPlay
         m_Mode: 3
@@ -11061,7 +11042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!1 &1890037220
 GameObject:
   m_ObjectHideFlags: 0
@@ -11493,7 +11474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a07ce913c8b3748a704d9ff747039e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseDetector
-  soundManager: {fileID: 213856716}
+  soundManager: {fileID: 2074371968}
 --- !u!1 &2025327039
 GameObject:
   m_ObjectHideFlags: 0
@@ -11778,7 +11759,7 @@ GameObject:
   - component: {fileID: 2074371969}
   - component: {fileID: 2074371968}
   m_Layer: 0
-  m_Name: EffectsSoundManager
+  m_Name: EffectsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
