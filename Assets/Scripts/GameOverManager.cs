@@ -37,6 +37,7 @@ public class GameOverManager : MonoBehaviour
 
     public void ShowGameOver()
     {
+        Debug.Log("morreu");
         gameOverPanel.SetActive(true);
         Time.timeScale = 0f; // pausa o jogo
 
