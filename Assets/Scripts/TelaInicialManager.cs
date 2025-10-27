@@ -27,7 +27,6 @@ public class TelaInicialManager : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("Leu MenuManager");
         Configuracoes config = mDb.CarregarConfiguracoes();
 
         int idNum = config.Id;

@@ -29,7 +29,6 @@ public class SoundManager : MonoBehaviour
     {
         sound = listSoundEffects[index];
         audioMixer.GetFloat("SoundVolume", out float effectsVolume);
-        Debug.Log(effectsVolume);
         audioSource.PlayOneShot(sound, 0.5f); 
     }
 }

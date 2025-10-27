@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 72640d87934e10f4abe778f41417655d
+guid: 632246a74cd1a364b8cb52ef0c30b0e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3332196408588913678
-    second: loja_0
+      213: 3109794005996808692
+    second: barra0005_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: loja_0
+      name: barra0005_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 719
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f3b9386509a1c1d0800000000000000
-      internalID: -3332196408588913678
+      spriteID: 4f9241c0c25382b20800000000000000
+      internalID: 3109794005996808692
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      loja_0: -3332196408588913678
+      barra0005_0: 3109794005996808692
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
