@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8047391841900423226}
   - component: {fileID: 6604299430031545043}
   - component: {fileID: 3623353307232672489}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -150,5 +150,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4272f1159c01db143ad225f5ad97b9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 5
   level: {fileID: 0}

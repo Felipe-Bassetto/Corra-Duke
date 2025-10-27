@@ -27,7 +27,6 @@ public class Player : MonoBehaviour
     public int coinRound = 0; // Contador de moedas
     private bool powerUpdActive = false; // Power up shield
     public bool jumpUp = true; // Pode pular
-    public bool colliding = true; // Está colidindo
     public string playerStatus = "Basic"; // Comando do jogador
     public float velocidadeVoo = 3f;
     public float coinMagnetRadius = 5f; // raio de atração
@@ -39,9 +38,16 @@ public class Player : MonoBehaviour
     public string deadReason;
     private bool pausePressed;
     public GameObject pauseMenu;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundCheckDistance = 0.1f;
+    [SerializeField] private LayerMask groundLayer;
+    public bool isGrounded;
+    enum PlayerState { Running, Jumping, DoubleJumping }
+    PlayerState state;
 
     // Definição de Listas
     public List<string> listPlayerVunerable = new List<string>();
+    
 
     public bool PowerUpdActive 
     {
@@ -61,11 +67,19 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayer);
+
         pausePressed = Input.GetKeyDown(KeyCode.Escape);
         jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);
         jumpHeld = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W);
 
-        if(pausePressed)
+        if (isGrounded)
+        {
+            jumpUp = true;
+            state = PlayerState.Running;
+        }
+
+        if (pausePressed)
         {
             Time.timeScale = 0f;
             pauseMenu.SetActive(true);
@@ -78,25 +92,37 @@ public class Player : MonoBehaviour
 
         if (jumpPressed && jumpUp) // Comando W para pular
         {
-            if (!colliding) // Caso esteja no ar
+            if (isGrounded) // Caso esteja no chão
             {
-                
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                state = PlayerState.Jumping;
+            }
+            else // Caso esteja no ar
+            {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // Zera a velocidade vertical ANTES de aplicar a nova força
                 rb.AddForce(Vector2.up * secondJump, ForceMode2D.Impulse);
                 jumpUp = false;
-                anim.Play("Double Jump");
-            }
-            else // Caso esteja no chão
-            {
-                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                anim.Play("Duke Jumping");
+                state = PlayerState.DoubleJumping;
             }
         }
 
         jumpPressed = false;
         
+        switch (state)
+        {
+            case PlayerState.Running:
+                anim.Play("Running Duke");
+                break;
+            case PlayerState.Jumping:
+                anim.Play("Duke Jumping");
+                break;
+            case PlayerState.DoubleJumping:
+                anim.Play("Double Jump");
+                break;
+        }
 
-        if (jumpHeld && !colliding && jumpUp)
+
+        if (jumpHeld && !isGrounded && jumpUp)
         {
             if (jumpTimeCounter < maxJumpTime)
             {
@@ -216,14 +242,6 @@ public class Player : MonoBehaviour
         Die();
     }
 
-    private void OnTriggerExit2D(Collider2D other) // Verificação se o jogador está tocando no chão
-    {
-        if (other.tag == "Collider")
-        {
-            colliding = false;
-        }
-    }
-
     void OnTriggerEnter2D(Collider2D obj)
     {
         if (listPlayerVunerable.Contains(obj.tag)) // Verifica se o player deve morrer ou não. E então executa a ação para cada tipo de objeto.
@@ -254,11 +272,12 @@ public class Player : MonoBehaviour
                     coinRound++;
                     break;
                 case "Collider":
-                    colliding = true;
-                    jumpUp = true;
-                    anim.Play("Running Duke");
+                    //colliding = true;
+                    //jumpUp = true;
+                    //anim.Play("Running Duke");
                     break;
             }
         }
     }
+    
 }
