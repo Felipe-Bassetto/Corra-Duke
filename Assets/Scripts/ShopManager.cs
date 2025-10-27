@@ -1,9 +1,13 @@
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using static UnityEngine.Rendering.STP;
 
 public class ShopManager : MonoBehaviour
 {
     [SerializeField] private GameDb mDb;
+    [SerializeField] private Texture[] arrBarsImage;
 
     private Configuracoes config;
     private int idNum;
@@ -40,11 +44,18 @@ public class ShopManager : MonoBehaviour
         popUp.SetActive(false);
     }
 
-    public void ComprarUpgrade(string powerUp)
+    public void ComprarUpgrade(GameObject powerUp)//, TextMeshProUGUI priceUI, RawImage barra)
     {
+        TextMeshProUGUI priceUI = powerUp.transform.Find("BuyUpgrade/PriceButton").GetComponent<TextMeshProUGUI>() ;
+        RawImage barra = powerUp.transform.Find("BarraCompra").GetComponent<RawImage>();
+        string powerUpName = powerUp.name;
+
         coins = progress.Coins;
-        PowerUpsTable upgradeTable = mDb.CarregarPowerUps(idNum, powerUp);
+        PowerUpsTable upgradeTable = mDb.CarregarPowerUps(idNum, powerUpName);
         price = upgradeTable.Price;
+
+        Debug.Log(price);
+        Debug.Log(coins);
 
         if(coins<price)
         {
@@ -86,7 +97,17 @@ public class ShopManager : MonoBehaviour
                 break;
         }
 
-        mDb.SalvarPowerUps(idNum, powerUp, newLevel, newDuration, newPrice);
+        if (priceUI == null || barra == null)
+        {
+            Debug.LogError($"PowerUp '{powerUp}' não reconhecido.");
+            return;
+        }
+
+
+        priceUI.text = "" + newPrice;
+        barra.texture = arrBarsImage[newLevel];
+
+        mDb.SalvarPowerUps(idNum, powerUpName, newLevel, newDuration, newPrice);
         
     }
 }
