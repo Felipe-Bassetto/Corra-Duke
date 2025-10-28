@@ -30,11 +30,12 @@ public class LevelManager : MonoBehaviour
     public GameObject powerUpPrefeb;
     public Player player;
     public int multPU; // Multiplicador do power up
-
+    public string nomeConjunto;
     public float velocidade;
+    public float timeSpawn;
 
     // Guarda posição original do chão
-    private Vector3 groundOriginalPos;
+    //private Vector3 groundOriginalPos;
 
 
     // Start is called before the first frame update
@@ -45,11 +46,11 @@ public class LevelManager : MonoBehaviour
             player = FindFirstObjectByType<Player>();
         }
         
-        if (ground != null)
-        {
-            groundOriginalPos = ground.transform.position;
+        //if (ground != null)
+        //{
+            //groundOriginalPos = ground.transform.position;
 
-        }
+        //}
     }
 
     // Update is called once per frame
@@ -117,6 +118,12 @@ public class LevelManager : MonoBehaviour
         {
             spawnGroup();
         }
+
+        if (timeSpawn > 0)
+        {
+            timeSpawn -= Time.deltaTime;
+        }
+
     }
 
     public void SetGroupActive(bool isActive)
@@ -127,6 +134,15 @@ public class LevelManager : MonoBehaviour
     public void spawnGroup() // Randomiza e gera um conjunto de obstaculos aleat�rio
     {
         indexArr = rnd.Next(arrGroupsObs.Length);
+        nomeConjunto = arrGroupsObs[indexArr].name;
+
+        switch (nomeConjunto)
+        {
+            case "Conjunto8":
+                timeSpawn = 15f;
+                break;
+        }
+
         Instantiate(arrGroupsObs[indexArr], new Vector3(22f,-4.5f,0), Quaternion.identity); // Gera o obstaculo
         Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity); // Gera o ch�o vazio ap�s o conjunto
 
