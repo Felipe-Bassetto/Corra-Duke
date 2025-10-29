@@ -33,6 +33,7 @@ public class LevelManager : MonoBehaviour
     public string nomeConjunto;
     public float velocidade;
     public float timeSpawn;
+    public GameObject nave;
 
     // Guarda posição original do chão
     //private Vector3 groundOriginalPos;
