@@ -1,40 +1,64 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
-public class AlmanaqueItem : MonoBehaviour
+public class AlmanaqueManager : MonoBehaviour
 {
-    [Header("Configurações")]
-    public string nome; // nome do inimigo ou obstáculo
-
     [Header("Referências")]
-    public Image imagemNormal;      // imagem real
-    public Image imagemBloqueada;   // imagem com ?
+    public Image[] entitySlots; // Losangos da direita
+    public TextMeshProUGUI mensagemCentral; // Texto no meio da tela
+
+    [Header("Sprites de cada categoria")]
+    public Sprite[] fellasSprites;
+    public Sprite[] foesSprites;
+    public Sprite[] inventorySprites;
+
+    private Dictionary<string, Sprite[]> categorias;
 
     void Start()
     {
-        AtualizarEstado();
+        categorias = new Dictionary<string, Sprite[]>
+        {
+            { "Fellas", fellasSprites },
+            { "Foes", foesSprites },
+            { "Inventory", inventorySprites }
+        };
+
+        // Mantém os losangos visíveis
+        LimparSlots();
+
+        // Mostra o texto inicial
+        mensagemCentral.gameObject.SetActive(true);
+        mensagemCentral.text = "Selecione uma categoria";
     }
 
-    // Atualiza a imagem exibida
-    void AtualizarEstado()
+    public void MostrarCategoria(string categoria)
     {
-        bool descoberto = PlayerPrefs.GetInt("Almanaque_" + nome, 0) == 1;
+        if (!categorias.ContainsKey(categoria))
+        {
+            Debug.LogWarning("Categoria não encontrada: " + categoria);
+            return;
+        }
 
-        imagemNormal.gameObject.SetActive(descoberto);
-        imagemBloqueada.gameObject.SetActive(!descoberto);
+        mensagemCentral.gameObject.SetActive(false); // Esconde o texto central
+        LimparSlots(); // limpa o antigo se tiver
+
+        Sprite[] sprites = categorias[categoria];
+
+        for (int i = 0; i < entitySlots.Length; i++)
+        {
+            if (i < sprites.Length && sprites[i] != null)
+            {
+                // Aqui você define o ícone sobre o losango
+                entitySlots[i].sprite = sprites[i];
+                entitySlots[i].color = Color.white;
+            }
+        }
     }
 
-    public void AtualizarEstadoPublico()
+    private void LimparSlots()
     {
-        AtualizarEstado();
-    }
-
-    // Chama quando o jogador encontrar o inimigo/obstáculo
-    public void MarcarComoDescoberto()
-    {
-        PlayerPrefs.SetInt("Almanaque_" + nome, 1);
-        PlayerPrefs.Save();
-        AtualizarEstado();
+      
     }
 }
-
