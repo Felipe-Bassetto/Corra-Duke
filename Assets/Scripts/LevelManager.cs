@@ -34,6 +34,7 @@ public class LevelManager : MonoBehaviour
     public float velocidade;
     public float timeSpawn;
     public GameObject nave;
+    public GameObject spawner;
 
     // Guarda posição original do chão
     //private Vector3 groundOriginalPos;
@@ -140,6 +141,11 @@ public class LevelManager : MonoBehaviour
         switch (nomeConjunto)
         {
             case "Conjunto8":
+                timeSpawn = 15f;
+                break;
+
+            case "Conjunto9":
+                Instantiate(spawner, new Vector3(44, -4.5f, 0), Quaternion.identity);
                 timeSpawn = 15f;
                 break;
         }

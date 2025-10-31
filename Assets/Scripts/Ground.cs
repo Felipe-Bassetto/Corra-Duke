@@ -34,7 +34,7 @@ public class Ground : MonoBehaviour
         {
             level.SetGroupActive(false);
         }
-        else if (level.nomeConjunto == "Conjunto8")
+        else if (level.nomeConjunto == "Conjunto8" || level.nomeConjunto == "Conjunto9")
         {
             if (level.timeSpawn > 0)
             {
