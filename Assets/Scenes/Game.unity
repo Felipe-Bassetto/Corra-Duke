@@ -805,6 +805,7 @@ GameObject:
   - component: {fileID: 637154391}
   - component: {fileID: 637154390}
   - component: {fileID: 637154392}
+  - component: {fileID: 637154393}
   m_Layer: 0
   m_Name: PiramidesFrente
   m_TagString: Untagged
@@ -898,6 +899,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Background
   velocidade: 2
+  spriteMain: {fileID: 700938867}
+--- !u!111 &637154393
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637154389}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &699223445
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,6 +977,7 @@ GameObject:
   - component: {fileID: 700938868}
   - component: {fileID: 700938867}
   - component: {fileID: 700938869}
+  - component: {fileID: 700938870}
   m_Layer: 0
   m_Name: Ceu_0
   m_TagString: Ceu
@@ -1052,6 +1071,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Background
   velocidade: 1
+  spriteMain: {fileID: 700938867}
+--- !u!95 &700938870
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700938866}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d2dbb92022476a4e97619b12628eed6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &839559352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,6 +1335,7 @@ GameObject:
   - component: {fileID: 1053572520}
   - component: {fileID: 1053572519}
   - component: {fileID: 1053572521}
+  - component: {fileID: 1053572522}
   m_Layer: 0
   m_Name: Ceu_1
   m_TagString: Ceu
@@ -1386,6 +1429,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Background
   velocidade: 1
+  spriteMain: {fileID: 700938867}
+--- !u!111 &1053572522
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053572518}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &1262072256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,6 +1562,7 @@ GameObject:
   - component: {fileID: 1303036142}
   - component: {fileID: 1303036141}
   - component: {fileID: 1303036143}
+  - component: {fileID: 1303036144}
   m_Layer: 0
   m_Name: PrismasFrente
   m_TagString: Untagged
@@ -1595,6 +1656,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Background
   velocidade: 3
+  spriteMain: {fileID: 700938867}
+--- !u!111 &1303036144
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303036140}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &1329121501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,6 +1892,7 @@ GameObject:
   - component: {fileID: 1405644014}
   - component: {fileID: 1405644013}
   - component: {fileID: 1405644015}
+  - component: {fileID: 1405644016}
   m_Layer: 0
   m_Name: PiramidesTras
   m_TagString: Untagged
@@ -1907,6 +1986,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Background
   velocidade: 2
+  spriteMain: {fileID: 700938867}
+--- !u!111 &1405644016
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405644012}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &1444788933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,6 +2466,7 @@ GameObject:
   - component: {fileID: 1668458200}
   - component: {fileID: 1668458199}
   - component: {fileID: 1668458201}
+  - component: {fileID: 1668458202}
   m_Layer: 0
   m_Name: PrismasTras
   m_TagString: Untagged
@@ -2463,6 +2560,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Background
   velocidade: 3
+  spriteMain: {fileID: 700938867}
+--- !u!111 &1668458202
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668458198}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &1683543403
 GameObject:
   m_ObjectHideFlags: 0
@@ -2632,6 +2746,7 @@ GameObject:
   - component: {fileID: 1698579523}
   - component: {fileID: 1698579522}
   - component: {fileID: 1698579524}
+  - component: {fileID: 1698579525}
   m_Layer: 0
   m_Name: Planeta
   m_TagString: Untagged
@@ -2725,6 +2840,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Background
   velocidade: 0.01
+  spriteMain: {fileID: 700938867}
+--- !u!111 &1698579525
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698579521}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &1708792776
 GameObject:
   m_ObjectHideFlags: 0

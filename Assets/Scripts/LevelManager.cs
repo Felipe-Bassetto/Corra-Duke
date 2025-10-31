@@ -36,10 +36,6 @@ public class LevelManager : MonoBehaviour
     public GameObject nave;
     public GameObject spawner;
 
-    // Guarda posição original do chão
-    //private Vector3 groundOriginalPos;
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -47,12 +43,6 @@ public class LevelManager : MonoBehaviour
         {
             player = FindFirstObjectByType<Player>();
         }
-        
-        //if (ground != null)
-        //{
-            //groundOriginalPos = ground.transform.position;
-
-        //}
     }
 
     // Update is called once per frame
