@@ -30,7 +30,7 @@ public class AlmanaqueData : MonoBehaviour
         categorias["Foes"] = new List<ItemInfo>();
         categorias["Inventory"] = new List<ItemInfo>();
 
-        // Busca os itens do banco
+        // Ele busca os itens do banco
         var fellas = db.db.Table<AlmanaqueTable>().Where(x => x.NameItem.StartsWith("Fellas")).ToList();
         foreach (var f in fellas)
             categorias["Fellas"].Add(new ItemInfo(f.NameItem, f.Descricao, defaultSprite));

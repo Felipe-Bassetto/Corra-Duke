@@ -30,12 +30,12 @@ public class AlmanaqueManager : MonoBehaviour
         // Carrega os dados do AlmanaqueData 
         categorias = dataSource.GetCategorias();
 
-        // Configura os clique das categorias
+        // Clique das categorias
         fellasButton.onClick.AddListener(() => MostrarCategoria("Fellas"));
         foesButton.onClick.AddListener(() => MostrarCategoria("Foes"));
         inventoryButton.onClick.AddListener(() => MostrarCategoria("Inventory"));
 
-        // Configura cliques dos losangos
+        //  Cliques dos losangos
         for (int i = 0; i < losangos.Count; i++)
         {
             int index = i;
@@ -44,7 +44,7 @@ public class AlmanaqueManager : MonoBehaviour
         }
     }
 
-    // Exibe os itens da categoria escolhida nos losangos
+    // Exibe os itens da categoria escolhida
     void MostrarCategoria(string categoria)
     {
         categoriaAtual = categoria;
@@ -58,7 +58,7 @@ public class AlmanaqueManager : MonoBehaviour
         {
             if (i < lista.Count)
             {
-                // Mostra sprite do item (ou mantém default se não tiver)
+                //  Sprite do item 
                 losangos[i].image.sprite = lista[i].sprite ?? defaultSprite;
                 losangos[i].interactable = true;
             }
@@ -70,7 +70,7 @@ public class AlmanaqueManager : MonoBehaviour
         }
     }
 
-    // Mostra a descrição do item clicado no centro
+    //  Descrição do item clicado no centro
     void MostrarDescricao(int index)
     {
         if (string.IsNullOrEmpty(categoriaAtual)) return;
