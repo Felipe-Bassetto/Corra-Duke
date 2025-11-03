@@ -1,64 +1,85 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class AlmanaqueManager : MonoBehaviour
 {
-    [Header("Referências")]
-    public Image[] entitySlots; // Losangos da direita
-    public TextMeshProUGUI mensagemCentral; // Texto no meio da tela
+    [Header("Referências de UI")]
+    public TextMeshProUGUI centralText;
+    public List<Button> losangos = new List<Button>();
 
-    [Header("Sprites de cada categoria")]
-    public Sprite[] fellasSprites;
-    public Sprite[] foesSprites;
-    public Sprite[] inventorySprites;
+    [Header("Botões de Categorias")]
+    public Button fellasButton;
+    public Button foesButton;
+    public Button inventoryButton;
 
-    private Dictionary<string, Sprite[]> categorias;
+    [Header("Sprites")]
+    public Sprite defaultSprite;
+
+    [Header("Fonte de Dados")]
+    public AlmanaqueData dataSource; // Referência p/ outro script
+
+    private Dictionary<string, List<ItemInfo>> categorias = new Dictionary<string, List<ItemInfo>>();
+    private string categoriaAtual = "";
 
     void Start()
     {
-        categorias = new Dictionary<string, Sprite[]>
+        centralText.text = "Selecione uma categoria";
+
+        // Carrega os dados do AlmanaqueData 
+        categorias = dataSource.GetCategorias();
+
+        // Configura os clique das categorias
+        fellasButton.onClick.AddListener(() => MostrarCategoria("Fellas"));
+        foesButton.onClick.AddListener(() => MostrarCategoria("Foes"));
+        inventoryButton.onClick.AddListener(() => MostrarCategoria("Inventory"));
+
+        // Configura cliques dos losangos
+        for (int i = 0; i < losangos.Count; i++)
         {
-            { "Fellas", fellasSprites },
-            { "Foes", foesSprites },
-            { "Inventory", inventorySprites }
-        };
-
-        // Mantém os losangos visíveis
-        LimparSlots();
-
-        // Mostra o texto inicial
-        mensagemCentral.gameObject.SetActive(true);
-        mensagemCentral.text = "Selecione uma categoria";
+            int index = i;
+            losangos[i].onClick.AddListener(() => MostrarDescricao(index));
+            losangos[i].image.sprite = defaultSprite;
+        }
     }
 
-    public void MostrarCategoria(string categoria)
+    // Exibe os itens da categoria escolhida nos losangos
+    void MostrarCategoria(string categoria)
     {
-        if (!categorias.ContainsKey(categoria))
+        categoriaAtual = categoria;
+        centralText.text = "Selecione um item da categoria " + categoria;
+
+        if (!categorias.ContainsKey(categoria)) return;
+
+        var lista = categorias[categoria];
+
+        for (int i = 0; i < losangos.Count; i++)
         {
-            Debug.LogWarning("Categoria não encontrada: " + categoria);
-            return;
-        }
-
-        mensagemCentral.gameObject.SetActive(false); // Esconde o texto central
-        LimparSlots(); // limpa o antigo se tiver
-
-        Sprite[] sprites = categorias[categoria];
-
-        for (int i = 0; i < entitySlots.Length; i++)
-        {
-            if (i < sprites.Length && sprites[i] != null)
+            if (i < lista.Count)
             {
-                // Aqui você define o ícone sobre o losango
-                entitySlots[i].sprite = sprites[i];
-                entitySlots[i].color = Color.white;
+                // Mostra sprite do item (ou mantém default se não tiver)
+                losangos[i].image.sprite = lista[i].sprite ?? defaultSprite;
+                losangos[i].interactable = true;
+            }
+            else
+            {
+                losangos[i].image.sprite = defaultSprite;
+                losangos[i].interactable = false;
             }
         }
     }
 
-    private void LimparSlots()
+    // Mostra a descrição do item clicado no centro
+    void MostrarDescricao(int index)
     {
-      
+        if (string.IsNullOrEmpty(categoriaAtual)) return;
+        if (!categorias.ContainsKey(categoriaAtual)) return;
+
+        var lista = categorias[categoriaAtual];
+        if (index < 0 || index >= lista.Count) return;
+
+        var item = lista[index];
+        centralText.text = item.nome + "\n\n" + item.descricao;
     }
 }
