@@ -9,7 +9,6 @@ public class PowerUps : MonoBehaviour
     // Definição de objetos
     System.Random rnd = new System.Random();
     public Player player;
-    public Ground ground;
     public LevelManager levelManager;
 
     // Definição variáveis
@@ -20,18 +19,18 @@ public class PowerUps : MonoBehaviour
     {
         if (levelManager == null)
         {
-            levelManager = FindObjectOfType<LevelManager>();
+            levelManager = FindFirstObjectByType<LevelManager>();
         }
         if (player == null)
         {
-            player = FindObjectOfType<Player>();
+            player = FindFirstObjectByType<Player>();
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.left * ground.velocidade * Time.deltaTime);
+        transform.Translate(Vector2.left * levelManager.velocidade * Time.deltaTime);
     }
 
     void OnTriggerEnter2D (Collider2D obj)

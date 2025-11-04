@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 public class GameDb : MonoBehaviour
 {
-    public List<string> powerUpsList = new List<string> { "Gunner", "Destroyer", "CoinMagnet" };
+    public List<string> powerUpsList = new List<string> { "Gunner", "Destroyer", "CoinMagnet", "Multipliyer"};
 
     private SQLiteConnection db;
 
@@ -36,7 +36,7 @@ public class GameDb : MonoBehaviour
         {
             foreach (string name in powerUpsList)
             {
-                CriarPowerUps(1, name, 0, 5f);
+                CriarPowerUps(1, name, 0, 5f, 500);
             }
         }
 
@@ -105,21 +105,22 @@ public class GameDb : MonoBehaviour
     }
 
     // ------------ CRIAR POWER UPS --------------
-    public void CriarPowerUps(int idSave, string powerUpName, int nivel, float duracao)
+    public void CriarPowerUps(int idSave, string powerUpName, int nivel, float duracao, int price)
     {
         db.Insert(new PowerUpsTable
         {
             IdSave = idSave,
             NamePower = powerUpName,
             Nivel = nivel,
-            Duracao = duracao
+            Duracao = duracao,
+            Price = price
         });
     }
 
     // ---------------- POWER UPS ----------------
-    public void SalvarPowerUps(int idSave, string name, int nivel, float duracao)
+    public void SalvarPowerUps(int idSave, string name, int nivel, float duracao, int price)
     {
-        db.Execute("UPDATE PowerUpsTable SET Nivel = ?, Duracao = ? WHERE IdSave = ? AND NamePower = ?", nivel, duracao, idSave, name);
+        db.Execute("UPDATE PowerUpsTable SET Nivel = ?, Duracao = ?, Price = ? WHERE IdSave = ? AND NamePower = ?", nivel, duracao, idSave, name, price);
     }
 
     // ------------ CARREGAR POWER UPS --------------
@@ -188,7 +189,8 @@ public class PowerUpsTable
     [Indexed(Name = "UX_SaveName", Order = 1, Unique = true), Collation("NOCASE")]
     public string NamePower { get; set; }
     public int Nivel { get; set; }
-    public float Duracao { get; set; } 
+    public float Duracao { get; set; }
+    public int Price { get; set; }
 }
 
 public class AlmanaqueTable

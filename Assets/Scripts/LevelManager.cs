@@ -15,8 +15,10 @@ public class LevelManager : MonoBehaviour
     public float counterTimePowerUp = 0f;
     public float timePowerUp;
     private float counterMult = 30f;
+    public float counterSpawnPowerUp = 10f;
+    private float counterVeloc = 9f;
+    private bool canSpawnPowerUp = false;
     private int multScore = 1;
-    
 
     // Defini��o de array
     public GameObject[] arrGroupsObs;
@@ -25,32 +27,27 @@ public class LevelManager : MonoBehaviour
     System.Random rnd = new System.Random();
     public Ground soloGround;
     public Ground ground;
+    public GameObject powerUpPrefeb;
     public Player player;
     public int multPU; // Multiplicador do power up
-
-    // Guarda posição original do chão
-    private Vector3 groundOriginalPos;
-
+    public string nomeConjunto;
+    public float velocidade;
+    public float timeSpawn;
+    public GameObject nave;
+    public GameObject spawner;
 
     // Start is called before the first frame update
     void Start()
     {
         if (player == null)
         {
-            player = FindObjectOfType<Player>();
-        }
-        
-        if (ground != null)
-        {
-            groundOriginalPos = ground.transform.position;
-
+            player = FindFirstObjectByType<Player>();
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if (counterTimePowerUp > 0f) 
         {
             counterTimePowerUp -= Time.deltaTime;
@@ -63,7 +60,7 @@ public class LevelManager : MonoBehaviour
         }
 
         // Soma o tempo desde o �ltimo frame em MILISSEGUNDOS
-        countMs += Time.deltaTime * soloGround.velocidade; 
+        countMs += Time.deltaTime * velocidade; 
 
         // Enquanto tiver pelo menos 1 ms acumulado, d� pontos
         while (countMs >= 1f)
@@ -76,6 +73,7 @@ public class LevelManager : MonoBehaviour
             countMs -= 1f;
         }
 
+        // Contagem de tempo para aumentar o Multiplicador da pontuação
         if (counterMult > 0f)
         {
             counterMult -= Time.deltaTime;
@@ -86,10 +84,38 @@ public class LevelManager : MonoBehaviour
             multScore++;
         }
 
+        // Contagem de tempo para aumentar a velocidade
+        if (counterVeloc > 0f)
+        {
+            counterVeloc -= Time.deltaTime;
+        }
+        else
+        {
+            counterVeloc = 9f;
+            velocidade += 0.2f;
+        }
+
+        // Contagem de tempo para spawnar novo powerUp
+        if (counterSpawnPowerUp > 0f)
+        {
+            counterSpawnPowerUp -= Time.deltaTime;
+        }
+        else
+        {
+            canSpawnPowerUp = true;
+        }
+
+
         if (!groupActive)
         {
             spawnGroup();
         }
+
+        if (timeSpawn > 0)
+        {
+            timeSpawn -= Time.deltaTime;
+        }
+
     }
 
     public void SetGroupActive(bool isActive)
@@ -100,8 +126,29 @@ public class LevelManager : MonoBehaviour
     public void spawnGroup() // Randomiza e gera um conjunto de obstaculos aleat�rio
     {
         indexArr = rnd.Next(arrGroupsObs.Length);
-        Instantiate(arrGroupsObs[indexArr], new Vector3(21f,-4.5f,0), Quaternion.identity); // Gera o obstaculo
+        nomeConjunto = arrGroupsObs[indexArr].name;
+
+        switch (nomeConjunto)
+        {
+            case "Conjunto8":
+                timeSpawn = 15f;
+                break;
+
+            case "Conjunto9":
+                Instantiate(spawner, new Vector3(44, -4.5f, 0), Quaternion.identity);
+                timeSpawn = 15f;
+                break;
+        }
+
+        Instantiate(arrGroupsObs[indexArr], new Vector3(22f,-4.5f,0), Quaternion.identity); // Gera o obstaculo
         Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity); // Gera o ch�o vazio ap�s o conjunto
+
+        if(canSpawnPowerUp)
+        {
+            Instantiate(powerUpPrefeb, new Vector3(44,-1f,0), Quaternion.identity);
+            canSpawnPowerUp = false;
+            counterSpawnPowerUp = 50f;
+        }
 
         SetGroupActive(true);
     }

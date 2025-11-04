@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class Objetos : MonoBehaviour
 {
+    [Header("Animation")]
+    private Animator anim;
+
+    [Header("Sound")]
     public GameObject music;
 
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         if(music == null)
         {
-            music = GameObject.Find("MusicGame");
+            music = GameObject.Find("EffectsManager");
         }
-
-        
     }
 
     // Update is called once per frame
@@ -33,7 +36,7 @@ public class Objetos : MonoBehaviour
            {
                case "Bomb":
                     soundManagerScript.SoundPlay(0);
-                    Destroy(gameObject);
+                    anim.Play("Bomba");
                     break;
                case "Coin":
                     Destroy(gameObject);
@@ -50,5 +53,10 @@ public class Objetos : MonoBehaviour
                     break;
            }
         }
+    }
+
+    public void Destroy() 
+    {
+        Destroy(gameObject);
     }
 }

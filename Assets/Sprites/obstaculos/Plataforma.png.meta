@@ -106,12 +106,12 @@ TextureImporter:
       name: Plataforma_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 111
-        width: 462
-        height: 194
+        x: 20
+        y: 13
+        width: 453
+        height: 292
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -124,33 +124,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Plataforma_1
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 11
-        width: 212
-        height: 103
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bbe005f6b572ca580800000000000000
-      internalID: -8814627097007878469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

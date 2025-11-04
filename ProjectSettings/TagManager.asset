@@ -16,11 +16,13 @@ TagManager:
   - Collider
   - Ceu
   - Button
+  - Infos
+  - OpenedInfos
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
