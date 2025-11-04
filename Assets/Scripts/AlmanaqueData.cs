@@ -2,49 +2,67 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class ItemInfo
+public class ItemData
 {
     public string nome;
     public string descricao;
-    public Sprite sprite;
+    public Sprite icon;
 
-    public ItemInfo(string nome, string descricao, Sprite sprite = null)
+    public ItemData(string nome, string descricao, Sprite icon = null)
     {
         this.nome = nome;
         this.descricao = descricao;
-        this.sprite = sprite;
+        this.icon = icon;
     }
+}
+
+[System.Serializable]
+public class CategoriaData
+{
+    public string nomeCategoria;
+    public List<ItemData> itens = new List<ItemData>();
 }
 
 public class AlmanaqueData : MonoBehaviour
 {
-    public GameDb db;
-    public Sprite defaultSprite;
+    [Header("Config (ex.: Ícones padrão)")]
+    public Sprite defaultIcon;
 
-    private Dictionary<string, List<ItemInfo>> categorias = new Dictionary<string, List<ItemInfo>>();
+    public List<CategoriaData> categorias = new List<CategoriaData>();
 
     void Awake()
     {
-        // Monta as categorias e carrega do banco
-        categorias["Fellas"] = new List<ItemInfo>();
-        categorias["Foes"] = new List<ItemInfo>();
-        categorias["Inventory"] = new List<ItemInfo>();
-
-        // Ele busca os itens do banco
-        var fellas = db.db.Table<AlmanaqueTable>().Where(x => x.NameItem.StartsWith("Fellas")).ToList();
-        foreach (var f in fellas)
-            categorias["Fellas"].Add(new ItemInfo(f.NameItem, f.Descricao, defaultSprite));
-
-        var foes = db.db.Table<AlmanaqueTable>().Where(x => x.NameItem.StartsWith("Foes")).ToList();
-        foreach (var e in foes)
-            categorias["Foes"].Add(new ItemInfo(e.NameItem, e.Descricao, defaultSprite));
-
-        var inv = db.db.Table<AlmanaqueTable>().Where(x => x.NameItem.StartsWith("Inventory")).ToList();
-        foreach (var i in inv)
-            categorias["Inventory"].Add(new ItemInfo(i.NameItem, i.Descricao, defaultSprite));
+        // Se quiser mudar automaticamente dps / editar.
+        if (categorias.Count == 0)
+            PopularExemplo();
     }
 
-    public Dictionary<string, List<ItemInfo>> GetCategorias()
+    void PopularExemplo()
+    {
+        categorias.Clear();
+
+        var c1 = new CategoriaData { nomeCategoria = "Fellas" };
+        c1.itens.Add(new ItemData("Duke", "O personagem principal do jogo.", defaultIcon));
+        c1.itens.Add(new ItemData("Aliado 1", "Companheiro do Duke.", defaultIcon));
+        c1.itens.Add(new ItemData("Aliado 2", "Suporte técnico.", defaultIcon));
+
+        var c2 = new CategoriaData { nomeCategoria = "Foes" };
+        c2.itens.Add(new ItemData("Drone", "Aparece em plataformas.", defaultIcon));
+        c2.itens.Add(new ItemData("LaserBot", "Inimigo que atira.", defaultIcon));
+        c2.itens.Add(new ItemData("Chefão X", "Chefão de fase.", defaultIcon));
+
+        var c3 = new CategoriaData { nomeCategoria = "Inventory" };
+        c3.itens.Add(new ItemData("Moeda", "Usada para comprar upgrades.", defaultIcon));
+        c3.itens.Add(new ItemData("Coração", "Recupera vida.", defaultIcon));
+        c3.itens.Add(new ItemData("Power-Up", "Efeito temporário.", defaultIcon));
+
+        categorias.Add(c1);
+        categorias.Add(c2);
+        categorias.Add(c3);
+    }
+
+    // Método público para o Manager obter as categorias
+    public List<CategoriaData> GetCategorias()
     {
         return categorias;
     }
