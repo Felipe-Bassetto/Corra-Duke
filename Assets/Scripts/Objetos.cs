@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class Objetos : MonoBehaviour
 {
+    [Header("Animation")]
+    private Animator anim;
+
+    [Header("Sound")]
     public GameObject music;
 
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         if(music == null)
         {
             music = GameObject.Find("EffectsManager");
@@ -25,14 +30,13 @@ public class Objetos : MonoBehaviour
     void OnTriggerEnter2D(Collider2D obj)
     {
         SoundManager soundManagerScript = music.GetComponent<SoundManager>();
-        Debug.Log("cathc");
         if(obj.CompareTag("Player"))
         {
            switch (gameObject.tag)
            {
                case "Bomb":
                     soundManagerScript.SoundPlay(0);
-                    Destroy(gameObject);
+                    anim.Play("Bomba");
                     break;
                case "Coin":
                     Destroy(gameObject);
@@ -49,5 +53,10 @@ public class Objetos : MonoBehaviour
                     break;
            }
         }
+    }
+
+    public void Destroy() 
+    {
+        Destroy(gameObject);
     }
 }
