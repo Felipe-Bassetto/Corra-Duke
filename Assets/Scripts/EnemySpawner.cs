@@ -7,9 +7,12 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemyPrefabNew;    
     public float spawnInterval = 3f;
     private float timer = 0f;
+    private int countEnemy;
+    public int quantSpawn;
 
     void Update()
     {
+        
         timer += Time.deltaTime;
         if (timer >= spawnInterval)
         {
@@ -19,7 +22,13 @@ public class EnemySpawner : MonoBehaviour
                 return;  // não deixa spawnar com prefab nulo (estava dando erro)
             }
             SpawnEnemy();
+            countEnemy++;
             timer = 0f;
+        }
+
+        if (quantSpawn < countEnemy)
+        {
+            Destroy(gameObject);
         }
     }
 

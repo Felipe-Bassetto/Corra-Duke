@@ -5,8 +5,13 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    // Definição de outros objetos
+    [Header("Animation")]
     private Animator anim;
+    private bool pulando = false;
+    private bool correndo = true;
+    private bool pulandoDois = false;
+
+    [Header("GameObjects")]
     public GameObject Bala;
     public GameObject gameOverPanel;
     public Transform Jogador;
@@ -14,40 +19,51 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     public LevelManager level;
     public GameDb db;
-
-    //Defini��o de vari�veis
+    public GameObject pauseMenu;
+    
+    [Header("Pulo")]
     public float distance = 2f; // distancia para calcular velocidade
     public float jumpForce; // força do pulo
     public float secondJump; // força segundo pulo
     public float extraJumpForce; // força continua pulo
     public float maxJumpTime; // tempo maximo de pulo
     public float jumpTimeCounter;
+    public bool jumpUp = true; // Pode pular
+    private bool jumpPressed, jumpHeld;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundCheckDistance;
+    [SerializeField] private LayerMask groundLayer;
+    public bool isGrounded;
+    enum PlayerState { Running, Jumping, DoubleJumping } 
+    PlayerState state = PlayerState.Running;
+    PlayerState currentState;
+    bool pausePressed;
+    bool canHold = true;
+    
+    //Defini��o de vari�veis
+    
+    [Header("Player")]
     public int maxHealth = 1; // vida maxima do jogado (a pensar)
     private int currentHealth; // vida atual
-    public int coinRound = 0; // Contador de moedas
-    private bool powerUpdActive = false; // Power up shield
-    public bool jumpUp = true; // Pode pular
-    public bool colliding = true; // Está colidindo
     public string playerStatus = "Basic"; // Comando do jogador
-    public float velocidadeVoo = 3f;
+    private bool dead = false;
+    public List<string> listPlayerVunerable = new List<string>();
+
+    [Header("PowerUps")]
+    private bool powerUpdActive = false; // Power up shield
     public float coinMagnetRadius = 5f; // raio de atração
     public float coinMagnetForce = 10f; // velocidade que a moeda vem
     public bool doubleScoreActive = false; // controla o multiplicador
-    private int finalScore;
-    private bool jumpPressed, jumpHeld;
-    private bool dead = false;
-    public string deadReason;
-    private bool pausePressed;
-    public GameObject pauseMenu;
-
-    // Definição de Listas
-    public List<string> listPlayerVunerable = new List<string>();
-
     public bool PowerUpdActive 
     {
         get { return powerUpdActive; }
         set { powerUpdActive = value; }
     }
+
+    [Header("UI")]
+    public int coinRound = 0; // Contador de moedas
+    private int finalScore;
+    public string deadReason;
 
     // Start is called before the first frame update
     void Start()
@@ -58,77 +74,74 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
     }
 
+    void FixedUpdate()
+    {
+        if(correndo) anim.CrossFade("Running Duke", 0.1f);
+        if(pulando) anim.Play("Duke Jumping");
+        if(pulandoDois) anim.CrossFade("Double Jump", 0.1f);
+    }
+
     // Update is called once per frame
     void Update()
     {
-        pausePressed = Input.GetKeyDown(KeyCode.Escape);
-        jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);
-        jumpHeld = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W);
+        isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayer);
 
-        if(pausePressed)
+        pausePressed = Input.GetKeyDown(KeyCode.Escape);
+        jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) ;
+        jumpHeld = (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W)) && canHold;
+
+        
+        if (pausePressed)
         {
             Time.timeScale = 0f;
             pauseMenu.SetActive(true);
         }
 
-        if (!jumpHeld)
-        {
-            jumpTimeCounter = 0f;
-        }
-
         if (jumpPressed && jumpUp) // Comando W para pular
         {
-            if (!colliding) // Caso esteja no ar
+            if (isGrounded) // Caso esteja no chão
             {
-                
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                state = PlayerState.Jumping; 
+            }
+            else // Caso esteja no ar
+            {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // Zera a velocidade vertical ANTES de aplicar a nova força
                 rb.AddForce(Vector2.up * secondJump, ForceMode2D.Impulse);
                 jumpUp = false;
-                anim.Play("Double Jump");
-            }
-            else // Caso esteja no chão
-            {
-                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                anim.Play("Duke Jumping");
+                state = PlayerState.DoubleJumping;
             }
         }
-
-        jumpPressed = false;
         
+        if (isGrounded && !jumpHeld)
+        {
+            jumpUp = true;
+            state = PlayerState.Running;
+            canHold = true;
+            jumpTimeCounter = 0f;
+        }
+        
+        ChangeState(state);
 
-        if (jumpHeld && !colliding && jumpUp)
+
+        if (jumpHeld && !isGrounded && jumpUp)
         {
             if (jumpTimeCounter < maxJumpTime)
             {
                 rb.AddForce(Vector2.up * extraJumpForce * Time.deltaTime, ForceMode2D.Force);
                 jumpTimeCounter += Time.deltaTime;
             }
+            else
+            {
+                canHold = false;
+            }
         }
 
         switch (playerStatus)
         {
             case "Gunner":
-                if (Input.GetMouseButtonDown(0)) // Comando botão esquerdo para atirar
-                {
-                    Instantiate(Bala, posicaoSpawn.position, Quaternion.identity);
-                }
-                break;
-            case "Flying":
-
-                rb.simulated = false;
-                if (Input.GetMouseButton(0))
-                {
-                    Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                    if (mousePos.y > transform.position.y)
-                    {
-                        transform.Translate(Vector2.up * velocidadeVoo * Time.deltaTime);
-                    }
-                    else
-                    {
-                        transform.Translate(Vector2.down * velocidadeVoo * Time.deltaTime);
-                    }
-                }
-
+                // Comando botão esquerdo para atirar
+                if (Input.GetMouseButtonDown(0)) Instantiate(Bala, posicaoSpawn.position, Quaternion.identity);
                 break;
 
             case "Destroyer":
@@ -137,15 +150,11 @@ public class Player : MonoBehaviour
                new Vector2(10f, 10f), 0f);
                foreach (Collider2D col in hits)
                {
-                    if (col.CompareTag("Bomb"))
-                    {
-                    Destroy(col.gameObject);
-                    }
+                    if (col.CompareTag("Bomb")) Destroy(col.gameObject);
                }
                break;
 
             case "Shield":
- 
                 PowerUpdActive = true; // Liga a invencibilidade 
                 break;
             case "CoinMagnet":
@@ -167,27 +176,48 @@ public class Player : MonoBehaviour
         }
     }
 
+    void ChangeState(PlayerState newState)
+    {
+        if (currentState == newState) return;
+        currentState = newState;
+
+        switch (currentState)
+        {
+            case PlayerState.Running:
+                pulando = false;
+                pulandoDois = false;
+                correndo = true;
+                break;
+            case PlayerState.Jumping:
+                pulandoDois = false;
+                correndo = false;
+                pulando = true;
+                break;
+            case PlayerState.DoubleJumping:
+                pulando = false;
+                correndo = false;
+                pulandoDois = true;
+                break;
+        }
+    }
+
     public void alterStatus(string newStatus)
     {
         playerStatus = newStatus;
 
-        if (newStatus != "GoldRush")
-        {
-            doubleScoreActive = false; // reseta multiplicador
-        }
+        if (newStatus != "GoldRush")doubleScoreActive = false; // reseta multiplicador
     }
 
     private void Die() // Função privada morte do jogador
     {
-        if (dead)
-        { 
-            return; 
-        }
+        if (dead) return; 
 
         dead = true;
 
-       gameOverPanel.SetActive(true); // Ativa o painel antes de destruir o jogador
+       gameOverPanel.SetActive(true);// Ativa o painel antes de destruir o jogador
        GameObject.Find("GameOverPanel").GetComponent<GameOverManager>().ShowGameOver();
+
+       
        
        finalScore = level.scoreMs; //Atualiza record se passou
 
@@ -198,10 +228,7 @@ public class Player : MonoBehaviour
        int record = save.ScoreRecord;
        int coins = save.Coins;
 
-       if(record < finalScore)
-       {
-           record = finalScore;
-       }   
+       if(record < finalScore) record = finalScore;  
 
        coins += coinRound;
 
@@ -213,15 +240,7 @@ public class Player : MonoBehaviour
     void OnBecameInvisible()
     {
         deadReason = "Downfall";
-        Die();
-    }
-
-    private void OnTriggerExit2D(Collider2D other) // Verificação se o jogador está tocando no chão
-    {
-        if (other.tag == "Collider")
-        {
-            colliding = false;
-        }
+        //Die();
     }
 
     void OnTriggerEnter2D(Collider2D obj)
@@ -243,7 +262,7 @@ public class Player : MonoBehaviour
                         break;
                 }
 
-                Die();
+               //Die();
             }
         }
         else 
@@ -254,11 +273,12 @@ public class Player : MonoBehaviour
                     coinRound++;
                     break;
                 case "Collider":
-                    colliding = true;
-                    jumpUp = true;
-                    anim.Play("Running Duke");
+                    //colliding = true;
+                    //jumpUp = true;
+                    //anim.Play("Running Duke");
                     break;
             }
         }
     }
+    
 }

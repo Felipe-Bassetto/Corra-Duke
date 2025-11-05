@@ -2,17 +2,18 @@ using UnityEngine;
 
 public class PowerUps : MonoBehaviour
 {
-    // Definição de arrays
+    [Header("Arrays")]
     public string[] arrayPowerUps;
     public float[] arrTimePowerUps;
+    public GameObject[] arrLetreiros;
 
-    // Definição de objetos
+    [Header("Objetos")]
     System.Random rnd = new System.Random();
     public Player player;
     public LevelManager levelManager;
 
-    // Definição variáveis
-    public int indexArray;
+    [Header("Gerenciamento")]
+    private int indexArray;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
