@@ -34,10 +34,11 @@ public class Player : MonoBehaviour
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask groundLayer;
     public bool isGrounded;
-    enum PlayerState { Running, Jumping, DoubleJumping }
-    PlayerState state;
+    enum PlayerState { Running, Jumping, DoubleJumping } 
+    PlayerState state = PlayerState.Running;
     PlayerState currentState;
     bool pausePressed;
+    bool canHold = true;
     
     //Defini��o de vari�veis
     
@@ -86,22 +87,18 @@ public class Player : MonoBehaviour
         isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayer);
 
         pausePressed = Input.GetKeyDown(KeyCode.Escape);
-        jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);
-        jumpHeld = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W);
+        jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) ;
+        jumpHeld = (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W)) && canHold;
 
-        if (isGrounded)
-        {
-            jumpUp = true;
-            state = PlayerState.Running;
-        }
-
+        
         if (pausePressed)
         {
             Time.timeScale = 0f;
             pauseMenu.SetActive(true);
         }
+        //if (jumpPressed) jumpHeld = false;
 
-        if (!jumpHeld) jumpTimeCounter = 0f;
+        if (!jumpHeld && state == PlayerState.Running) jumpTimeCounter = 0f;
 
 
         if (jumpPressed && jumpUp) // Comando W para pular
@@ -109,7 +106,7 @@ public class Player : MonoBehaviour
             if (isGrounded) // Caso esteja no chão
             {
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                state = PlayerState.Jumping;
+                state = PlayerState.Jumping; 
             }
             else // Caso esteja no ar
             {
@@ -118,6 +115,13 @@ public class Player : MonoBehaviour
                 jumpUp = false;
                 state = PlayerState.DoubleJumping;
             }
+        }
+        
+        if (isGrounded && !jumpHeld)
+        {
+            jumpUp = true;
+            state = PlayerState.Running;
+            canHold = true;
         }
         
         ChangeState(state);
@@ -129,6 +133,10 @@ public class Player : MonoBehaviour
             {
                 rb.AddForce(Vector2.up * extraJumpForce * Time.deltaTime, ForceMode2D.Force);
                 jumpTimeCounter += Time.deltaTime;
+            }
+            else
+            {
+                canHold = false;
             }
         }
 
