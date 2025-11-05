@@ -96,10 +96,6 @@ public class Player : MonoBehaviour
             Time.timeScale = 0f;
             pauseMenu.SetActive(true);
         }
-        //if (jumpPressed) jumpHeld = false;
-
-        if (!jumpHeld) jumpTimeCounter = 0f;
-
 
         if (jumpPressed && jumpUp) // Comando W para pular
         {
@@ -122,6 +118,7 @@ public class Player : MonoBehaviour
             jumpUp = true;
             state = PlayerState.Running;
             canHold = true;
+            jumpTimeCounter = 0f;
         }
         
         ChangeState(state);
