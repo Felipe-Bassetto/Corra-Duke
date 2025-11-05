@@ -29,13 +29,13 @@ public class Player : MonoBehaviour
     public float maxJumpTime; // tempo maximo de pulo
     public float jumpTimeCounter;
     public bool jumpUp = true; // Pode pular
-    private bool jumpPressed, jumpHeld;
+    private bool jumpPressed, jumpHeld, jumpRelease;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask groundLayer;
     public bool isGrounded;
     enum PlayerState { Running, Jumping, DoubleJumping } 
-    PlayerState state = PlayerState.Running;
+    PlayerState state;
     PlayerState currentState;
     bool pausePressed;
     
@@ -71,6 +71,7 @@ public class Player : MonoBehaviour
         anim.speed = 1.8f;
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
+        state = PlayerState.Running;
     }
 
     void FixedUpdate()
@@ -88,6 +89,7 @@ public class Player : MonoBehaviour
         pausePressed = Input.GetKeyDown(KeyCode.Escape);
         jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) ;
         jumpHeld = (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W));
+        jumpRelease = Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp (KeyCode.W) ; 
 
         
         if (pausePressed)
@@ -131,6 +133,8 @@ public class Player : MonoBehaviour
                 jumpTimeCounter += Time.deltaTime;
             }
         }
+
+        if (jumpRelease) jumpTimeCounter = 50f;
 
         switch (playerStatus)
         {
