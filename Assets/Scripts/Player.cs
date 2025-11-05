@@ -76,9 +76,21 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(correndo) anim.CrossFade("Running Duke", 0.1f);
-        if(pulando) anim.Play("Duke Jumping");
-        if(pulandoDois) anim.CrossFade("Double Jump", 0.1f);
+        switch (playerStatus)
+        {
+            case "Basic":
+                if (correndo) anim.CrossFade("Running Duke", 0.1f);
+                if (pulando) anim.Play("Duke Jumping");
+                
+                break;
+            case "Gunner":
+                if (correndo) anim.CrossFade("Duke Gunner", 0.1f);
+                if (pulando) anim.Play("Gunner Jump");
+
+                break;
+        }
+
+        if (pulandoDois) anim.CrossFade("Double Jump", 0.1f);
     }
 
     // Update is called once per frame
