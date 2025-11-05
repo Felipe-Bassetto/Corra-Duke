@@ -239,7 +239,7 @@ public class Player : MonoBehaviour
     void OnBecameInvisible()
     {
         deadReason = "Downfall";
-        //Die();
+        Die();
     }
 
     void OnTriggerEnter2D(Collider2D obj)
@@ -261,7 +261,7 @@ public class Player : MonoBehaviour
                         break;
                 }
 
-               //Die();
+               Die();
             }
         }
         else 
@@ -270,11 +270,6 @@ public class Player : MonoBehaviour
             {
                 case "Coin":
                     coinRound++;
-                    break;
-                case "Collider":
-                    //colliding = true;
-                    //jumpUp = true;
-                    //anim.Play("Running Duke");
                     break;
             }
         }
