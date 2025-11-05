@@ -38,7 +38,6 @@ public class Player : MonoBehaviour
     PlayerState state = PlayerState.Running;
     PlayerState currentState;
     bool pausePressed;
-    bool canHold = true;
     
     //Defini��o de vari�veis
     
@@ -88,7 +87,7 @@ public class Player : MonoBehaviour
 
         pausePressed = Input.GetKeyDown(KeyCode.Escape);
         jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) ;
-        jumpHeld = (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W)) && canHold;
+        jumpHeld = (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W));
 
         
         if (pausePressed)
@@ -106,6 +105,7 @@ public class Player : MonoBehaviour
             }
             else // Caso esteja no ar
             {
+                jumpTimeCounter = 50f;
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // Zera a velocidade vertical ANTES de aplicar a nova força
                 rb.AddForce(Vector2.up * secondJump, ForceMode2D.Impulse);
                 jumpUp = false;
@@ -113,11 +113,10 @@ public class Player : MonoBehaviour
             }
         }
         
-        if (isGrounded && !jumpHeld)
+        if (isGrounded && jumpTimeCounter >= maxJumpTime)//!jumpHeld)
         {
             jumpUp = true;
             state = PlayerState.Running;
-            canHold = true;
             jumpTimeCounter = 0f;
         }
         
@@ -130,10 +129,6 @@ public class Player : MonoBehaviour
             {
                 rb.AddForce(Vector2.up * extraJumpForce * Time.deltaTime, ForceMode2D.Force);
                 jumpTimeCounter += Time.deltaTime;
-            }
-            else
-            {
-                canHold = false;
             }
         }
 
