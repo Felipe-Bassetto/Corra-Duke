@@ -98,7 +98,7 @@ public class Player : MonoBehaviour
         }
         //if (jumpPressed) jumpHeld = false;
 
-        if (!jumpHeld && state == PlayerState.Running) jumpTimeCounter = 0f;
+        if (!jumpHeld) jumpTimeCounter = 0f;
 
 
         if (jumpPressed && jumpUp) // Comando W para pular
