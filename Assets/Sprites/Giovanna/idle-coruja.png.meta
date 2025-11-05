@@ -1,0 +1,1055 @@
+fileFormatVersion: 2
+guid: 76db64a7c311e124ca0b8e0f4a5c174f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -172541596561031324
+    second: idle-coruja_0
+  - first:
+      213: 2725752172269231354
+    second: idle-coruja_1
+  - first:
+      213: -1506617649128123708
+    second: idle-coruja_2
+  - first:
+      213: 878509604802343719
+    second: idle-coruja_3
+  - first:
+      213: -6098413350093142510
+    second: idle-coruja_4
+  - first:
+      213: -5009044327007498021
+    second: idle-coruja_5
+  - first:
+      213: 8216114916005877518
+    second: idle-coruja_6
+  - first:
+      213: -3311599499800514638
+    second: idle-coruja_7
+  - first:
+      213: -7273002187475025428
+    second: idle-coruja_8
+  - first:
+      213: -4916273833641271335
+    second: idle-coruja_9
+  - first:
+      213: 413562855977548177
+    second: idle-coruja_10
+  - first:
+      213: -2615405160437556443
+    second: idle-coruja_11
+  - first:
+      213: -2505864894569859521
+    second: idle-coruja_12
+  - first:
+      213: -4164596931035190829
+    second: idle-coruja_13
+  - first:
+      213: -8696441970474786600
+    second: idle-coruja_14
+  - first:
+      213: -2508500739863258784
+    second: idle-coruja_15
+  - first:
+      213: 3591435203857815777
+    second: idle-coruja_16
+  - first:
+      213: 5691288056819323388
+    second: idle-coruja_17
+  - first:
+      213: 5543741319531309472
+    second: idle-coruja_18
+  - first:
+      213: 4378797604101174783
+    second: idle-coruja_19
+  - first:
+      213: -8363158617298863343
+    second: idle-coruja_20
+  - first:
+      213: 3138162169336479617
+    second: idle-coruja_21
+  - first:
+      213: 4759336899631199167
+    second: idle-coruja_22
+  - first:
+      213: 8096254709961201787
+    second: idle-coruja_23
+  - first:
+      213: -1951746133721531034
+    second: idle-coruja_24
+  - first:
+      213: -1599641202301851786
+    second: idle-coruja_25
+  - first:
+      213: -2653329441933758642
+    second: idle-coruja_26
+  - first:
+      213: 5008536776558810969
+    second: idle-coruja_27
+  - first:
+      213: 240756946416657208
+    second: idle-coruja_28
+  - first:
+      213: -4742648869924848179
+    second: idle-coruja_29
+  - first:
+      213: -6271718008439626997
+    second: idle-coruja_30
+  - first:
+      213: 4183875295501122499
+    second: idle-coruja_31
+  - first:
+      213: -1658766607113686580
+    second: idle-coruja_32
+  - first:
+      213: -1362855240408483825
+    second: idle-coruja_33
+  - first:
+      213: 5827604152419279309
+    second: idle-coruja_34
+  - first:
+      213: 6023672088071189866
+    second: idle-coruja_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: idle-coruja_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1330
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f300405520b9df0800000000000000
+      internalID: -172541596561031324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_1
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1330
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc5bd5b821d3d520800000000000000
+      internalID: 2725752172269231354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_2
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1330
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c252630b3b671be0800000000000000
+      internalID: -1506617649128123708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_3
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1330
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723330eb4d7113c00800000000000000
+      internalID: 878509604802343719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_4
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1330
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216c23e6e551e5ba0800000000000000
+      internalID: -6098413350093142510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_5
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1330
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0588049bc4c7ab0800000000000000
+      internalID: -5009044327007498021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1064
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e07915a3cf0850270800000000000000
+      internalID: 8216114916005877518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_7
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1064
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf6700fcc5da02d0800000000000000
+      internalID: -3311599499800514638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_8
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1064
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce189e46b0b111b90800000000000000
+      internalID: -7273002187475025428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_9
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1064
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df934feef2e5cbb0800000000000000
+      internalID: -4916273833641271335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_10
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1064
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19976d2f9354db500800000000000000
+      internalID: 413562855977548177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_11
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1064
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b55641dd634bbd0800000000000000
+      internalID: -2615405160437556443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 798
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36ba00b721693dd0800000000000000
+      internalID: -2505864894569859521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_13
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 798
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d927fcf7216436c0800000000000000
+      internalID: -4164596931035190829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_14
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 798
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d06d048a18005780800000000000000
+      internalID: -8696441970474786600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_15
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 798
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06955a12ed3003dd0800000000000000
+      internalID: -2508500739863258784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_16
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 798
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e817c72a4757d130800000000000000
+      internalID: 3591435203857815777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_17
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 798
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1932d75548bfe40800000000000000
+      internalID: 5691288056819323388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 532
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9a15dab535fec40800000000000000
+      internalID: 5543741319531309472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_19
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 532
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff538c7983d94cc30800000000000000
+      internalID: 4378797604101174783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_20
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 532
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b77a72c8710fb80800000000000000
+      internalID: -8363158617298863343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_21
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 532
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18fbed6cdddfc8b20800000000000000
+      internalID: 3138162169336479617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_22
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 532
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb33de4b1bf8c0240800000000000000
+      internalID: 4759336899631199167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_23
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 532
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b78125e43ccab5070800000000000000
+      internalID: 8096254709961201787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 266
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d39cf6b310ae4e0800000000000000
+      internalID: -1951746133721531034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_25
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 266
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67728b04dceecc9e0800000000000000
+      internalID: -1599641202301851786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_26
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 266
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4fe3753eea7d2bd0800000000000000
+      internalID: -2653329441933758642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_27
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 266
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957944379a5e18540800000000000000
+      internalID: 5008536776558810969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_28
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 266
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8336f5cca27575300800000000000000
+      internalID: 240756946416657208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_29
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 266
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcdb8bdfaf9be2eb0800000000000000
+      internalID: -4742648869924848179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03298743b166f8a0800000000000000
+      internalID: -6271718008439626997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_31
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 0
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb70e40a6c101a30800000000000000
+      internalID: 4183875295501122499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_32
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 0
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc175b13f80eaf8e0800000000000000
+      internalID: -1658766607113686580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_33
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 0
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f083c2b216a261de0800000000000000
+      internalID: -1362855240408483825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_34
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 0
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1ea84c91fcfd050800000000000000
+      internalID: 5827604152419279309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-coruja_35
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 0
+        width: 218
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a653bec69d1689350800000000000000
+      internalID: 6023672088071189866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b2b1f720a64fbd842946fa21b117c99e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":218.0,"y":266.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      idle-coruja_0: -172541596561031324
+      idle-coruja_1: 2725752172269231354
+      idle-coruja_10: 413562855977548177
+      idle-coruja_11: -2615405160437556443
+      idle-coruja_12: -2505864894569859521
+      idle-coruja_13: -4164596931035190829
+      idle-coruja_14: -8696441970474786600
+      idle-coruja_15: -2508500739863258784
+      idle-coruja_16: 3591435203857815777
+      idle-coruja_17: 5691288056819323388
+      idle-coruja_18: 5543741319531309472
+      idle-coruja_19: 4378797604101174783
+      idle-coruja_2: -1506617649128123708
+      idle-coruja_20: -8363158617298863343
+      idle-coruja_21: 3138162169336479617
+      idle-coruja_22: 4759336899631199167
+      idle-coruja_23: 8096254709961201787
+      idle-coruja_24: -1951746133721531034
+      idle-coruja_25: -1599641202301851786
+      idle-coruja_26: -2653329441933758642
+      idle-coruja_27: 5008536776558810969
+      idle-coruja_28: 240756946416657208
+      idle-coruja_29: -4742648869924848179
+      idle-coruja_3: 878509604802343719
+      idle-coruja_30: -6271718008439626997
+      idle-coruja_31: 4183875295501122499
+      idle-coruja_32: -1658766607113686580
+      idle-coruja_33: -1362855240408483825
+      idle-coruja_34: 5827604152419279309
+      idle-coruja_35: 6023672088071189866
+      idle-coruja_4: -6098413350093142510
+      idle-coruja_5: -5009044327007498021
+      idle-coruja_6: 8216114916005877518
+      idle-coruja_7: -3311599499800514638
+      idle-coruja_8: -7273002187475025428
+      idle-coruja_9: -4916273833641271335
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
