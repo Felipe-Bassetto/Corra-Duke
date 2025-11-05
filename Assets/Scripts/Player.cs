@@ -29,16 +29,15 @@ public class Player : MonoBehaviour
     public float maxJumpTime; // tempo maximo de pulo
     public float jumpTimeCounter;
     public bool jumpUp = true; // Pode pular
-    private bool jumpPressed, jumpHeld;
+    private bool jumpPressed, jumpHeld, jumpRelease;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask groundLayer;
     public bool isGrounded;
     enum PlayerState { Running, Jumping, DoubleJumping } 
-    PlayerState state = PlayerState.Running;
+    PlayerState state;
     PlayerState currentState;
     bool pausePressed;
-    bool canHold = true;
     
     //Defini��o de vari�veis
     
@@ -72,6 +71,7 @@ public class Player : MonoBehaviour
         anim.speed = 1.8f;
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
+        state = PlayerState.Running;
     }
 
     void FixedUpdate()
@@ -88,7 +88,8 @@ public class Player : MonoBehaviour
 
         pausePressed = Input.GetKeyDown(KeyCode.Escape);
         jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) ;
-        jumpHeld = (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W)) && canHold;
+        jumpHeld = (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W));
+        jumpRelease = Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp (KeyCode.W) ; 
 
         
         if (pausePressed)
@@ -106,6 +107,7 @@ public class Player : MonoBehaviour
             }
             else // Caso esteja no ar
             {
+                jumpTimeCounter = 50f;
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // Zera a velocidade vertical ANTES de aplicar a nova força
                 rb.AddForce(Vector2.up * secondJump, ForceMode2D.Impulse);
                 jumpUp = false;
@@ -113,11 +115,10 @@ public class Player : MonoBehaviour
             }
         }
         
-        if (isGrounded && !jumpHeld)
+        if (isGrounded && jumpTimeCounter >= maxJumpTime)//!jumpHeld)
         {
             jumpUp = true;
             state = PlayerState.Running;
-            canHold = true;
             jumpTimeCounter = 0f;
         }
         
@@ -131,11 +132,9 @@ public class Player : MonoBehaviour
                 rb.AddForce(Vector2.up * extraJumpForce * Time.deltaTime, ForceMode2D.Force);
                 jumpTimeCounter += Time.deltaTime;
             }
-            else
-            {
-                canHold = false;
-            }
         }
+
+        if (jumpRelease) jumpTimeCounter = 50f;
 
         switch (playerStatus)
         {
@@ -240,7 +239,7 @@ public class Player : MonoBehaviour
     void OnBecameInvisible()
     {
         deadReason = "Downfall";
-        //Die();
+        Die();
     }
 
     void OnTriggerEnter2D(Collider2D obj)
@@ -262,7 +261,7 @@ public class Player : MonoBehaviour
                         break;
                 }
 
-               //Die();
+               Die();
             }
         }
         else 
@@ -271,11 +270,6 @@ public class Player : MonoBehaviour
             {
                 case "Coin":
                     coinRound++;
-                    break;
-                case "Collider":
-                    //colliding = true;
-                    //jumpUp = true;
-                    //anim.Play("Running Duke");
                     break;
             }
         }

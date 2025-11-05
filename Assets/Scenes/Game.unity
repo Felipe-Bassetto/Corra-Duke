@@ -350,6 +350,7 @@ MonoBehaviour:
   - Gunner
   - Destroyer
   - CoinMagnet
+  - Multipliyer
 --- !u!1 &316900408
 GameObject:
   m_ObjectHideFlags: 0
@@ -3191,6 +3192,7 @@ MonoBehaviour:
   listPlayerVunerable:
   - Bomb
   - Laser
+  - EnemyBullet
   coinMagnetRadius: 5
   coinMagnetForce: 10
   doubleScoreActive: 0
@@ -3920,6 +3922,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927642534}
   m_CullTransparentMesh: 1
+--- !u!1001 &1945655300
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.187327
+      objectReference: {fileID: 0}
+    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.9959309
+      objectReference: {fileID: 0}
+    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367540434247220356, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: m_Name
+      value: PowerUps
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
 --- !u!1 &1973589189
 GameObject:
   m_ObjectHideFlags: 0
@@ -3975,7 +4034,15 @@ MonoBehaviour:
   timePowerUp: 0
   counterSpawnPowerUp: 10
   arrGroupsObs:
+  - {fileID: 2755101971793818047, guid: 320d1b84e589cd843b75d1c045003a99, type: 3}
+  - {fileID: 2126345185413134453, guid: 03e06218c7db8214da3eda9ceaf5466c, type: 3}
+  - {fileID: 4900749688789021506, guid: 4dff692c5ce577546bf5c1173ad0e8c6, type: 3}
+  - {fileID: 3351617541542321839, guid: 3811179f5d6adbb44b58f0b4724f6aca, type: 3}
+  - {fileID: 5622814296668365602, guid: d562f47473ab81f44b14cd2a5e95e882, type: 3}
   - {fileID: 3844986034102846716, guid: c3228473669d51240ac34d00733083af, type: 3}
+  - {fileID: 5622814296668365602, guid: 11f58f23e317b19458337d5e98e96ccc, type: 3}
+  - {fileID: 6078784526603657552, guid: 51f8d9b31032cf74ba16a35a2ac9ef0e, type: 3}
+  - {fileID: 6078784526603657552, guid: 8e42465ebd399b84bafaf6c3313f44c2, type: 3}
   soloGround: {fileID: 3623353307232672489, guid: 417dba9413b31f34c90341aa414fca13, type: 3}
   ground: {fileID: 2150998469599380928}
   powerUpPrefeb: {fileID: 3367540434247220356, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
@@ -4240,3 +4307,4 @@ SceneRoots:
   - {fileID: 1303036142}
   - {fileID: 1668458200}
   - {fileID: 183729409}
+  - {fileID: 1945655300}
