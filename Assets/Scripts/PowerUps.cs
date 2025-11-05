@@ -11,6 +11,7 @@ public class PowerUps : MonoBehaviour
     System.Random rnd = new System.Random();
     public Player player;
     public LevelManager levelManager;
+    public GameObject letreiro;
 
     [Header("Gerenciamento")]
     private int indexArray;
@@ -41,6 +42,7 @@ public class PowerUps : MonoBehaviour
             indexArray = rnd.Next(arrayPowerUps.Length); // Pega o numero referente ao power up
             player.alterStatus(arrayPowerUps[indexArray]); // Altera o status do player para o power up
             levelManager.SetPowerUpTime(arrTimePowerUps[indexArray]); // Define a contagem de tempo no level manager
+            Instantiate(letreiro, new Vector3(0, 3f, 0), Quaternion.identity);
             Destroy(gameObject);
         }
     }
