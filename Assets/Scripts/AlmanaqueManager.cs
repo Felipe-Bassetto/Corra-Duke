@@ -1,134 +1,105 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class AlmanaqueManager : MonoBehaviour
 {
-    [Header("Fonte de Dados")]
-    public AlmanaqueData data;
+    [Header("Referências de UI")]
+    [SerializeField] private TextMeshProUGUI nomeItemText;           
+    [SerializeField] private TextMeshProUGUI mensagemInicialText;    
+    [SerializeField] private Image[] losangos;                       
 
-    [Header("Containers (UI)")]
-    public Transform categoryButtonContainer; 
-    public Transform itemSlotContainer;       
+    [Header("Categorias")]
+    [SerializeField] private Button categoriaFellas;
+    [SerializeField] private Button categoriaFoes;
+    [SerializeField] private Button categoriaInventory;
 
-    [Header("Prefabs")]
-    public Button categoryButtonPrefab;  
-    public Button itemSlotButtonPrefab; 
+    [Header("Banco de Dados")]
+    [SerializeField] private AlmanaqueData almanaqueData;
 
-    [Header("Detalhes Centro")]
-    public TMP_Text centralText;        // texto do meio
-    public TMP_Text itemNameText;       // nome do item 
-    public TMP_Text itemDescriptionText; // descrição do item 
+    private List<AlmanaqueItem> itensCategoriaAtual = new List<AlmanaqueItem>();
 
-    private string currentCategory = "";
-    private List<Button> spawnedCategoryButtons = new List<Button>();
-    private List<Button> spawnedItemSlots = new List<Button>();
-
-    void Start()
+    private void Start()
     {
-        if (data == null)
+        // ligações com as categorias corretas
+        categoriaFellas.onClick.AddListener(() => SelecionarCategoria("Fellas"));
+        categoriaFoes.onClick.AddListener(() => SelecionarCategoria("Foes"));
+        categoriaInventory.onClick.AddListener(() => SelecionarCategoria("Inventory"));
+
+        // define o comportamento dos losangos
+        for (int i = 0; i < losangos.Length; i++)
         {
-            Debug.LogError("AlmanaqueManager: arraste referência do AlmanaqueData no Inspector.");
+            int index = i;
+            Button btn = losangos[i].GetComponent<Button>();
+            if (btn != null)
+                btn.onClick.AddListener(() => MostrarDescricaoItem(index));
+        }
+
+        // estado inicial
+        LimparLosangos();
+        nomeItemText.text = "";
+        mensagemInicialText.text = "Selecione uma categoria";
+    }
+
+    private void SelecionarCategoria(string categoria)
+    {
+        nomeItemText.text = "";
+        mensagemInicialText.text = "";
+
+        if (almanaqueData == null)
+        {
+            Debug.LogError("❌ AlmanaqueData não está atribuído no Inspector!");
             return;
         }
 
-        // mensagem inicial e limpar slots
-        centralText.text = "Selecione uma categoria";
-        LimparItemSlots();
+        // busca os itens da categoria selecionada
+        itensCategoriaAtual = almanaqueData.ObterItensPorCategoria(categoria);
+        Debug.Log($"Itens encontrados na categoria {categoria}: {itensCategoriaAtual.Count}");
 
-        CriarBotoesDeCategoria();
-    }
-
-    void CriarBotoesDeCategoria()
-    {
-        // destrói antigos
-        foreach (var b in spawnedCategoryButtons) Destroy(b.gameObject);
-        spawnedCategoryButtons.Clear();
-
-        var cats = data.GetCategorias();
-        for (int i = 0; i < cats.Count; i++)
+        for (int i = 0; i < losangos.Length; i++)
         {
-            var cat = cats[i];
-            var btn = Instantiate(categoryButtonPrefab, categoryButtonContainer);
-            var txt = btn.GetComponentInChildren<TMP_Text>();
-            if (txt != null) txt.text = cat.nomeCategoria;
+            Image img = losangos[i];
 
-            string nomeCat = cat.nomeCategoria; 
-            btn.onClick.AddListener(() => OnCategoriaClicada(nomeCat));
-            spawnedCategoryButtons.Add(btn);
-        }
-    }
-
-    void OnCategoriaClicada(string categoria)
-    {
-        currentCategory = categoria;
-        centralText.text = "Selecione um item";
-        PreencherItemSlots(categoria);
-    }
-
-    void PreencherItemSlots(string categoria)
-    {
-        // limpa antigos
-        foreach (var b in spawnedItemSlots) Destroy(b.gameObject);
-        spawnedItemSlots.Clear();
-
-        // encontra categoria
-        var cat = data.categorias.Find(c => c.nomeCategoria == categoria);
-        if (cat == null)
-        {
-            Debug.LogWarning("Categoria não encontrada: " + categoria);
-            return;
-        }
-
-        // Preenche os slots: 
-        int slotCount = 6;
-        for (int i = 0; i < slotCount; i++)
-        {
-            var btn = Instantiate(itemSlotButtonPrefab, itemSlotContainer);
-            spawnedItemSlots.Add(btn);
-
-            Image img = btn.GetComponent<Image>();
-            Button bcomp = btn.GetComponent<Button>();
-
-            if (i < cat.itens.Count)
+            if (i < itensCategoriaAtual.Count && itensCategoriaAtual[i].sprite != null)
             {
-                var item = cat.itens[i];
-                if (img != null) img.sprite = item.icon != null ? item.icon : data.defaultIcon;
+                img.sprite = itensCategoriaAtual[i].sprite;
+                img.color = Color.white;
 
-                // mostra detalhes no centro quando clicado
-                bcomp.onClick.AddListener(() => MostrarDescricao(item));
-                bcomp.interactable = true;
+                // ajusta a imagem dentro do losango
+                img.preserveAspect = true;
+                img.type = Image.Type.Simple;
+
+                RectTransform rect = img.GetComponent<RectTransform>();
+                rect.localScale = new Vector3(0.8f, 0.8f, 1f);
             }
             else
             {
-                // slot vazio: mantém sprite padrão
-                if (img != null) img.sprite = data.defaultIcon;
-                bcomp.onClick.RemoveAllListeners();
-                bcomp.interactable = false;
+                img.sprite = null;
+                img.color = new Color(1, 1, 1, 0.25f);
+                img.GetComponent<RectTransform>().localScale = Vector3.one;
             }
         }
     }
 
-    void MostrarDescricao(ItemData item)
+    private void MostrarDescricaoItem(int index)
     {
-        if (item == null)
-        {
-            centralText.text = "Espaço vazio";
+        if (index < 0 || index >= itensCategoriaAtual.Count)
             return;
-        }
 
-        // Atualiza textos centrais 
-        centralText.text = item.nome + "\n\n" + item.descricao;
-
-        // Pode mostrar nome/descrição em campos separados
-        if (itemNameText != null) itemNameText.text = item.nome;
-        if (itemDescriptionText != null) itemDescriptionText.text = item.descricao;
+        var item = itensCategoriaAtual[index];
+        nomeItemText.text = item.nome;
+        mensagemInicialText.text = item.descricao;
     }
 
-    void LimparItemSlots()
+    private void LimparLosangos()
     {
-        foreach (var b in spawnedItemSlots) Destroy(b.gameObject);
-        spawnedItemSlots.Clear();
+        foreach (var img in losangos)
+        {
+            img.sprite = null;
+            img.color = new Color(1, 1, 1, 0.25f);
+            img.GetComponent<RectTransform>().localScale = Vector3.one;
+        }
     }
 }
+
