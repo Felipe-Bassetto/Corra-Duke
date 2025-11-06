@@ -23,7 +23,6 @@ public class GameOverManager : MonoBehaviour
 
     [SerializeField] private RawImage postIt;
     public Texture[] arrPostIt;
-    private Sprite spritePostIt;
 
     void Start()
     {

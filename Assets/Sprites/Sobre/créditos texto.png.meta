@@ -1,0 +1,6253 @@
+fileFormatVersion: 2
+guid: f434940a594eb9d4f9e4a8f2d4bb2dd3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9205164321255250206
+    second: "cr\xE9ditos texto_0"
+  - first:
+      213: -1016263260369289510
+    second: "cr\xE9ditos texto_1"
+  - first:
+      213: 8131129355272001989
+    second: "cr\xE9ditos texto_2"
+  - first:
+      213: 5592973660173867963
+    second: "cr\xE9ditos texto_3"
+  - first:
+      213: 3816842809887096547
+    second: "cr\xE9ditos texto_4"
+  - first:
+      213: 4672050337553259655
+    second: "cr\xE9ditos texto_5"
+  - first:
+      213: 6438135893785730244
+    second: "cr\xE9ditos texto_6"
+  - first:
+      213: -3747891089159965243
+    second: "cr\xE9ditos texto_7"
+  - first:
+      213: -683970902678222047
+    second: "cr\xE9ditos texto_8"
+  - first:
+      213: -4250007655065489747
+    second: "cr\xE9ditos texto_9"
+  - first:
+      213: -4930893563400211888
+    second: "cr\xE9ditos texto_10"
+  - first:
+      213: -8357794902892981936
+    second: "cr\xE9ditos texto_11"
+  - first:
+      213: 5888706384291774904
+    second: "cr\xE9ditos texto_12"
+  - first:
+      213: 4156340937560225429
+    second: "cr\xE9ditos texto_13"
+  - first:
+      213: -357051254586959438
+    second: "cr\xE9ditos texto_14"
+  - first:
+      213: -203156726123309990
+    second: "cr\xE9ditos texto_15"
+  - first:
+      213: -168743994785539307
+    second: "cr\xE9ditos texto_16"
+  - first:
+      213: 6880993363174527609
+    second: "cr\xE9ditos texto_17"
+  - first:
+      213: 8621231138267791495
+    second: "cr\xE9ditos texto_18"
+  - first:
+      213: 8840422555228174673
+    second: "cr\xE9ditos texto_19"
+  - first:
+      213: -3178263948512339071
+    second: "cr\xE9ditos texto_20"
+  - first:
+      213: 2695504367845578459
+    second: "cr\xE9ditos texto_21"
+  - first:
+      213: 751655381324512561
+    second: "cr\xE9ditos texto_22"
+  - first:
+      213: -1720951661486368759
+    second: "cr\xE9ditos texto_23"
+  - first:
+      213: -8900591027504319976
+    second: "cr\xE9ditos texto_24"
+  - first:
+      213: 1876374378980625411
+    second: "cr\xE9ditos texto_25"
+  - first:
+      213: 5687347670867624994
+    second: "cr\xE9ditos texto_26"
+  - first:
+      213: 4303630262505765497
+    second: "cr\xE9ditos texto_27"
+  - first:
+      213: 1536045800641080290
+    second: "cr\xE9ditos texto_28"
+  - first:
+      213: 6391858792994650570
+    second: "cr\xE9ditos texto_29"
+  - first:
+      213: -5718952233567150264
+    second: "cr\xE9ditos texto_30"
+  - first:
+      213: -7670190032886824142
+    second: "cr\xE9ditos texto_31"
+  - first:
+      213: -5930758888757982282
+    second: "cr\xE9ditos texto_32"
+  - first:
+      213: -7376872642784734016
+    second: "cr\xE9ditos texto_33"
+  - first:
+      213: -8293499008341694905
+    second: "cr\xE9ditos texto_34"
+  - first:
+      213: -4587657075867750023
+    second: "cr\xE9ditos texto_35"
+  - first:
+      213: -4333350739400594362
+    second: "cr\xE9ditos texto_36"
+  - first:
+      213: -7449397209416171850
+    second: "cr\xE9ditos texto_37"
+  - first:
+      213: 1991104853836341865
+    second: "cr\xE9ditos texto_38"
+  - first:
+      213: -1442053623161135401
+    second: "cr\xE9ditos texto_39"
+  - first:
+      213: -4919122368561709384
+    second: "cr\xE9ditos texto_40"
+  - first:
+      213: -3554053860442355012
+    second: "cr\xE9ditos texto_41"
+  - first:
+      213: -4776342790176575006
+    second: "cr\xE9ditos texto_42"
+  - first:
+      213: 2205644513126128860
+    second: "cr\xE9ditos texto_43"
+  - first:
+      213: -1535590716030994159
+    second: "cr\xE9ditos texto_44"
+  - first:
+      213: -234546286164476299
+    second: "cr\xE9ditos texto_45"
+  - first:
+      213: -8078392403998394439
+    second: "cr\xE9ditos texto_46"
+  - first:
+      213: -656607083743835062
+    second: "cr\xE9ditos texto_47"
+  - first:
+      213: -5128856520640018505
+    second: "cr\xE9ditos texto_48"
+  - first:
+      213: -7035059381652124510
+    second: "cr\xE9ditos texto_49"
+  - first:
+      213: 1321518163625196972
+    second: "cr\xE9ditos texto_50"
+  - first:
+      213: -3365129076304277772
+    second: "cr\xE9ditos texto_51"
+  - first:
+      213: 6239092952754154353
+    second: "cr\xE9ditos texto_52"
+  - first:
+      213: 554159595933601151
+    second: "cr\xE9ditos texto_53"
+  - first:
+      213: 2878061776814132360
+    second: "cr\xE9ditos texto_54"
+  - first:
+      213: -7095380827255113014
+    second: "cr\xE9ditos texto_55"
+  - first:
+      213: 6888089065342611646
+    second: "cr\xE9ditos texto_56"
+  - first:
+      213: 8313522673207097609
+    second: "cr\xE9ditos texto_57"
+  - first:
+      213: 252121244524954785
+    second: "cr\xE9ditos texto_58"
+  - first:
+      213: -8454754593435306629
+    second: "cr\xE9ditos texto_59"
+  - first:
+      213: 8618399843602416497
+    second: "cr\xE9ditos texto_60"
+  - first:
+      213: 7197333713626249335
+    second: "cr\xE9ditos texto_61"
+  - first:
+      213: 6834776991554591106
+    second: "cr\xE9ditos texto_62"
+  - first:
+      213: 5628418683636451369
+    second: "cr\xE9ditos texto_63"
+  - first:
+      213: -7786302421368603636
+    second: "cr\xE9ditos texto_64"
+  - first:
+      213: -3681019483269470544
+    second: "cr\xE9ditos texto_65"
+  - first:
+      213: 9006490512922131299
+    second: "cr\xE9ditos texto_66"
+  - first:
+      213: 8621600970046651088
+    second: "cr\xE9ditos texto_67"
+  - first:
+      213: 7226231738402148774
+    second: "cr\xE9ditos texto_68"
+  - first:
+      213: 1124116441713225827
+    second: "cr\xE9ditos texto_69"
+  - first:
+      213: -3913298429542487392
+    second: "cr\xE9ditos texto_70"
+  - first:
+      213: 4258778970787307941
+    second: "cr\xE9ditos texto_71"
+  - first:
+      213: -7399378223270203171
+    second: "cr\xE9ditos texto_72"
+  - first:
+      213: 6210812064260961610
+    second: "cr\xE9ditos texto_73"
+  - first:
+      213: -5689712939231753421
+    second: "cr\xE9ditos texto_74"
+  - first:
+      213: -3799470176776827024
+    second: "cr\xE9ditos texto_75"
+  - first:
+      213: 4865107677914001694
+    second: "cr\xE9ditos texto_76"
+  - first:
+      213: -8206923065168927562
+    second: "cr\xE9ditos texto_77"
+  - first:
+      213: -3382331287724206524
+    second: "cr\xE9ditos texto_78"
+  - first:
+      213: 2748776351878751532
+    second: "cr\xE9ditos texto_79"
+  - first:
+      213: 7450443829991217113
+    second: "cr\xE9ditos texto_80"
+  - first:
+      213: -5168666885752470116
+    second: "cr\xE9ditos texto_81"
+  - first:
+      213: 5720921425346530703
+    second: "cr\xE9ditos texto_82"
+  - first:
+      213: 8916938716365094038
+    second: "cr\xE9ditos texto_83"
+  - first:
+      213: -3162915042541253810
+    second: "cr\xE9ditos texto_84"
+  - first:
+      213: -2892926550310345008
+    second: "cr\xE9ditos texto_85"
+  - first:
+      213: -8801655789322842170
+    second: "cr\xE9ditos texto_86"
+  - first:
+      213: -271240145673191087
+    second: "cr\xE9ditos texto_87"
+  - first:
+      213: 7745328773875372260
+    second: "cr\xE9ditos texto_88"
+  - first:
+      213: 1450899647719686721
+    second: "cr\xE9ditos texto_89"
+  - first:
+      213: -490114360526601534
+    second: "cr\xE9ditos texto_90"
+  - first:
+      213: 377418179850383028
+    second: "cr\xE9ditos texto_91"
+  - first:
+      213: 11587726141432391
+    second: "cr\xE9ditos texto_92"
+  - first:
+      213: -6162818880877990514
+    second: "cr\xE9ditos texto_93"
+  - first:
+      213: 494563140079435492
+    second: "cr\xE9ditos texto_94"
+  - first:
+      213: -8793872234992498196
+    second: "cr\xE9ditos texto_95"
+  - first:
+      213: 7275795401754293474
+    second: "cr\xE9ditos texto_96"
+  - first:
+      213: 7387818738796685394
+    second: "cr\xE9ditos texto_97"
+  - first:
+      213: 8677126899801763585
+    second: "cr\xE9ditos texto_98"
+  - first:
+      213: -7494482238007436507
+    second: "cr\xE9ditos texto_99"
+  - first:
+      213: -5590165237766019508
+    second: "cr\xE9ditos texto_100"
+  - first:
+      213: -4846006955598005368
+    second: "cr\xE9ditos texto_101"
+  - first:
+      213: -8798550380790379612
+    second: "cr\xE9ditos texto_102"
+  - first:
+      213: -173230039494779164
+    second: "cr\xE9ditos texto_103"
+  - first:
+      213: 4535192062418358279
+    second: "cr\xE9ditos texto_104"
+  - first:
+      213: -5229338816963849967
+    second: "cr\xE9ditos texto_105"
+  - first:
+      213: -7165946925816152388
+    second: "cr\xE9ditos texto_106"
+  - first:
+      213: 3604013280337132137
+    second: "cr\xE9ditos texto_107"
+  - first:
+      213: -3673713691024855651
+    second: "cr\xE9ditos texto_108"
+  - first:
+      213: 8058018047212126176
+    second: "cr\xE9ditos texto_109"
+  - first:
+      213: -7197265958663421427
+    second: "cr\xE9ditos texto_110"
+  - first:
+      213: 1312054654040804117
+    second: "cr\xE9ditos texto_111"
+  - first:
+      213: 6110170503195147030
+    second: "cr\xE9ditos texto_112"
+  - first:
+      213: -3070330724782812279
+    second: "cr\xE9ditos texto_113"
+  - first:
+      213: 3063087893852694541
+    second: "cr\xE9ditos texto_114"
+  - first:
+      213: 3435457222144735209
+    second: "cr\xE9ditos texto_115"
+  - first:
+      213: 454064819306079932
+    second: "cr\xE9ditos texto_116"
+  - first:
+      213: 6145413333266047223
+    second: "cr\xE9ditos texto_117"
+  - first:
+      213: 7968038777729727549
+    second: "cr\xE9ditos texto_118"
+  - first:
+      213: 6992915532261865722
+    second: "cr\xE9ditos texto_119"
+  - first:
+      213: -6910426465631333250
+    second: "cr\xE9ditos texto_120"
+  - first:
+      213: 2520548543160572255
+    second: "cr\xE9ditos texto_121"
+  - first:
+      213: 7915620965175051705
+    second: "cr\xE9ditos texto_122"
+  - first:
+      213: 8577082845785457320
+    second: "cr\xE9ditos texto_123"
+  - first:
+      213: -7565836070283249851
+    second: "cr\xE9ditos texto_124"
+  - first:
+      213: -4300895028651020075
+    second: "cr\xE9ditos texto_125"
+  - first:
+      213: 7795511703655891730
+    second: "cr\xE9ditos texto_126"
+  - first:
+      213: -6444475565189858899
+    second: "cr\xE9ditos texto_127"
+  - first:
+      213: -2043623384364994522
+    second: "cr\xE9ditos texto_128"
+  - first:
+      213: 9045094620773563753
+    second: "cr\xE9ditos texto_129"
+  - first:
+      213: -2085441435172943482
+    second: "cr\xE9ditos texto_130"
+  - first:
+      213: -4239974502313502533
+    second: "cr\xE9ditos texto_131"
+  - first:
+      213: -181170627019551023
+    second: "cr\xE9ditos texto_132"
+  - first:
+      213: 2406975089505794166
+    second: "cr\xE9ditos texto_133"
+  - first:
+      213: 3092083128569802881
+    second: "cr\xE9ditos texto_134"
+  - first:
+      213: -3666539674257526142
+    second: "cr\xE9ditos texto_135"
+  - first:
+      213: 611464310722703270
+    second: "cr\xE9ditos texto_136"
+  - first:
+      213: 1075259557164485263
+    second: "cr\xE9ditos texto_137"
+  - first:
+      213: 171731675881972011
+    second: "cr\xE9ditos texto_138"
+  - first:
+      213: 4043955491226774248
+    second: "cr\xE9ditos texto_139"
+  - first:
+      213: -5906369572430689674
+    second: "cr\xE9ditos texto_140"
+  - first:
+      213: -4892027083271697550
+    second: "cr\xE9ditos texto_141"
+  - first:
+      213: -5473992804420224130
+    second: "cr\xE9ditos texto_142"
+  - first:
+      213: -895344804626595989
+    second: "cr\xE9ditos texto_143"
+  - first:
+      213: 1567333377131754413
+    second: "cr\xE9ditos texto_144"
+  - first:
+      213: 5886396283630880726
+    second: "cr\xE9ditos texto_145"
+  - first:
+      213: -8620699253071720278
+    second: "cr\xE9ditos texto_146"
+  - first:
+      213: 7147116888392959400
+    second: "cr\xE9ditos texto_147"
+  - first:
+      213: -2813798346827107208
+    second: "cr\xE9ditos texto_148"
+  - first:
+      213: -335064466801647595
+    second: "cr\xE9ditos texto_149"
+  - first:
+      213: 189087509079760604
+    second: "cr\xE9ditos texto_150"
+  - first:
+      213: -4989804787448673077
+    second: "cr\xE9ditos texto_151"
+  - first:
+      213: 5618255032689733082
+    second: "cr\xE9ditos texto_152"
+  - first:
+      213: -1576366043327127179
+    second: "cr\xE9ditos texto_153"
+  - first:
+      213: -983713648875566258
+    second: "cr\xE9ditos texto_154"
+  - first:
+      213: 768293269458766610
+    second: "cr\xE9ditos texto_155"
+  - first:
+      213: -8048611017964611146
+    second: "cr\xE9ditos texto_156"
+  - first:
+      213: 8043573186323589694
+    second: "cr\xE9ditos texto_157"
+  - first:
+      213: -4520311011766012340
+    second: "cr\xE9ditos texto_158"
+  - first:
+      213: 5390363339445704688
+    second: "cr\xE9ditos texto_159"
+  - first:
+      213: -443751078852003216
+    second: "cr\xE9ditos texto_160"
+  - first:
+      213: 8166892102524251599
+    second: "cr\xE9ditos texto_161"
+  - first:
+      213: 9066371604945825130
+    second: "cr\xE9ditos texto_162"
+  - first:
+      213: -8907514961660478209
+    second: "cr\xE9ditos texto_163"
+  - first:
+      213: -8283530468313401398
+    second: "cr\xE9ditos texto_164"
+  - first:
+      213: 7561606429701246859
+    second: "cr\xE9ditos texto_165"
+  - first:
+      213: -279382906603864126
+    second: "cr\xE9ditos texto_166"
+  - first:
+      213: -7635245217902243224
+    second: "cr\xE9ditos texto_167"
+  - first:
+      213: 990290989408302205
+    second: "cr\xE9ditos texto_168"
+  - first:
+      213: -7685483446201935198
+    second: "cr\xE9ditos texto_169"
+  - first:
+      213: 2214682236738844883
+    second: "cr\xE9ditos texto_170"
+  - first:
+      213: -1840594582821147623
+    second: "cr\xE9ditos texto_171"
+  - first:
+      213: 6741704505835124031
+    second: "cr\xE9ditos texto_172"
+  - first:
+      213: -3708005763052087170
+    second: "cr\xE9ditos texto_173"
+  - first:
+      213: 9090095595947518442
+    second: "cr\xE9ditos texto_174"
+  - first:
+      213: -6728765704067802203
+    second: "cr\xE9ditos texto_175"
+  - first:
+      213: 7577889798199785414
+    second: "cr\xE9ditos texto_176"
+  - first:
+      213: 2483766276030952310
+    second: "cr\xE9ditos texto_177"
+  - first:
+      213: -504157229675339957
+    second: "cr\xE9ditos texto_178"
+  - first:
+      213: 3559246126745849029
+    second: "cr\xE9ditos texto_179"
+  - first:
+      213: 8845531173357571871
+    second: "cr\xE9ditos texto_180"
+  - first:
+      213: 6167836111346530238
+    second: "cr\xE9ditos texto_181"
+  - first:
+      213: 6519348197093944831
+    second: "cr\xE9ditos texto_182"
+  - first:
+      213: 3259924626401592872
+    second: "cr\xE9ditos texto_183"
+  - first:
+      213: -491232773436289342
+    second: "cr\xE9ditos texto_184"
+  - first:
+      213: -3856096001328129502
+    second: "cr\xE9ditos texto_185"
+  - first:
+      213: -4905796703208361222
+    second: "cr\xE9ditos texto_186"
+  - first:
+      213: -1624736034478030604
+    second: "cr\xE9ditos texto_187"
+  - first:
+      213: -3034756399682342505
+    second: "cr\xE9ditos texto_188"
+  - first:
+      213: -6158219242327608701
+    second: "cr\xE9ditos texto_189"
+  - first:
+      213: -4264312573221707606
+    second: "cr\xE9ditos texto_190"
+  - first:
+      213: -1408134190571284688
+    second: "cr\xE9ditos texto_191"
+  - first:
+      213: -2596687377967289507
+    second: "cr\xE9ditos texto_192"
+  - first:
+      213: -4606583514810258121
+    second: "cr\xE9ditos texto_193"
+  - first:
+      213: 3291868590040603197
+    second: "cr\xE9ditos texto_194"
+  - first:
+      213: 8006295068722958311
+    second: "cr\xE9ditos texto_195"
+  - first:
+      213: 1654798706168139567
+    second: "cr\xE9ditos texto_196"
+  - first:
+      213: 8176458422899976013
+    second: "cr\xE9ditos texto_197"
+  - first:
+      213: -5821853709780301613
+    second: "cr\xE9ditos texto_198"
+  - first:
+      213: -323235198697989105
+    second: "cr\xE9ditos texto_199"
+  - first:
+      213: -2560972218097217412
+    second: "cr\xE9ditos texto_200"
+  - first:
+      213: 2440157332713444781
+    second: "cr\xE9ditos texto_201"
+  - first:
+      213: -6380211005385430367
+    second: "cr\xE9ditos texto_202"
+  - first:
+      213: 4412845647970995649
+    second: "cr\xE9ditos texto_203"
+  - first:
+      213: 7048674689144311293
+    second: "cr\xE9ditos texto_204"
+  - first:
+      213: -562659090598308090
+    second: "cr\xE9ditos texto_205"
+  - first:
+      213: -6096987415800808125
+    second: "cr\xE9ditos texto_206"
+  - first:
+      213: 1249004251761100973
+    second: "cr\xE9ditos texto_207"
+  - first:
+      213: -6659278527478253820
+    second: "cr\xE9ditos texto_208"
+  - first:
+      213: -2513127780704871351
+    second: "cr\xE9ditos texto_209"
+  - first:
+      213: -3848439123522683877
+    second: "cr\xE9ditos texto_210"
+  - first:
+      213: 4896416662701388088
+    second: "cr\xE9ditos texto_211"
+  - first:
+      213: 5316410996911417761
+    second: "cr\xE9ditos texto_212"
+  - first:
+      213: 1922715579012808530
+    second: "cr\xE9ditos texto_213"
+  - first:
+      213: 4974490525512735743
+    second: "cr\xE9ditos texto_214"
+  - first:
+      213: 5972890983842470531
+    second: "cr\xE9ditos texto_215"
+  - first:
+      213: 1744658117896175371
+    second: "cr\xE9ditos texto_216"
+  - first:
+      213: -4223109331889513000
+    second: "cr\xE9ditos texto_217"
+  - first:
+      213: -2393016842255777296
+    second: "cr\xE9ditos texto_218"
+  - first:
+      213: -6816128837921904517
+    second: "cr\xE9ditos texto_219"
+  - first:
+      213: 5973944512274532376
+    second: "cr\xE9ditos texto_220"
+  - first:
+      213: 236257784157080106
+    second: "cr\xE9ditos texto_221"
+  - first:
+      213: -3224193390781720955
+    second: "cr\xE9ditos texto_222"
+  - first:
+      213: -5667801558571705247
+    second: "cr\xE9ditos texto_223"
+  - first:
+      213: -7794506674714290106
+    second: "cr\xE9ditos texto_224"
+  - first:
+      213: 5791734773588122699
+    second: "cr\xE9ditos texto_225"
+  - first:
+      213: -674141725965943595
+    second: "cr\xE9ditos texto_226"
+  - first:
+      213: -4204199061303569976
+    second: "cr\xE9ditos texto_227"
+  - first:
+      213: -5262946639972839525
+    second: "cr\xE9ditos texto_228"
+  - first:
+      213: -8030736101637484990
+    second: "cr\xE9ditos texto_229"
+  - first:
+      213: -6201429555403617703
+    second: "cr\xE9ditos texto_230"
+  - first:
+      213: 6396507000592837862
+    second: "cr\xE9ditos texto_231"
+  - first:
+      213: 7867912024067936931
+    second: "cr\xE9ditos texto_232"
+  - first:
+      213: 4968959579034891900
+    second: "cr\xE9ditos texto_233"
+  - first:
+      213: -8604423214375033654
+    second: "cr\xE9ditos texto_234"
+  - first:
+      213: -5246414465274767886
+    second: "cr\xE9ditos texto_235"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_0"
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 570
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19d48bdd205fbf70800000000000000
+      internalID: 9205164321255250206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_1"
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 567
+        width: 27
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade7867f2f185e1f0800000000000000
+      internalID: -1016263260369289510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_2"
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 569
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c91dbb611397d070800000000000000
+      internalID: 8131129355272001989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_3"
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 569
+        width: 6
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbb97cc39eb3e9d40800000000000000
+      internalID: 5592973660173867963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_4"
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 572
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eef2d6205628f430800000000000000
+      internalID: 3816842809887096547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_5"
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 570
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c1b96470576d040800000000000000
+      internalID: 4672050337553259655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_6"
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 571
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc5ac41c7ad85950800000000000000
+      internalID: 6438135893785730244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_7"
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 573
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5b4cd59e0dcfbc0800000000000000
+      internalID: -3747891089159965243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_8"
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 554
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b492d761c0286f0800000000000000
+      internalID: -683970902678222047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_9"
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 551
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae61232e80f405c0800000000000000
+      internalID: -4250007655065489747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_10"
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 554
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0523548dd62f19bb0800000000000000
+      internalID: -4930893563400211888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_11"
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 555
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0515e7b31d5230c80800000000000000
+      internalID: -8357794902892981936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_12"
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 552
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1494eb143e8b150800000000000000
+      internalID: 5888706384291774904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_13"
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 556
+        width: 10
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596f0bcbf0a4ea930800000000000000
+      internalID: 4156340937560225429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_14"
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 552
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b99cb396cf7b0bf0800000000000000
+      internalID: -357051254586959438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_15"
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 548
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5450b1b80e3e2df0800000000000000
+      internalID: -203156726123309990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_16"
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 546
+        width: 12
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51bd3d41b3088adf0800000000000000
+      internalID: -168743994785539307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_17"
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 552
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97296d9b1033e7f50800000000000000
+      internalID: 6880993363174527609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_18"
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 553
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7800df20b04c4a770800000000000000
+      internalID: 8621231138267791495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_19"
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 554
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 159f9b4b97d7faa70800000000000000
+      internalID: 8840422555228174673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_20"
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 553
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bdd7a27c984e3d0800000000000000
+      internalID: -3178263948512339071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_21"
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 551
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd613ffe0fa586520800000000000000
+      internalID: 2695504367845578459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_22"
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 529
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13dbb5d369a6e6a00800000000000000
+      internalID: 751655381324512561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_23"
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 528
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9089c75f493fd18e0800000000000000
+      internalID: -1720951661486368759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_24"
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 526
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812739a2e9fba7480800000000000000
+      internalID: -8900591027504319976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_25"
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 528
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30cc8c46e883a0a10800000000000000
+      internalID: 1876374378980625411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_26"
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 529
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224c534e2948dee40800000000000000
+      internalID: 5687347670867624994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_27"
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 531
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97af6411ce099bb30800000000000000
+      internalID: 4303630262505765497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_28"
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 532
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb21f17481215510800000000000000
+      internalID: 1536045800641080290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_29"
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 530
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac937eae4b174b850800000000000000
+      internalID: 6391858792994650570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_30"
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 531
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84f9dce6e3332a0b0800000000000000
+      internalID: -5718952233567150264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_31"
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 532
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2330a02bdc20e8590800000000000000
+      internalID: -7670190032886824142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_32"
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 530
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb07139636b1bda0800000000000000
+      internalID: -5930758888757982282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_33"
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 532
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4d48d6a6510a990800000000000000
+      internalID: -7376872642784734016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_34"
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 533
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7462dbeb79297ec80800000000000000
+      internalID: -8293499008341694905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_35"
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 534
+        width: 46
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9717899223e5550c0800000000000000
+      internalID: -4587657075867750023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_36"
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 12
+        width: 17
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ce9da2678dcd3c0800000000000000
+      internalID: -4333350739400594362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_37"
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 428
+        width: 53
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be76f5e4bc6e9890800000000000000
+      internalID: -7449397209416171850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_38"
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 432
+        width: 49
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962a873b053d1ab10800000000000000
+      internalID: 1991104853836341865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_39"
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 431
+        width: 32
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de5a6cbedbccfbe0800000000000000
+      internalID: -1442053623161135401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_40"
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 436
+        width: 15
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be7337b444cbbbb0800000000000000
+      internalID: -4919122368561709384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_41"
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 434
+        width: 47
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba4ab718d67daec0800000000000000
+      internalID: -3554053860442355012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_42"
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 434
+        width: 48
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1f60ad98507bdb0800000000000000
+      internalID: -4776342790176575006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_43"
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 479
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc1ca9aff50c9e10800000000000000
+      internalID: 2205644513126128860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_44"
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 472
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 119b592316c70bae0800000000000000
+      internalID: -1535590716030994159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_45"
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 472
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57e77c93569bebcf0800000000000000
+      internalID: -234546286164476299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_46"
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 478
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b73673e8e8c3ef80800000000000000
+      internalID: -8078392403998394439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_47"
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 478
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c8170165343e6f0800000000000000
+      internalID: -656607083743835062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_48"
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 478
+        width: 26
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b74e471b24a2d8b0800000000000000
+      internalID: -5128856520640018505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_49"
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 479
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac88d604c27e5e90800000000000000
+      internalID: -7035059381652124510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_50"
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 476
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad3b13a4c9f65210800000000000000
+      internalID: 1321518163625196972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_51"
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 476
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe8b8f2fe8ac41d0800000000000000
+      internalID: -3365129076304277772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_52"
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 468
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17bed810cf5b59650800000000000000
+      internalID: 6239092952754154353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_53"
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 475
+        width: 21
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d0f786735c0b700800000000000000
+      internalID: 554159595933601151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_54"
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 464
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88cc2a8ffede0f720800000000000000
+      internalID: 2878061776814132360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_55"
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 439
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca77550bb4288d90800000000000000
+      internalID: -7095380827255113014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_56"
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 433
+        width: 42
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0bff0a288679f50800000000000000
+      internalID: 6888089065342611646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_57"
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 437
+        width: 11
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9093aa803d09f5370800000000000000
+      internalID: 8313522673207097609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_58"
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 440
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a44d34afe6bf7300800000000000000
+      internalID: 252121244524954785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_59"
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 479
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75bf231e7daaaa80800000000000000
+      internalID: -8454754593435306629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_60"
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 451
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173443adef4ba9770800000000000000
+      internalID: 8618399843602416497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_61"
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 453
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778b2a221e012e360800000000000000
+      internalID: 7197333713626249335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_62"
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 451
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289df9c26710ade50800000000000000
+      internalID: 6834776991554591106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_63"
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 455
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928825dd8f82c1e40800000000000000
+      internalID: 5628418683636451369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_64"
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 452
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c7f8c833f71f390800000000000000
+      internalID: -7786302421368603636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_65"
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 453
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b66e6868446aecc0800000000000000
+      internalID: -3681019483269470544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_66"
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 450
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b36af276b7dfc70800000000000000
+      internalID: 9006490512922131299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_67"
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 452
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da3bce276416a770800000000000000
+      internalID: 8621600970046651088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_68"
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 458
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a11d18da7bb84460800000000000000
+      internalID: 7226231738402148774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_69"
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 484
+        width: 41
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3603e7aa2f9a99f00800000000000000
+      internalID: 1124116441713225827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_70"
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 455
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aaa607dfcb21b9c0800000000000000
+      internalID: -3913298429542487392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_71"
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 455
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a16ea2f8e83a1b30800000000000000
+      internalID: 4258778970787307941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_72"
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 439
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0f733a5b0205990800000000000000
+      internalID: -7399378223270203171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_73"
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 436
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a453cf88aac313650800000000000000
+      internalID: 6210812064260961610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_74"
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 437
+        width: 6
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33bc5272a341a01b0800000000000000
+      internalID: -5689712939231753421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_75"
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 433
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07fc6823102954bc0800000000000000
+      internalID: -3799470176776827024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_76"
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 437
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11f61818a5548340800000000000000
+      internalID: 4865107677914001694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_77"
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 439
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b465a154f62b1e80800000000000000
+      internalID: -8206923065168927562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_78"
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 435
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446528a3d9b8f01d0800000000000000
+      internalID: -3382331287724206524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_79"
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 434
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c252ab4478d952620800000000000000
+      internalID: 2748776351878751532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_80"
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 431
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d790a1703b456760800000000000000
+      internalID: 7450443829991217113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_81"
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 457
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9546682ad43548b0800000000000000
+      internalID: -5168666885752470116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_82"
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 431
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d83b1c9bbc46f40800000000000000
+      internalID: 5720921425346530703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_83"
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 446
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c7ed0c4845fbb70800000000000000
+      internalID: 8916938716365094038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_84"
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 429
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bc692d6811b14d0800000000000000
+      internalID: -3162915042541253810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_85"
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 429
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6a47f31a24ad7d0800000000000000
+      internalID: -2892926550310345008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_86"
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 430
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cfc62a51bc3ad580800000000000000
+      internalID: -8801655789322842170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_87"
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 429
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151035c468c5c3cf0800000000000000
+      internalID: -271240145673191087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_88"
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 428
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0147bbb7fec7b60800000000000000
+      internalID: 7745328773875372260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_89"
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 278
+        width: 43
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142421bda81a22410800000000000000
+      internalID: 1450899647719686721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_90"
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 281
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c28e79f593c239f0800000000000000
+      internalID: -490114360526601534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_91"
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 280
+        width: 15
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bea1cdb5dbdc3500800000000000000
+      internalID: 377418179850383028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_92"
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 284
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7422a6cb9fa292000800000000000000
+      internalID: 11587726141432391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_93"
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 283
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d623e31e4497aa0800000000000000
+      internalID: -6162818880877990514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_94"
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 281
+        width: 39
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eebf6b3e8a0dd600800000000000000
+      internalID: 494563140079435492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_95"
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 323
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce90a115bc3e5f580800000000000000
+      internalID: -8793872234992498196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_96"
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 323
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e43cfb7e51d8f460800000000000000
+      internalID: 7275795401754293474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_97"
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 324
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25863f6200ec68660800000000000000
+      internalID: 7387818738796685394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_98"
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 324
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10faba521f85b6870800000000000000
+      internalID: 8677126899801763585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_99"
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 326
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b971cac104ef790800000000000000
+      internalID: -7494482238007436507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_100"
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 321
+        width: 39
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46283f855ebb62b0800000000000000
+      internalID: -5590165237766019508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_101"
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 321
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b328069568fbcb0800000000000000
+      internalID: -4846006955598005368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_102"
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 316
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab8c9e9b0545e580800000000000000
+      internalID: -8798550380790379612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_103"
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 322
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee9c776230989df0800000000000000
+      internalID: -173230039494779164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_104"
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 324
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7001e9cf62d30fe30800000000000000
+      internalID: 4535192062418358279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_105"
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 321
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11155bc5d08ad67b0800000000000000
+      internalID: -5229338816963849967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_106"
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 322
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbefc6fdc317d8c90800000000000000
+      internalID: -7165946925816152388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_107"
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 322
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96af84ccbf6040230800000000000000
+      internalID: 3604013280337132137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_108"
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 320
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d69f7bcd8540dc0800000000000000
+      internalID: -3673713691024855651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_109"
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 322
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eff3c188b4d3df60800000000000000
+      internalID: 8058018047212126176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_110"
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 322
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d020bdb4ebc2e1c90800000000000000
+      internalID: -7197265958663421427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_111"
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 293
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b000c91ca553210800000000000000
+      internalID: 1312054654040804117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_112"
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 294
+        width: 15
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b340813bfabc450800000000000000
+      internalID: 6110170503195147030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_113"
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 295
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9835a5e197ef365d0800000000000000
+      internalID: -3070330724782812279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_114"
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 293
+        width: 37
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d08a3e4e536428a20800000000000000
+      internalID: 3063087893852694541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_115"
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 294
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e7bcf644223daf20800000000000000
+      internalID: 3435457222144735209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_116"
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 300
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb6adb32c892d4600800000000000000
+      internalID: 454064819306079932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_117"
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 298
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0a547edd4e84550800000000000000
+      internalID: 6145413333266047223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_118"
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 297
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c3e174d09249e60800000000000000
+      internalID: 7968038777729727549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_119"
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 332
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8b7c460a3db0160800000000000000
+      internalID: 6992915532261865722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_120"
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 308
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7416951ebb3910a0800000000000000
+      internalID: -6910426465631333250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_121"
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 307
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f59d63aab89caf220800000000000000
+      internalID: 2520548543160572255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_122"
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 307
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b5c4ed345fe9dd60800000000000000
+      internalID: 7915620965175051705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_123"
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 307
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a28328a76be70770800000000000000
+      internalID: 8577082845785457320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_124"
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 315
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 547fde9fd20c00790800000000000000
+      internalID: -7565836070283249851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_125"
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 311
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d0330132c62054c0800000000000000
+      internalID: -4300895028651020075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_126"
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 308
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2134fc297983f2c60800000000000000
+      internalID: 7795511703655891730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_127"
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 288
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da97c252e9f9096a0800000000000000
+      internalID: -6444475565189858899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_128"
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 288
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6203e380c5793a3e0800000000000000
+      internalID: -2043623384364994522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_129"
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 288
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d310772a1a68d70800000000000000
+      internalID: 9045094620773563753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_130"
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 289
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689c2a850160f03e0800000000000000
+      internalID: -2085441435172943482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_131"
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 287
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8d3ec87a59825c0800000000000000
+      internalID: -4239974502313502533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_132"
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 285
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dec3cc464a5c7df0800000000000000
+      internalID: -181170627019551023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_133"
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 284
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 678f439571b476120800000000000000
+      internalID: 2406975089505794166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_134"
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 284
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 180b16e093949ea20800000000000000
+      internalID: 3092083128569802881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_135"
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 286
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282f009a795dd1dc0800000000000000
+      internalID: -3666539674257526142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_136"
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 279
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6afa4790d8b5c7800800000000000000
+      internalID: 611464310722703270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_137"
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 280
+        width: 9
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a022aced61cee00800000000000000
+      internalID: 1075259557164485263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_138"
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 281
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b21a0a1ac0d126200800000000000000
+      internalID: 171731675881972011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_139"
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 280
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eaef0ee7140f1830800000000000000
+      internalID: 4043955491226774248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_140"
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 279
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ac71bca2c580ea0800000000000000
+      internalID: -5906369572430689674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_141"
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 279
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b000e69470c1cb0800000000000000
+      internalID: -4892027083271697550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_142"
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 278
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7bfc7dfb887804b0800000000000000
+      internalID: -5473992804420224130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_143"
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 300
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f7db8d4a81393f0800000000000000
+      internalID: -895344804626595989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_144"
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 291
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da33d84076940c510800000000000000
+      internalID: 1567333377131754413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_145"
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 252
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d78ff48b3ea0b150800000000000000
+      internalID: 5886396283630880726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_146"
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 253
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa05f2924bf1d5880800000000000000
+      internalID: -8620699253071720278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_147"
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 250
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a58bd461f8af2360800000000000000
+      internalID: 7147116888392959400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_148"
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 252
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874f9cbcf4163f8d0800000000000000
+      internalID: -2813798346827107208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_149"
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 252
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510ae6784ac995bf0800000000000000
+      internalID: -335064466801647595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_150"
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 255
+        width: 6
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde99227616cf9200800000000000000
+      internalID: 189087509079760604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_151"
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 252
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc0491abf6a0cab0800000000000000
+      internalID: -4989804787448673077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_152"
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 250
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adda5097f2d08fd40800000000000000
+      internalID: 5618255032689733082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_153"
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 165
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 571af7f7f6f9f1ae0800000000000000
+      internalID: -1576366043327127179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_154"
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 187
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b8116f5a52952f0800000000000000
+      internalID: -983713648875566258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_155"
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 186
+        width: 21
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21bc96178a689aa00800000000000000
+      internalID: 768293269458766610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_156"
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 188
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b99cea2ce69d4090800000000000000
+      internalID: -8048611017964611146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_157"
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 216
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3aacaf323380af60800000000000000
+      internalID: 8043573186323589694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_158"
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 185
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46766d9511a441c0800000000000000
+      internalID: -4520311011766012340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_159"
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 186
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f713f9d5ea6eca40800000000000000
+      internalID: 5390363339445704688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_160"
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 185
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a7450beba77d9f0800000000000000
+      internalID: -443751078852003216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_161"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 133
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcda6e1e811a65170800000000000000
+      internalID: 8166892102524251599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_162"
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 141
+        width: 30
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6deb7260f832dd70800000000000000
+      internalID: 9066371604945825130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_163"
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 137
+        width: 38
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffcffbe1656226480800000000000000
+      internalID: -8907514961660478209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_164"
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 135
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7fd065decfa0d80800000000000000
+      internalID: -8283530468313401398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_165"
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 170
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f07a51cf830f860800000000000000
+      internalID: 7561606429701246859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_166"
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 171
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf7f870abe6f1cf0800000000000000
+      internalID: -279382906603864126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_167"
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 173
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862dfe57de82a0690800000000000000
+      internalID: -7635245217902243224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_168"
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 167
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74b3f778683ebd00800000000000000
+      internalID: 990290989408302205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_169"
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 167
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa1dfd668da75590800000000000000
+      internalID: -7685483446201935198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_170"
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 169
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8bf2ba2c12cbe10800000000000000
+      internalID: 2214682236738844883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_171"
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 171
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91cef639af4e476e0800000000000000
+      internalID: -1840594582821147623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_172"
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 164
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35f3fa67885f8d50800000000000000
+      internalID: 6741704505835124031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_173"
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 164
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e78dd2487648a8cc0800000000000000
+      internalID: -3708005763052087170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_174"
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 162
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae96bca78c1862e70800000000000000
+      internalID: 9090095595947518442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_175"
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 164
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab15302e3f9e92a0800000000000000
+      internalID: -6728765704067802203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_176"
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 167
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c731c04f921a2960800000000000000
+      internalID: 7577889798199785414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_177"
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 164
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6737bebb44c187220800000000000000
+      internalID: 2483766276030952310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_178"
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 197
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f9146bbafd009f0800000000000000
+      internalID: -504157229675339957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_179"
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 186
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc0fdc9e7bf46130800000000000000
+      internalID: 3559246126745849029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_180"
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 140
+        width: 37
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f4f9d8cb3a1ca70800000000000000
+      internalID: 8845531173357571871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_181"
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 134
+        width: 37
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7f2a1c34e889550800000000000000
+      internalID: 6167836111346530238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_182"
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 180
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffd2edee4a0697a50800000000000000
+      internalID: 6519348197093944831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_183"
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 167
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82607370d249d3d20800000000000000
+      internalID: 3259924626401592872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_184"
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 167
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cecc4d256ace29f0800000000000000
+      internalID: -491232773436289342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_185"
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 153
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a58050e156c7ac0800000000000000
+      internalID: -3856096001328129502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_186"
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 178
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2bbf4f3eb1bebb0800000000000000
+      internalID: -4905796703208361222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_187"
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 156
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f009235f27c379e0800000000000000
+      internalID: -1624736034478030604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_188"
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 154
+        width: 7
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7913711222162e5d0800000000000000
+      internalID: -3034756399682342505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_189"
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 140
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 382761c0a3c998aa0800000000000000
+      internalID: -6158219242327608701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_190"
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 136
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa063e5de4e12d4c0800000000000000
+      internalID: -4264312573221707606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_191"
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 137
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0379aee0a6d457ce0800000000000000
+      internalID: -1408134190571284688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_192"
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 140
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5be48b6696b6fbd0800000000000000
+      internalID: -2596687377967289507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_193"
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 137
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d609333b02210c0800000000000000
+      internalID: -4606583514810258121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_194"
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 133
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ad2a4aa011fad20800000000000000
+      internalID: 3291868590040603197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_195"
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 134
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef813222f21c1f60800000000000000
+      internalID: 8006295068722958311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_196"
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 138
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f8defd7a607f610800000000000000
+      internalID: 1654798706168139567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_197"
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 137
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4724b96d9d987170800000000000000
+      internalID: 8176458422899976013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_198"
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 154
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8414e75ee943fa0800000000000000
+      internalID: -5821853709780301613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_199"
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 152
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c14b2ac43a38bf0800000000000000
+      internalID: -323235198697989105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_200"
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 154
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70dba41659957cd0800000000000000
+      internalID: -2560972218097217412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_201"
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 154
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da513746a2e2dd120800000000000000
+      internalID: 2440157332713444781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_202"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 34
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aaa6f7f4efe477a0800000000000000
+      internalID: -6380211005385430367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_203"
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 4
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd80ff8cb39d3d30800000000000000
+      internalID: 4412845647970995649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_204"
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 8
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfdcbb7c84ce1d160800000000000000
+      internalID: 7048674689144311293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_205"
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 0
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6075e37c9880138f0800000000000000
+      internalID: -562659090598308090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_206"
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 4
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d7a21af36236ba0800000000000000
+      internalID: -6096987415800808125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_207"
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 29
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da84c2ddfba555110800000000000000
+      internalID: 1249004251761100973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_208"
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 27
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407b54d267d7593a0800000000000000
+      internalID: -6659278527478253820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_209"
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 29
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c9beb39939f1dd0800000000000000
+      internalID: -2513127780704871351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_210"
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 31
+        width: 13
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cf6bec109979ac0800000000000000
+      internalID: -3848439123522683877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_211"
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 27
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831be9c230193f340800000000000000
+      internalID: 4896416662701388088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_212"
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 25
+        width: 41
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9a2e652afa7c940800000000000000
+      internalID: 5316410996911417761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_213"
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 60
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ffa23d1abdeaa10800000000000000
+      internalID: 1922715579012808530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_214"
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 26
+        width: 28
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb9bb7e6c0f80540800000000000000
+      internalID: 4974490525512735743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_215"
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 32
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a501e34b8f3e250800000000000000
+      internalID: 5972890983842470531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_216"
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 32
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ff3bb8055463810800000000000000
+      internalID: 1744658117896175371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_217"
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 30
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd961900708465c0800000000000000
+      internalID: -4223109331889513000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_218"
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 30
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f141d75cdb4aced0800000000000000
+      internalID: -2393016842255777296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_219"
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 33
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b786e507fee3861a0800000000000000
+      internalID: -6816128837921904517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_220"
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 30
+        width: 23
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8188402f1e6b7e250800000000000000
+      internalID: 5973944512274532376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_221"
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 37
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a8a14f33b574300800000000000000
+      internalID: 236257784157080106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_222"
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 42
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5861b4f813d5143d0800000000000000
+      internalID: -3224193390781720955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_223"
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 10
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c9de3038ce751b0800000000000000
+      internalID: -5667801558571705247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_224"
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 16
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6485e36f97954d390800000000000000
+      internalID: -7794506674714290106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_225"
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 17
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c5ff43710606050800000000000000
+      internalID: 5791734773588122699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_226"
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 15
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dcf7870ca7f4a6f0800000000000000
+      internalID: -674141725965943595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_227"
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 15
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c158f18a3fa7a5c0800000000000000
+      internalID: -4204199061303569976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_228"
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 15
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f459c4ae146f6b0800000000000000
+      internalID: -5262946639972839525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_229"
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 14
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e0ef070181d8090800000000000000
+      internalID: -8030736101637484990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_230"
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 12
+        width: 20
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a0f8a0da810f9a0800000000000000
+      internalID: -6201429555403617703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_231"
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 10
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eca2a51a35f4c850800000000000000
+      internalID: 6396507000592837862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_232"
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 12
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a21896cc40703d60800000000000000
+      internalID: 7867912024067936931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_233"
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 9
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7636a3196a45f440800000000000000
+      internalID: 4968959579034891900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_234"
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 25
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac42d0abca2f69880800000000000000
+      internalID: -8604423214375033654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "cr\xE9ditos texto_235"
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 5
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f593dc27ddf037b0800000000000000
+      internalID: -5246414465274767886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "cr\xE9ditos texto_0": 9205164321255250206
+      "cr\xE9ditos texto_1": -1016263260369289510
+      "cr\xE9ditos texto_10": -4930893563400211888
+      "cr\xE9ditos texto_100": -5590165237766019508
+      "cr\xE9ditos texto_101": -4846006955598005368
+      "cr\xE9ditos texto_102": -8798550380790379612
+      "cr\xE9ditos texto_103": -173230039494779164
+      "cr\xE9ditos texto_104": 4535192062418358279
+      "cr\xE9ditos texto_105": -5229338816963849967
+      "cr\xE9ditos texto_106": -7165946925816152388
+      "cr\xE9ditos texto_107": 3604013280337132137
+      "cr\xE9ditos texto_108": -3673713691024855651
+      "cr\xE9ditos texto_109": 8058018047212126176
+      "cr\xE9ditos texto_11": -8357794902892981936
+      "cr\xE9ditos texto_110": -7197265958663421427
+      "cr\xE9ditos texto_111": 1312054654040804117
+      "cr\xE9ditos texto_112": 6110170503195147030
+      "cr\xE9ditos texto_113": -3070330724782812279
+      "cr\xE9ditos texto_114": 3063087893852694541
+      "cr\xE9ditos texto_115": 3435457222144735209
+      "cr\xE9ditos texto_116": 454064819306079932
+      "cr\xE9ditos texto_117": 6145413333266047223
+      "cr\xE9ditos texto_118": 7968038777729727549
+      "cr\xE9ditos texto_119": 6992915532261865722
+      "cr\xE9ditos texto_12": 5888706384291774904
+      "cr\xE9ditos texto_120": -6910426465631333250
+      "cr\xE9ditos texto_121": 2520548543160572255
+      "cr\xE9ditos texto_122": 7915620965175051705
+      "cr\xE9ditos texto_123": 8577082845785457320
+      "cr\xE9ditos texto_124": -7565836070283249851
+      "cr\xE9ditos texto_125": -4300895028651020075
+      "cr\xE9ditos texto_126": 7795511703655891730
+      "cr\xE9ditos texto_127": -6444475565189858899
+      "cr\xE9ditos texto_128": -2043623384364994522
+      "cr\xE9ditos texto_129": 9045094620773563753
+      "cr\xE9ditos texto_13": 4156340937560225429
+      "cr\xE9ditos texto_130": -2085441435172943482
+      "cr\xE9ditos texto_131": -4239974502313502533
+      "cr\xE9ditos texto_132": -181170627019551023
+      "cr\xE9ditos texto_133": 2406975089505794166
+      "cr\xE9ditos texto_134": 3092083128569802881
+      "cr\xE9ditos texto_135": -3666539674257526142
+      "cr\xE9ditos texto_136": 611464310722703270
+      "cr\xE9ditos texto_137": 1075259557164485263
+      "cr\xE9ditos texto_138": 171731675881972011
+      "cr\xE9ditos texto_139": 4043955491226774248
+      "cr\xE9ditos texto_14": -357051254586959438
+      "cr\xE9ditos texto_140": -5906369572430689674
+      "cr\xE9ditos texto_141": -4892027083271697550
+      "cr\xE9ditos texto_142": -5473992804420224130
+      "cr\xE9ditos texto_143": -895344804626595989
+      "cr\xE9ditos texto_144": 1567333377131754413
+      "cr\xE9ditos texto_145": 5886396283630880726
+      "cr\xE9ditos texto_146": -8620699253071720278
+      "cr\xE9ditos texto_147": 7147116888392959400
+      "cr\xE9ditos texto_148": -2813798346827107208
+      "cr\xE9ditos texto_149": -335064466801647595
+      "cr\xE9ditos texto_15": -203156726123309990
+      "cr\xE9ditos texto_150": 189087509079760604
+      "cr\xE9ditos texto_151": -4989804787448673077
+      "cr\xE9ditos texto_152": 5618255032689733082
+      "cr\xE9ditos texto_153": -1576366043327127179
+      "cr\xE9ditos texto_154": -983713648875566258
+      "cr\xE9ditos texto_155": 768293269458766610
+      "cr\xE9ditos texto_156": -8048611017964611146
+      "cr\xE9ditos texto_157": 8043573186323589694
+      "cr\xE9ditos texto_158": -4520311011766012340
+      "cr\xE9ditos texto_159": 5390363339445704688
+      "cr\xE9ditos texto_16": -168743994785539307
+      "cr\xE9ditos texto_160": -443751078852003216
+      "cr\xE9ditos texto_161": 8166892102524251599
+      "cr\xE9ditos texto_162": 9066371604945825130
+      "cr\xE9ditos texto_163": -8907514961660478209
+      "cr\xE9ditos texto_164": -8283530468313401398
+      "cr\xE9ditos texto_165": 7561606429701246859
+      "cr\xE9ditos texto_166": -279382906603864126
+      "cr\xE9ditos texto_167": -7635245217902243224
+      "cr\xE9ditos texto_168": 990290989408302205
+      "cr\xE9ditos texto_169": -7685483446201935198
+      "cr\xE9ditos texto_17": 6880993363174527609
+      "cr\xE9ditos texto_170": 2214682236738844883
+      "cr\xE9ditos texto_171": -1840594582821147623
+      "cr\xE9ditos texto_172": 6741704505835124031
+      "cr\xE9ditos texto_173": -3708005763052087170
+      "cr\xE9ditos texto_174": 9090095595947518442
+      "cr\xE9ditos texto_175": -6728765704067802203
+      "cr\xE9ditos texto_176": 7577889798199785414
+      "cr\xE9ditos texto_177": 2483766276030952310
+      "cr\xE9ditos texto_178": -504157229675339957
+      "cr\xE9ditos texto_179": 3559246126745849029
+      "cr\xE9ditos texto_18": 8621231138267791495
+      "cr\xE9ditos texto_180": 8845531173357571871
+      "cr\xE9ditos texto_181": 6167836111346530238
+      "cr\xE9ditos texto_182": 6519348197093944831
+      "cr\xE9ditos texto_183": 3259924626401592872
+      "cr\xE9ditos texto_184": -491232773436289342
+      "cr\xE9ditos texto_185": -3856096001328129502
+      "cr\xE9ditos texto_186": -4905796703208361222
+      "cr\xE9ditos texto_187": -1624736034478030604
+      "cr\xE9ditos texto_188": -3034756399682342505
+      "cr\xE9ditos texto_189": -6158219242327608701
+      "cr\xE9ditos texto_19": 8840422555228174673
+      "cr\xE9ditos texto_190": -4264312573221707606
+      "cr\xE9ditos texto_191": -1408134190571284688
+      "cr\xE9ditos texto_192": -2596687377967289507
+      "cr\xE9ditos texto_193": -4606583514810258121
+      "cr\xE9ditos texto_194": 3291868590040603197
+      "cr\xE9ditos texto_195": 8006295068722958311
+      "cr\xE9ditos texto_196": 1654798706168139567
+      "cr\xE9ditos texto_197": 8176458422899976013
+      "cr\xE9ditos texto_198": -5821853709780301613
+      "cr\xE9ditos texto_199": -323235198697989105
+      "cr\xE9ditos texto_2": 8131129355272001989
+      "cr\xE9ditos texto_20": -3178263948512339071
+      "cr\xE9ditos texto_200": -2560972218097217412
+      "cr\xE9ditos texto_201": 2440157332713444781
+      "cr\xE9ditos texto_202": -6380211005385430367
+      "cr\xE9ditos texto_203": 4412845647970995649
+      "cr\xE9ditos texto_204": 7048674689144311293
+      "cr\xE9ditos texto_205": -562659090598308090
+      "cr\xE9ditos texto_206": -6096987415800808125
+      "cr\xE9ditos texto_207": 1249004251761100973
+      "cr\xE9ditos texto_208": -6659278527478253820
+      "cr\xE9ditos texto_209": -2513127780704871351
+      "cr\xE9ditos texto_21": 2695504367845578459
+      "cr\xE9ditos texto_210": -3848439123522683877
+      "cr\xE9ditos texto_211": 4896416662701388088
+      "cr\xE9ditos texto_212": 5316410996911417761
+      "cr\xE9ditos texto_213": 1922715579012808530
+      "cr\xE9ditos texto_214": 4974490525512735743
+      "cr\xE9ditos texto_215": 5972890983842470531
+      "cr\xE9ditos texto_216": 1744658117896175371
+      "cr\xE9ditos texto_217": -4223109331889513000
+      "cr\xE9ditos texto_218": -2393016842255777296
+      "cr\xE9ditos texto_219": -6816128837921904517
+      "cr\xE9ditos texto_22": 751655381324512561
+      "cr\xE9ditos texto_220": 5973944512274532376
+      "cr\xE9ditos texto_221": 236257784157080106
+      "cr\xE9ditos texto_222": -3224193390781720955
+      "cr\xE9ditos texto_223": -5667801558571705247
+      "cr\xE9ditos texto_224": -7794506674714290106
+      "cr\xE9ditos texto_225": 5791734773588122699
+      "cr\xE9ditos texto_226": -674141725965943595
+      "cr\xE9ditos texto_227": -4204199061303569976
+      "cr\xE9ditos texto_228": -5262946639972839525
+      "cr\xE9ditos texto_229": -8030736101637484990
+      "cr\xE9ditos texto_23": -1720951661486368759
+      "cr\xE9ditos texto_230": -6201429555403617703
+      "cr\xE9ditos texto_231": 6396507000592837862
+      "cr\xE9ditos texto_232": 7867912024067936931
+      "cr\xE9ditos texto_233": 4968959579034891900
+      "cr\xE9ditos texto_234": -8604423214375033654
+      "cr\xE9ditos texto_235": -5246414465274767886
+      "cr\xE9ditos texto_24": -8900591027504319976
+      "cr\xE9ditos texto_25": 1876374378980625411
+      "cr\xE9ditos texto_26": 5687347670867624994
+      "cr\xE9ditos texto_27": 4303630262505765497
+      "cr\xE9ditos texto_28": 1536045800641080290
+      "cr\xE9ditos texto_29": 6391858792994650570
+      "cr\xE9ditos texto_3": 5592973660173867963
+      "cr\xE9ditos texto_30": -5718952233567150264
+      "cr\xE9ditos texto_31": -7670190032886824142
+      "cr\xE9ditos texto_32": -5930758888757982282
+      "cr\xE9ditos texto_33": -7376872642784734016
+      "cr\xE9ditos texto_34": -8293499008341694905
+      "cr\xE9ditos texto_35": -4587657075867750023
+      "cr\xE9ditos texto_36": -4333350739400594362
+      "cr\xE9ditos texto_37": -7449397209416171850
+      "cr\xE9ditos texto_38": 1991104853836341865
+      "cr\xE9ditos texto_39": -1442053623161135401
+      "cr\xE9ditos texto_4": 3816842809887096547
+      "cr\xE9ditos texto_40": -4919122368561709384
+      "cr\xE9ditos texto_41": -3554053860442355012
+      "cr\xE9ditos texto_42": -4776342790176575006
+      "cr\xE9ditos texto_43": 2205644513126128860
+      "cr\xE9ditos texto_44": -1535590716030994159
+      "cr\xE9ditos texto_45": -234546286164476299
+      "cr\xE9ditos texto_46": -8078392403998394439
+      "cr\xE9ditos texto_47": -656607083743835062
+      "cr\xE9ditos texto_48": -5128856520640018505
+      "cr\xE9ditos texto_49": -7035059381652124510
+      "cr\xE9ditos texto_5": 4672050337553259655
+      "cr\xE9ditos texto_50": 1321518163625196972
+      "cr\xE9ditos texto_51": -3365129076304277772
+      "cr\xE9ditos texto_52": 6239092952754154353
+      "cr\xE9ditos texto_53": 554159595933601151
+      "cr\xE9ditos texto_54": 2878061776814132360
+      "cr\xE9ditos texto_55": -7095380827255113014
+      "cr\xE9ditos texto_56": 6888089065342611646
+      "cr\xE9ditos texto_57": 8313522673207097609
+      "cr\xE9ditos texto_58": 252121244524954785
+      "cr\xE9ditos texto_59": -8454754593435306629
+      "cr\xE9ditos texto_6": 6438135893785730244
+      "cr\xE9ditos texto_60": 8618399843602416497
+      "cr\xE9ditos texto_61": 7197333713626249335
+      "cr\xE9ditos texto_62": 6834776991554591106
+      "cr\xE9ditos texto_63": 5628418683636451369
+      "cr\xE9ditos texto_64": -7786302421368603636
+      "cr\xE9ditos texto_65": -3681019483269470544
+      "cr\xE9ditos texto_66": 9006490512922131299
+      "cr\xE9ditos texto_67": 8621600970046651088
+      "cr\xE9ditos texto_68": 7226231738402148774
+      "cr\xE9ditos texto_69": 1124116441713225827
+      "cr\xE9ditos texto_7": -3747891089159965243
+      "cr\xE9ditos texto_70": -3913298429542487392
+      "cr\xE9ditos texto_71": 4258778970787307941
+      "cr\xE9ditos texto_72": -7399378223270203171
+      "cr\xE9ditos texto_73": 6210812064260961610
+      "cr\xE9ditos texto_74": -5689712939231753421
+      "cr\xE9ditos texto_75": -3799470176776827024
+      "cr\xE9ditos texto_76": 4865107677914001694
+      "cr\xE9ditos texto_77": -8206923065168927562
+      "cr\xE9ditos texto_78": -3382331287724206524
+      "cr\xE9ditos texto_79": 2748776351878751532
+      "cr\xE9ditos texto_8": -683970902678222047
+      "cr\xE9ditos texto_80": 7450443829991217113
+      "cr\xE9ditos texto_81": -5168666885752470116
+      "cr\xE9ditos texto_82": 5720921425346530703
+      "cr\xE9ditos texto_83": 8916938716365094038
+      "cr\xE9ditos texto_84": -3162915042541253810
+      "cr\xE9ditos texto_85": -2892926550310345008
+      "cr\xE9ditos texto_86": -8801655789322842170
+      "cr\xE9ditos texto_87": -271240145673191087
+      "cr\xE9ditos texto_88": 7745328773875372260
+      "cr\xE9ditos texto_89": 1450899647719686721
+      "cr\xE9ditos texto_9": -4250007655065489747
+      "cr\xE9ditos texto_90": -490114360526601534
+      "cr\xE9ditos texto_91": 377418179850383028
+      "cr\xE9ditos texto_92": 11587726141432391
+      "cr\xE9ditos texto_93": -6162818880877990514
+      "cr\xE9ditos texto_94": 494563140079435492
+      "cr\xE9ditos texto_95": -8793872234992498196
+      "cr\xE9ditos texto_96": 7275795401754293474
+      "cr\xE9ditos texto_97": 7387818738796685394
+      "cr\xE9ditos texto_98": 8677126899801763585
+      "cr\xE9ditos texto_99": -7494482238007436507
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
