@@ -89,7 +89,7 @@ public class Player : MonoBehaviour
                 break;
 
             case "CoinMagnet":
-                if (correndo) anim.CrossFade("Running Duke", 0.1f);
+                if (correndo) anim.CrossFade("Magnetic Runner", 0.1f);
                 if (pulando) anim.Play("Magnetic Jump");
                 break;
         }
