@@ -6752,7 +6752,7 @@ MonoBehaviour:
   nomeJogo: {fileID: 1784587895}
   painelMelhorias: {fileID: 41161494}
   painelInstrucoes: {fileID: 992098962}
-  painelAlmanaque: {fileID: 5866987264769840688}
+  painelAlmanaque: {fileID: 0}
   musicSource: {fileID: 213856714}
   musicTelaInicial: {fileID: 8300000, guid: 33a64803cdf53074ab068f8780f01357, type: 3}
   musicUpgrades: {fileID: 8300000, guid: 2c9c463f05a3b4741b85a9050d3a66db, type: 3}
