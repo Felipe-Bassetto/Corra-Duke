@@ -128,6 +128,9 @@ public class LevelManager : MonoBehaviour
         indexArr = rnd.Next(arrGroupsObs.Length);
         nomeConjunto = arrGroupsObs[indexArr].name;
 
+        Debug.Log(indexArr);
+        Debug.Log(nomeConjunto);
+
         switch (nomeConjunto)
         {
             case "Conjunto8":
@@ -140,6 +143,7 @@ public class LevelManager : MonoBehaviour
                 break;
         }
 
+        Debug.Log("spawn");
         Instantiate(arrGroupsObs[indexArr], new Vector3(22f,-4.5f,0), Quaternion.identity); // Gera o obstaculo
         Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity); // Gera o ch�o vazio ap�s o conjunto
 

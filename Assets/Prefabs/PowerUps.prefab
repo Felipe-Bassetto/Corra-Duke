@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 2769176977697071045, guid: ab2ab67e65c691945ae786c1e3a9bab0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PowerUps
   arrayPowerUps:
   - Gunner
-  - Flying
+  - Multipliyer
   - Destroyer
   - CoinMagnet
   arrTimePowerUps:
@@ -115,9 +115,14 @@ MonoBehaviour:
   - 5
   - 1
   - 5
+  arrLetreiros:
+  - {fileID: 21300000, guid: c64de1b38e365b3449ecb9c007c0f680, type: 3}
+  - {fileID: 21300000, guid: 2b19ed69767cca94fba504202461401b, type: 3}
+  - {fileID: 21300000, guid: 55be28953ba93ba418d23becb7de0a8a, type: 3}
+  - {fileID: 21300000, guid: 126474c7c65f5c04dbf3787de99653ca, type: 3}
   player: {fileID: 0}
   levelManager: {fileID: 0}
-  indexArray: 0
+  letreiroPrefab: {fileID: 3283709720405363792, guid: acf5a41d57ef31045b7aaadb5af79811, type: 3}
 --- !u!61 &5176626626442105514
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -156,7 +161,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.81, y: 2.17}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

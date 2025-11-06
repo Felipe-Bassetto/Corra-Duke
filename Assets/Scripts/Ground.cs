@@ -30,6 +30,7 @@ public class Ground : MonoBehaviour
 
     void OnBecameInvisible()
     {   
+
         if (gameObject.CompareTag("GroupGround")) // Verifica se é um conjunto. Caso seja, desativa o GroupActive para gerar um novo.
         {
             level.SetGroupActive(false);

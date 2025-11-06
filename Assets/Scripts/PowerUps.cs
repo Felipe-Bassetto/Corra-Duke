@@ -2,18 +2,20 @@ using UnityEngine;
 
 public class PowerUps : MonoBehaviour
 {
-    // Definição de arrays
+    [Header("Arrays")]
     public string[] arrayPowerUps;
     public float[] arrTimePowerUps;
+    public Sprite[] arrLetreiros;
 
-    // Definição de objetos
-    System.Random rnd = new System.Random();
+    [Header("Objetos")]
     public Player player;
     public LevelManager levelManager;
+    public GameObject letreiroPrefab;
 
-    // Definição variáveis
-    public int indexArray;
-    
+    [Header("Gerenciamento")]
+    private int indexArray;
+    System.Random rnd = new System.Random();
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,6 +42,8 @@ public class PowerUps : MonoBehaviour
             indexArray = rnd.Next(arrayPowerUps.Length); // Pega o numero referente ao power up
             player.alterStatus(arrayPowerUps[indexArray]); // Altera o status do player para o power up
             levelManager.SetPowerUpTime(arrTimePowerUps[indexArray]); // Define a contagem de tempo no level manager
+            GameObject letreiro = Instantiate(letreiroPrefab, new Vector3(0, 3f, 0), Quaternion.identity);
+            letreiro.GetComponent<SpriteRenderer>().sprite = arrLetreiros[indexArray];
             Destroy(gameObject);
         }
     }
