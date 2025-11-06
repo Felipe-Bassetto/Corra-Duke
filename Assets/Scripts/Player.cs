@@ -79,14 +79,18 @@ public class Player : MonoBehaviour
         switch (playerStatus)
         {
             case "Basic":
+            case "Destroyer":
                 if (correndo) anim.CrossFade("Running Duke", 0.1f);
                 if (pulando) anim.Play("Duke Jumping");
-                
                 break;
             case "Gunner":
                 if (correndo) anim.CrossFade("Duke Gunner", 0.1f);
                 if (pulando) anim.Play("Gunner Jump");
+                break;
 
+            case "CoinMagnet":
+                if (correndo) anim.CrossFade("Running Duke", 0.1f);
+                if (pulando) anim.Play("Magnetic Jump");
                 break;
         }
 
