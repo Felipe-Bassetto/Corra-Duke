@@ -39,3 +39,27 @@ MonoBehaviour:
       substitu\xEDram as bombas terrestres por quest\xE3o de diversidade de obst\xE1culos
       (e de investimento)."
     sprite: {fileID: 2695397407002535339, guid: b62936cbce328c74b8c74c6d5795cfd3, type: 3}
+  - nome: Arma
+    categoria: Inventory
+    descricao: "Atire nas bombas e inimigos para destru\xED-los.\nA arma de estima\xE7\xE3o,
+      ela est\xE1 presente desde o dia que se cruzou com o olhar de Duke."
+    sprite: {fileID: -5544336463580313496, guid: 262fa3862af199b49998c0969917e5fd, type: 3}
+  - nome: Bomba de Circuito
+    categoria: Inventory
+    descricao: "Causa circuito e destr\xF3i obst\xE1culos pr\xF3ximos.\nEm sua primeira
+      produ\xE7\xE3o, nenhuma m\xE1quina escapava de seu circuito, nem mesmo Duke.
+      Com v\xE1rias corre\xE7\xF5es, a Bomba-circuito agora \xE9 uma pe\xE7a valiosa
+      que qualquer agente cobi\xE7a."
+    sprite: {fileID: 313477896007496386, guid: d26bcd9187a1da745bf6a5c226bcf75c, type: 3}
+  - nome: Desodorante Multiplicador
+    categoria: Inventory
+    descricao: "Dobra a quantidade de pontos e moedas coletadas.\nUm antitranspirante
+      que tira o mau cheiro e duplica seus status?! Caramba\u2026"
+    sprite: {fileID: 8378282653388505158, guid: c470b11ac8fa59d4185bfac35609ec52, type: 3}
+  - nome: "Pulseira Magn\xE9tica"
+    categoria: Inventory
+    descricao: "Atrai e coleta moedas pr\xF3ximas.\nA riqueza nunca foi de interesse
+      do Duke, mesmo com a Snynth tentando convenc\xEA-lo. Ele come\xE7ou a ver um
+      valor maior do dinheiro ap\xF3s compreender Devina, e hoje tem uma raz\xE3o
+      para usar a pulseira."
+    sprite: {fileID: 9158323321849259581, guid: d1cbb67d37252004ca31b8630530c1ed, type: 3}

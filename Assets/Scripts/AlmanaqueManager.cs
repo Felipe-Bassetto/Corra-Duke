@@ -37,7 +37,6 @@ public class AlmanaqueManager : MonoBehaviour
         }
 
         // estado inicial
-        LimparLosangos();
         nomeItemText.text = "";
         mensagemInicialText.text = "Selecione uma categoria";
     }
@@ -47,38 +46,33 @@ public class AlmanaqueManager : MonoBehaviour
         nomeItemText.text = "";
         mensagemInicialText.text = "";
 
-        if (almanaqueData == null)
-        {
-            Debug.LogError("❌ AlmanaqueData não está atribuído no Inspector!");
-            return;
-        }
-
         // busca os itens da categoria selecionada
         itensCategoriaAtual = almanaqueData.ObterItensPorCategoria(categoria);
-        Debug.Log($"Itens encontrados na categoria {categoria}: {itensCategoriaAtual.Count}");
+        mensagemInicialText.text = "Selecione um item";
+
 
         for (int i = 0; i < losangos.Length; i++)
         {
             Image img = losangos[i];
-
+            
             if (i < itensCategoriaAtual.Count && itensCategoriaAtual[i].sprite != null)
-            {
-                img.sprite = itensCategoriaAtual[i].sprite;
-                img.color = Color.white;
+              {
+                 img.gameObject.SetActive(true);
+                 img.sprite = itensCategoriaAtual[i].sprite;
+                 img.color = Color.white;
 
-                // ajusta a imagem dentro do losango
-                img.preserveAspect = true;
-                img.type = Image.Type.Simple;
+                 // ajusta a imagem dentro do losango
+                 img.preserveAspect = true;
+                 img.type = Image.Type.Simple;
 
-                RectTransform rect = img.GetComponent<RectTransform>();
-                rect.localScale = new Vector3(0.8f, 0.8f, 1f);
-            }
+                 RectTransform rect = img.GetComponent<RectTransform>();
+                  rect.localScale = new Vector3(0.8f, 0.8f, 1f);
+              }
             else
-            {
-                img.sprite = null;
-                img.color = new Color(1, 1, 1, 0.25f);
-                img.GetComponent<RectTransform>().localScale = Vector3.one;
-            }
+              {
+                img.gameObject.SetActive(false); // esconde  o losango sem item
+              }
+
         }
     }
 
