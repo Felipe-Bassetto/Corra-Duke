@@ -3182,7 +3182,7 @@ MonoBehaviour:
   jumpTimeCounter: 0
   jumpUp: 1
   groundCheck: {fileID: 1974430852}
-  groundCheckDistance: 0.1
+  groundCheckDistance: 0.15
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -3973,6 +3973,22 @@ PrefabInstance:
     - target: {fileID: 3367540434247220356, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
       propertyPath: m_Name
       value: PowerUps
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: arrayPowerUps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: 'arrayPowerUps.Array.data[1]'
+      value: Destroyer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: 'arrayPowerUps.Array.data[2]'
+      value: CoinMagnet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: 'arrayPowerUps.Array.data[3]'
+      value: Gunner
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

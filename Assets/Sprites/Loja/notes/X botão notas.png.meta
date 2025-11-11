@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1b8025b6ba79aa543a8744282d459c68
+guid: 35f5d1b1f38ab3c49b39194409ad1399
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -855298285791758126
-    second: 1_0
+      213: 6654450599482510397
+    second: "X bot\xE3o notas_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1_0
+      name: "X bot\xE3o notas_0"
       rect:
         serializedVersion: 2
-        x: 440
+        x: 0
         y: 0
-        width: 497
-        height: 518
+        width: 58
+        height: 60
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d8b16a9dbe5124f0800000000000000
-      internalID: -855298285791758126
+      spriteID: d3c4a8d309b595c50800000000000000
+      internalID: 6654450599482510397
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 678baf46950705c42a6f9ee9dc124f7b
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      1_0: -855298285791758126
+      "X bot\xE3o notas_0": 6654450599482510397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

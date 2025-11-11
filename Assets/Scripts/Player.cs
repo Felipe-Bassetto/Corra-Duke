@@ -80,7 +80,7 @@ public class Player : MonoBehaviour
         {
             case "Basic":
             case "Destroyer":
-                if (correndo) anim.CrossFade("Running Duke", 0.1f);
+                if (correndo) anim.CrossFade("Duke Running", 0.1f);
                 if (pulando) anim.Play("Duke Jumping");
                 break;
             case "Gunner":
