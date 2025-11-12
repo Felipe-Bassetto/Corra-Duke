@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6a0775ebd9516f64786fc08aefe640e6
+guid: 3b1bad25c7b13824a9170e9ef8e114b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4825226636260092222
-    second: dispositive (1)_0
+      213: -8442288123708377377
+    second: almanaque arte fundo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dispositive (1)_0
+      name: almanaque arte fundo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1660
-        height: 831
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e39290f7f06a6f240800000000000000
-      internalID: 4825226636260092222
+      spriteID: fd6fcde3ea7f6da80800000000000000
+      internalID: -8442288123708377377
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      dispositive (1)_0: 4825226636260092222
+      almanaque arte fundo_0: -8442288123708377377
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
