@@ -3126,7 +3126,7 @@ Transform:
   m_GameObject: {fileID: 1714215852}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.417, y: -2.04, z: 0}
+  m_LocalPosition: {x: -7.1, y: -2.29, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3187,8 +3187,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   isGrounded: 0
+  currentState: 0
   maxHealth: 1
   playerStatus: Basic
+  dead: 0
   listPlayerVunerable:
   - Bomb
   - Laser
@@ -3932,11 +3934,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.187327
+      value: -1.81
       objectReference: {fileID: 0}
     - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.9959309
+      value: -2.67
       objectReference: {fileID: 0}
     - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
       propertyPath: m_LocalPosition.z

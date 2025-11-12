@@ -32,7 +32,11 @@ public class PowerUps : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.left * levelManager.velocidade * Time.deltaTime);
+        if(!player.dead)
+        {
+            transform.Translate(Vector2.left * levelManager.velocidade * Time.deltaTime);
+        }
+        
     }
 
     void OnTriggerEnter2D (Collider2D obj)
