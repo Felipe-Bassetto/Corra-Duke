@@ -29,9 +29,9 @@ MonoBehaviour:
   - nome: Plataformas
     categoria: Foes
     descricao: "Usado para evitar quedas.\nCom a quantidade de buracos deixados pela
-      destrui\xE7\xE3o, os gansos necessitavam de uma forma de se locomover facilmente.
-      A ideia foi rapidamente substitu\xEDda pelos Jetpacks ap\xF3s se tocarem que
-      qualquer um pode usar as plataformas."
+      destrui\xE7\xE3o, os gansos necessitavam de uma forma de se locomover. A ideia
+      foi rapidamente substitu\xEDda pelos Jetpacks ap\xF3s se tocarem que qualquer
+      um pode usar as plataformas."
     sprite: {fileID: 2695397407002535339, guid: b62936cbce328c74b8c74c6d5795cfd3, type: 3}
   - nome: Espinhos
     categoria: Foes

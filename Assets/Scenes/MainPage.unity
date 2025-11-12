@@ -412,7 +412,7 @@ GameObject:
   - component: {fileID: 47944980}
   - component: {fileID: 47944979}
   m_Layer: 5
-  m_Name: Losango2
+  m_Name: Quadrado2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -434,7 +434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 339, y: 76}
+  m_AnchoredPosition: {x: 349.21997, y: 64.990005}
   m_SizeDelta: {x: 91.22, y: 86.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &47944979
@@ -501,7 +501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 189062733712871961, guid: aa6818fb5c8fd2d4ebbc12669f1f98d8, type: 3}
+  m_Sprite: {fileID: 4620750607832915309, guid: afd80e8b36ccb194b945631510d4f775, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3261,7 +3261,7 @@ GameObject:
   - component: {fileID: 479376645}
   - component: {fileID: 479376644}
   m_Layer: 5
-  m_Name: Losango4
+  m_Name: Quadrado4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3283,7 +3283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 340, y: -20}
+  m_AnchoredPosition: {x: 349.21997, y: -32.284992}
   m_SizeDelta: {x: 91.22, y: 86.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &479376644
@@ -3350,7 +3350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 189062733712871961, guid: aa6818fb5c8fd2d4ebbc12669f1f98d8, type: 3}
+  m_Sprite: {fileID: 4620750607832915309, guid: afd80e8b36ccb194b945631510d4f775, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3556,7 +3556,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -316.7, y: 100.9}
+  m_AnchoredPosition: {x: -319, y: 100.9}
   m_SizeDelta: {x: 142.67, y: 55.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &518267568
@@ -3748,7 +3748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -316.7, y: -47.3}
+  m_AnchoredPosition: {x: -319, y: -47.3}
   m_SizeDelta: {x: 142.67, y: 55.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &548041651
@@ -4976,8 +4976,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 86.928, y: 83}
-  m_SizeDelta: {x: 239.87, y: 50}
+  m_AnchoredPosition: {x: 65.09, y: 90.452}
+  m_SizeDelta: {x: 230.18, y: 35.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &689091316
 MonoBehaviour:
@@ -5026,8 +5026,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5302,7 +5302,7 @@ GameObject:
   - component: {fileID: 697956648}
   - component: {fileID: 697956647}
   m_Layer: 5
-  m_Name: Losango1
+  m_Name: Quadrado1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5324,7 +5324,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 288, y: 125}
+  m_AnchoredPosition: {x: 252.48, y: 85.885}
   m_SizeDelta: {x: 91.22, y: 86.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697956647
@@ -5391,7 +5391,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 189062733712871961, guid: aa6818fb5c8fd2d4ebbc12669f1f98d8, type: 3}
+  m_Sprite: {fileID: 4620750607832915309, guid: afd80e8b36ccb194b945631510d4f775, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6187,7 +6187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AlmanaqueManager
   nomeItemText: {fileID: 689091316}
   mensagemInicialText: {fileID: 407561531560462991}
-  losangos:
+  quadrados:
   - {fileID: 697956648}
   - {fileID: 47944980}
   - {fileID: 1916946482}
@@ -7694,7 +7694,7 @@ GameObject:
   - component: {fileID: 1027786109}
   - component: {fileID: 1027786108}
   m_Layer: 5
-  m_Name: Losango5
+  m_Name: Quadrado5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7716,7 +7716,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 289, y: -69}
+  m_AnchoredPosition: {x: 252.87001, y: -99}
   m_SizeDelta: {x: 91.22, y: 86.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1027786108
@@ -7783,7 +7783,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 189062733712871961, guid: aa6818fb5c8fd2d4ebbc12669f1f98d8, type: 3}
+  m_Sprite: {fileID: 4620750607832915309, guid: afd80e8b36ccb194b945631510d4f775, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8371,7 +8371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -316.7, y: 27.2}
+  m_AnchoredPosition: {x: -319, y: 27.2}
   m_SizeDelta: {x: 142.67, y: 55.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1086936253
@@ -12458,7 +12458,7 @@ GameObject:
   - component: {fileID: 1916946482}
   - component: {fileID: 1916946481}
   m_Layer: 5
-  m_Name: Losango3
+  m_Name: Quadrado3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12480,7 +12480,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 288, y: 27}
+  m_AnchoredPosition: {x: 252.86998, y: -6.9900017}
   m_SizeDelta: {x: 91.22, y: 86.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916946481
@@ -12547,7 +12547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 189062733712871961, guid: aa6818fb5c8fd2d4ebbc12669f1f98d8, type: 3}
+  m_Sprite: {fileID: 4620750607832915309, guid: afd80e8b36ccb194b945631510d4f775, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14153,8 +14153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 86.93, y: 30.195}
-  m_SizeDelta: {x: 239.87, y: 50}
+  m_AnchoredPosition: {x: 65.088, y: 27.597}
+  m_SizeDelta: {x: 230.17, y: 44.805}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &827211472457440468
 MonoBehaviour:
@@ -14381,7 +14381,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 428805970049611793, guid: 0ebb236e179064b4bb0e1b3af0f39466, type: 3}
+  m_Sprite: {fileID: 4825226636260092222, guid: 6a0775ebd9516f64786fc08aefe640e6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14426,7 +14426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &6013240932561899377
 MonoBehaviour:
   m_ObjectHideFlags: 0
