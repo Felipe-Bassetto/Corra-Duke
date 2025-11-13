@@ -237,7 +237,7 @@ public class Player : MonoBehaviour
     IEnumerator morteBomba()
     {
         anim.Play("Morte Bomba");
-        yield return new WaitForSeconds(1.6f);
+        yield return new WaitForSeconds(0.5f);
         Die();
     }
 
