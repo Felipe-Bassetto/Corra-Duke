@@ -112,111 +112,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: choque 1_0
+      name: choque 1_8
       rect:
         serializedVersion: 2
-        x: 9
-        y: 219
-        width: 2402
-        height: 2218
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1042
+        y: 282
+        width: 1371
+        height: 1737
+      alignment: 9
+      pivot: {x: 0.57115513, y: 0.5182148}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1abb783b7d0755750800000000000000
-      internalID: 6293060126052432801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: choque 1_1
-      rect:
-        serializedVersion: 2
-        x: 1497
-        y: 2385
-        width: 761
-        height: 146
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 59b3cc8a1245b6640800000000000000
-      internalID: 5074241908705606549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: choque 1_2
-      rect:
-        serializedVersion: 2
-        x: 2805
-        y: 1977
-        width: 638
-        height: 132
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5fafde43a117fece0800000000000000
-      internalID: -1373755003953612043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: choque 1_3
-      rect:
-        serializedVersion: 2
-        x: 934
-        y: 1513
-        width: 15
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 13c891d3987e83330800000000000000
-      internalID: 3690954471251741745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: choque 1_4
-      rect:
-        serializedVersion: 2
-        x: 3053
-        y: 209
-        width: 442
-        height: 856
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99c596838f17c69c0800000000000000
-      internalID: -3932643063689028455
+      spriteID: ddd4b11019c089e4ca8cad623d7da28c
+      internalID: 841818247
       vertices: []
       indices: 
       edges: []
@@ -225,7 +137,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8dc389ae048e052479da621261734a7c
     internalID: 0
     vertices: []
     indices: 
@@ -233,13 +145,29 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":3510.0,"y":2550.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       choque 1_0: 6293060126052432801
       choque 1_1: 5074241908705606549
+      choque 1_10: -1790360749
+      choque 1_11: 1889745389
+      choque 1_12: 1301652500
+      choque 1_13: 581815095
+      choque 1_14: 833089355
+      choque 1_15: -615070978
+      choque 1_16: 1850046142
+      choque 1_17: 155658067
+      choque 1_18: -391788212
       choque 1_2: -1373755003953612043
       choque 1_3: 3690954471251741745
       choque 1_4: -3932643063689028455
+      choque 1_5: 541434960
+      choque 1_6: 536474242
+      choque 1_7: -116810591
+      choque 1_8: 841818247
+      choque 1_9: -1487100080
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

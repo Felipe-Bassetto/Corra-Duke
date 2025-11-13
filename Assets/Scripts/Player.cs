@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     public LevelManager level;
     public GameDb db;
     public GameObject pauseMenu;
+    public GameOverManager gameOver;
     
     [Header("Pulo")]
     public float distance = 2f;
@@ -211,7 +212,7 @@ public class Player : MonoBehaviour
     private void Die()
     {       
        gameOverPanel.SetActive(true);
-       GameObject.Find("GameOverPanel").GetComponent<GameOverManager>().ShowGameOver();
+       gameOver.ShowGameOver();
 
        finalScore = level.scoreMs;
 
@@ -236,7 +237,16 @@ public class Player : MonoBehaviour
 
     IEnumerator morteBomba()
     {
+        rb.simulated = false;
         anim.Play("Morte Bomba");
+        yield return new WaitForSeconds(0.5f);
+        Die();
+    }
+
+    IEnumerator morteLaser()
+    {
+        rb.simulated = false;
+        anim.Play("Morte Laser");
         yield return new WaitForSeconds(0.5f);
         Die();
     }
@@ -256,6 +266,7 @@ public class Player : MonoBehaviour
                     case "Laser":
                         deadReason = "Laser";
                         dead = true;
+                        StartCoroutine(morteLaser());
                         break;
                     case "Bomb":
                         deadReason = "Bomb";
