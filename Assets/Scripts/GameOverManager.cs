@@ -12,6 +12,7 @@ public class GameOverManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI coinHud;
     [SerializeField] private TextMeshProUGUI scoreHud;
     [SerializeField] private TextMeshProUGUI deadHud;
+    [SerializeField] private GameObject HudGame;
     public GameController gameController;
     private string newScene;
     public string deadBy;
@@ -32,30 +33,32 @@ public class GameOverManager : MonoBehaviour
 
         indexArray = rnd.Next(arrPostIt.Length);
         postIt.texture = arrPostIt[indexArray];
+        
     }
 
     public void ShowGameOver()
     {
         Debug.Log("morreu");
         gameOverPanel.SetActive(true);
-        Time.timeScale = 0f; // pausa o jogo
+        //Time.timeScale = 0f; // pausa o jogo
 
         coinHud.text = "x" + player.coinRound;
         scoreHud.text = "" + scoreMs.scoreMs;
         deadHud.text = "" + player.deadReason;
+        HudGame.SetActive(false);
     }
 
     public void Retry()
     {
         newScene = "Empty";
         gameController.activatePanel(newScene);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void GoToMenu()
     {
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         SceneManager.LoadScene("MainPage"); // nome exato da cena do menu
     }
 
@@ -63,7 +66,7 @@ public class GameOverManager : MonoBehaviour
     {
         newScene = "PanelUpgrade";
         gameController.activatePanel(newScene);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         SceneManager.LoadScene("MainPage");
     }
 
@@ -71,7 +74,7 @@ public class GameOverManager : MonoBehaviour
     {
         newScene = "PaneInstrucoes";
         gameController.activatePanel(newScene);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         SceneManager.LoadScene("MainPage");
     }
 
