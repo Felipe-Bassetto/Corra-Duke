@@ -3,17 +3,17 @@ guid: b6a1e5d491c08e44f843b539275c6a1d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 886724726268611430
-    second: Morte espinho_0
+      213: 4018490485163992915
+    second: morte espinho_0
   - first:
-      213: -7837115213117499748
-    second: Morte espinho_1
+      213: 2801813640432270679
+    second: morte espinho_1
   - first:
-      213: -2796739401368199173
-    second: Morte espinho_2
+      213: 3855972686661738055
+    second: morte espinho_2
   - first:
-      213: -5940750539096171450
-    second: Morte espinho_3
+      213: 1279574250061297376
+    second: morte espinho_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,89 +109,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Morte espinho_0
+      name: morte espinho_0
       rect:
         serializedVersion: 2
-        x: 66
-        y: 229
-        width: 3417
-        height: 2278
+        x: 1254
+        y: 553
+        width: 972
+        height: 1365
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66bcbc2c0774e4c00800000000000000
-      internalID: 886724726268611430
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Morte espinho_1
-      rect:
-        serializedVersion: 2
-        x: 1553
-        y: 2397
-        width: 404
-        height: 123
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c96525a8c39fc3390800000000000000
-      internalID: -7837115213117499748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Morte espinho_2
-      rect:
-        serializedVersion: 2
-        x: 262
-        y: 1422
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bff1c1c055cff29d0800000000000000
-      internalID: -2796739401368199173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Morte espinho_3
-      rect:
-        serializedVersion: 2
-        x: 3009
-        y: 506
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 64c56f13cd63e8da0800000000000000
-      internalID: -5940750539096171450
+      spriteID: 357ac7d2ecb84c730800000000000000
+      internalID: 4018490485163992915
       vertices: []
       indices: 
       edges: []
@@ -200,7 +134,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fb3aa0b4021a1b844b0c036c63036871
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +144,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Morte espinho_0: 886724726268611430
-      Morte espinho_1: -7837115213117499748
-      Morte espinho_2: -2796739401368199173
-      Morte espinho_3: -5940750539096171450
+      morte espinho_0: 4018490485163992915
+      morte espinho_1: 2801813640432270679
+      morte espinho_2: 3855972686661738055
+      morte espinho_3: 1279574250061297376
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
