@@ -18,6 +18,7 @@ TagManager:
   - Button
   - Infos
   - OpenedInfos
+  - Spike
   layers:
   - Default
   - TransparentFX
