@@ -26,7 +26,6 @@ public class LevelManager : MonoBehaviour
     // Defini��o de objetos
     System.Random rnd = new System.Random();
     public Ground soloGround;
-    public Ground ground;
     public GameObject powerUpPrefeb;
     public Player player;
     public int multPU; // Multiplicador do power up
@@ -138,13 +137,13 @@ public class LevelManager : MonoBehaviour
                 break;
 
             case "Conjunto9":
-                Instantiate(spawner, new Vector3(44, -4.5f, 0), Quaternion.identity);
+                Instantiate(spawner, new Vector3(44, -4f, 0), Quaternion.identity);
                 timeSpawn = 15f;
                 break;
         }
 
-        Instantiate(arrGroupsObs[indexArr], new Vector3(22f,-4.5f,0), Quaternion.identity); // Gera o obstaculo
-        Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity); // Gera o ch�o vazio ap�s o conjunto
+        Instantiate(arrGroupsObs[indexArr], new Vector3(22f,-4f,0), Quaternion.identity); // Gera o obstaculo
+        Instantiate(soloGround, new Vector3(44,-4f,0), Quaternion.identity); // Gera o ch�o vazio ap�s o conjunto
 
         if(canSpawnPowerUp)
         {
