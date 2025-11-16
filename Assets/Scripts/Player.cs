@@ -236,6 +236,7 @@ public class Player : MonoBehaviour
     void OnBecameInvisible()
     {
         deadReason = "Downfall";
+        dead = true;
         Die();
     }
 

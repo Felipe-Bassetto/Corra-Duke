@@ -1,8 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 
 public class GameOverManager : MonoBehaviour
 {
@@ -16,6 +15,7 @@ public class GameOverManager : MonoBehaviour
     public GameController gameController;
     private string newScene;
     public string deadBy;
+    public Image deathImage;
 
     System.Random rnd = new System.Random();
 
@@ -24,6 +24,8 @@ public class GameOverManager : MonoBehaviour
 
     [SerializeField] private RawImage postIt;
     public Texture[] arrPostIt;
+
+    public Sprite[] arrMorteFinal;
 
     void Start()
     {
@@ -45,6 +47,26 @@ public class GameOverManager : MonoBehaviour
         coinHud.text = "x" + player.coinRound;
         scoreHud.text = "" + scoreMs.scoreMs;
         deadHud.text = "" + player.deadReason;
+
+        switch (player.deadReason)
+            {
+            case "Bomb":
+                deathImage.sprite = arrMorteFinal[0];
+                break;
+            case "Laser":
+                deathImage.sprite = arrMorteFinal[1];
+                break;
+            case "Enemy Bullet":
+                deathImage.sprite = arrMorteFinal[2];
+                break;
+            case "Spike":
+                deathImage.sprite = arrMorteFinal[3];
+                break;
+            case "Downfall":
+                deathImage.sprite = arrMorteFinal[3];
+                break;
+        }
+
         HudGame.SetActive(false);
     }
 

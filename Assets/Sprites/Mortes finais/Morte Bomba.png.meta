@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d136f039c02e8764fac53cf42647a06d
+guid: d2e0009eb9679f34f80d3f6f1f26170c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4834408690942527379
-    second: frango_0
+      213: -2493409414582083925
+    second: foto morte0003_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frango_0
+      name: foto morte0003_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 26
-        width: 987
-        height: 662
+        x: 298
+        y: 118
+        width: 802
+        height: 799
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d683f4dc8eab8ecb0800000000000000
-      internalID: -4834408690942527379
+      spriteID: bae583c1951a56dd0800000000000000
+      internalID: -2493409414582083925
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8ca4654bad1e03c4089296417b5f7dd5
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      frango_0: -4834408690942527379
+      foto morte0003_0: -2493409414582083925
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
