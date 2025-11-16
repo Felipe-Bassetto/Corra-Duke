@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0b090e29b58d44645a73959014b5676f
+guid: 7e4932317e40eec449355a86ac2b28b9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7476172728798272794
-    second: almanaque fundo_0
+      213: -6324294061457568969
+    second: category button0001 (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: almanaque fundo_0
+      name: category button0001 (1)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 281
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e2248c738c4f3890800000000000000
-      internalID: -7476172728798272794
+      spriteID: 73b85b30f089b38a0800000000000000
+      internalID: -6324294061457568969
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      almanaque fundo_0: -7476172728798272794
+      category button0001 (1)_0: -6324294061457568969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
