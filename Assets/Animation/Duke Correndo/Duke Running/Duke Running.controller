@@ -7,8 +7,8 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Magnetic Jump
-  m_Speed: 2
+  m_Name: Magnetic Jumping
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -59,7 +59,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Duke Gunner
+  m_Name: Gunner Running
   m_Speed: 0.3
   m_CycleOffset: 0
   m_Transitions: []
@@ -133,7 +133,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Magnetic Runner
+  m_Name: Magnetic Running
   m_Speed: 0.3
   m_CycleOffset: 0
   m_Transitions: []
@@ -215,34 +215,34 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -3414925012653250941}
-    m_Position: {x: 270, y: 40, z: 0}
+    m_Position: {x: 280, y: -40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6524970415428104463}
     m_Position: {x: 470, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8228144679977240129}
-    m_Position: {x: 360, y: 260, z: 0}
+    m_Position: {x: 710, y: -70, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1810177073589281155}
-    m_Position: {x: 80, y: 290, z: 0}
+    m_Position: {x: 280, y: 60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8074191682765402567}
-    m_Position: {x: 90, y: 190, z: 0}
+    m_Position: {x: 470, y: 220, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2173690826229359081}
-    m_Position: {x: 420, y: 460, z: 0}
+    m_Position: {x: 280, y: 10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4050270698293224314}
-    m_Position: {x: 380, y: 350, z: 0}
+    m_Position: {x: 470, y: 170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1240929592305440700}
-    m_Position: {x: 410, y: 410, z: 0}
+    m_Position: {x: 400, y: -160, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6450170044474349814}
-    m_Position: {x: 20, y: -140, z: 0}
+    m_Position: {x: 400, y: -260, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7620428991020810610}
-    m_Position: {x: 40, y: -80, z: 0}
+    m_Position: {x: 400, y: -210, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -286,7 +286,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Gunner Jump
+  m_Name: Gunner Jumping
   m_Speed: 2
   m_CycleOffset: 0
   m_Transitions: []

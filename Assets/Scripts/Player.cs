@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
     public string playerStatus = "Basic";
     public bool dead = false;
     public List<string> listPlayerVunerable = new List<string>();
+    public string statusEspinho = "nothing";
 
     [Header("PowerUps")]
     private bool powerUpdActive = false;
@@ -77,7 +78,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if(!dead)
+        if (statusEspinho == "subindo") transform.Translate(Vector3.up * Time.deltaTime * 8f);
+        else if (statusEspinho == "descendo") transform.Translate(Vector3.down * Time.deltaTime * 10f);
+
+        if (!dead)
         {
             isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayer);
 
@@ -194,7 +198,7 @@ public class Player : MonoBehaviour
             case "Destroyer":
                 return $"Duke {baseAnim}";
             case "Gunner":
-                return baseAnim == "Running" ? "Duke Gunner" : "Gunner Jump";
+                return $"Gunner {baseAnim}";
             case "CoinMagnet":
                 return $"Magnetic {baseAnim}";
             default:
@@ -232,6 +236,7 @@ public class Player : MonoBehaviour
     void OnBecameInvisible()
     {
         deadReason = "Downfall";
+        dead = true;
         Die();
     }
 
@@ -248,6 +253,17 @@ public class Player : MonoBehaviour
         rb.simulated = false;
         anim.Play("Morte Laser");
         yield return new WaitForSeconds(0.5f);
+        Die();
+    }
+
+    IEnumerator morteEspinho()
+    {
+        rb.simulated = false;
+        anim.Play("Morte Espinho");
+        statusEspinho = "subindo";
+        yield return new WaitForSeconds(0.4f);
+        statusEspinho = "descendo";
+        yield return new WaitForSeconds(3f);
         Die();
     }
 
@@ -272,6 +288,11 @@ public class Player : MonoBehaviour
                         deadReason = "Bomb";
                         dead = true;
                         StartCoroutine(morteBomba());
+                        break;
+                    case "Spike":
+                        deadReason = "Spike";
+                        dead = true;
+                        StartCoroutine(morteEspinho());
                         break;
                 }
             }

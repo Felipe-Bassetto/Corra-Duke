@@ -22,8 +22,8 @@ public class Objetos : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
-
+    {
+        if (gameObject.tag == "Spike" && gameObject.transform.position.x < -3.5f) anim.Play("Spike");
     }
 
     //Configuração de colisão
