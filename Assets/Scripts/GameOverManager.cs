@@ -68,6 +68,7 @@ public class GameOverManager : MonoBehaviour
         }
 
         HudGame.SetActive(false);
+        Destroy(player);
     }
 
     public void Retry()

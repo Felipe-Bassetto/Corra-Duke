@@ -229,8 +229,7 @@ public class Player : MonoBehaviour
        if(record < finalScore) record = finalScore;  
        coins += coinRound;
 
-       db.SalvarProgresso(config.Id, record, coins);
-       Destroy(gameObject); 
+       db.SalvarProgresso(config.Id, record, coins); 
     }
 
     void OnBecameInvisible()
