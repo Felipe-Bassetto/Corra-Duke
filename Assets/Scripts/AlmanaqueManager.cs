@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class AlmanaqueManager : MonoBehaviour
 {
     [Header("Referências de UI")]
-    [SerializeField] private TextMeshProUGUI nomeItemText;           
-    [SerializeField] private TextMeshProUGUI mensagemInicialText;    
-    [SerializeField] private Image[] losangos;                       
+    [SerializeField] private TextMeshProUGUI nomeItemText;
+    [SerializeField] private TextMeshProUGUI mensagemInicialText;
+    [SerializeField] private Image[] quadrados;
 
     [Header("Categorias")]
     [SerializeField] private Button categoriaFellas;
@@ -19,24 +19,24 @@ public class AlmanaqueManager : MonoBehaviour
     [SerializeField] private AlmanaqueData almanaqueData;
 
     private List<AlmanaqueItem> itensCategoriaAtual = new List<AlmanaqueItem>();
+    private List<Image> imagensItens = new List<Image>();
 
     private void Start()
-    {
-        // ligações com as categorias corretas
+    { 
         categoriaFellas.onClick.AddListener(() => SelecionarCategoria("Fellas"));
         categoriaFoes.onClick.AddListener(() => SelecionarCategoria("Foes"));
         categoriaInventory.onClick.AddListener(() => SelecionarCategoria("Inventory"));
 
-        // define o comportamento dos losangos
-        for (int i = 0; i < losangos.Length; i++)
+        // comportamento dos quadrados
+        for (int i = 0; i < quadrados.Length; i++)
         {
             int index = i;
-            Button btn = losangos[i].GetComponent<Button>();
+            Button btn = quadrados[i].GetComponent<Button>();
             if (btn != null)
                 btn.onClick.AddListener(() => MostrarDescricaoItem(index));
         }
 
-        // estado inicial
+        // inicial
         nomeItemText.text = "";
         mensagemInicialText.text = "Selecione uma categoria";
     }
@@ -44,35 +44,51 @@ public class AlmanaqueManager : MonoBehaviour
     private void SelecionarCategoria(string categoria)
     {
         nomeItemText.text = "";
-        mensagemInicialText.text = "";
+        mensagemInicialText.text = "Selecione um item";
+
+        // remove as imagens antigas
+        foreach (var img in imagensItens)
+        {
+            if (img != null)
+                Destroy(img.gameObject);
+        }
+        imagensItens.Clear();
 
         // busca os itens da categoria selecionada
         itensCategoriaAtual = almanaqueData.ObterItensPorCategoria(categoria);
-        mensagemInicialText.text = "Selecione um item";
 
-
-        for (int i = 0; i < losangos.Length; i++)
+        for (int i = 0; i < quadrados.Length; i++)
         {
-            Image img = losangos[i];
-            
+            Image quadrado = quadrados[i];
+
             if (i < itensCategoriaAtual.Count && itensCategoriaAtual[i].sprite != null)
-              {
-                 img.gameObject.SetActive(true);
-                 img.sprite = itensCategoriaAtual[i].sprite;
-                 img.color = Color.white;
+            {
+                quadrado.gameObject.SetActive(true);
 
-                 // ajusta a imagem dentro do losango
-                 img.preserveAspect = true;
-                 img.type = Image.Type.Simple;
+                // cria uma nova imagem do item como filho do quadrado
+                GameObject itemGO = new GameObject("ItemImage", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
+                itemGO.transform.SetParent(quadrado.transform, false);
 
-                 RectTransform rect = img.GetComponent<RectTransform>();
-                  rect.localScale = new Vector3(0.8f, 0.8f, 1f);
-              }
+                Image itemImg = itemGO.GetComponent<Image>();
+                itemImg.sprite = itensCategoriaAtual[i].sprite;
+                itemImg.preserveAspect = true;
+                itemImg.type = Image.Type.Simple;
+                itemImg.color = new Color(1, 1, 1, 1); // transparente no fundo, mas visível no sprite
+
+                // ajusta posição e tamanho
+                RectTransform rect = itemGO.GetComponent<RectTransform>();
+                rect.anchorMin = new Vector2(0.5f, 0.5f);
+                rect.anchorMax = new Vector2(0.5f, 0.5f);
+                rect.pivot = new Vector2(0.5f, 0.5f);
+                rect.anchoredPosition = Vector2.zero;
+                rect.sizeDelta = quadrado.GetComponent<RectTransform>().sizeDelta * 0.7f; // menor que o quadrado
+
+                imagensItens.Add(itemImg);
+            }
             else
-              {
-                img.gameObject.SetActive(false); // esconde  o losango sem item
-              }
-
+            {
+                quadrado.gameObject.SetActive(false); // esconde quadrado vazio
+            }
         }
     }
 
@@ -86,14 +102,13 @@ public class AlmanaqueManager : MonoBehaviour
         mensagemInicialText.text = item.descricao;
     }
 
-    private void LimparLosangos()
+    private void LimparQuadrados()
     {
-        foreach (var img in losangos)
+        foreach (var img in quadrados)
         {
             img.sprite = null;
-            img.color = new Color(1, 1, 1, 0.25f);
+            img.color = Color.white; // mantém a cor original
             img.GetComponent<RectTransform>().localScale = Vector3.one;
         }
     }
 }
-
