@@ -198,7 +198,7 @@ public class Player : MonoBehaviour
             case "Destroyer":
                 return $"Duke {baseAnim}";
             case "Gunner":
-                return baseAnim == "Running" ? "Duke Gunner" : "Gunner Jump";
+                return $"Gunner {baseAnim}";
             case "CoinMagnet":
                 return $"Magnetic {baseAnim}";
             default:

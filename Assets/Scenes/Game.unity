@@ -360,6 +360,10 @@ PrefabInstance:
       propertyPath: arrayPowerUps.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: 'arrayPowerUps.Array.data[0]'
+      value: Gunner
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
