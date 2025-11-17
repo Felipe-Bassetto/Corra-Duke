@@ -5003,8 +5003,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3addacc645f52d440b7ad0e3ed68520e, type: 2}
+  m_sharedMaterial: {fileID: 966018488379230746, guid: 3addacc645f52d440b7ad0e3ed68520e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5028,8 +5028,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6275,6 +6275,18 @@ MonoBehaviour:
   categoriaFoes: {fileID: 1086936253}
   categoriaInventory: {fileID: 548041651}
   almanaqueData: {fileID: 11400000, guid: 42201c8305733ef4b8b85a4cddb9bb8b, type: 2}
+  frasesAleatorias:
+  - "Obrigado por confiar na corpora\xE7\xE3o Snynth, mais cedo ou tarde iremos derrotar
+    os gansos de uma vez por todas!"
+  - "J\xE1 experimentou a nova cafeteira na sala do conselho?"
+  - "Como vai a sua amiga? Ouvi falar da nova inven\xE7\xE3o dela mais cedo."
+  - "Sinto muito sobre o que houve com seu amigo\u2026espero que voc\xEAs possam
+    se ver novamente um dia."
+  - "Ent\xE3o\u2026Vem sempre aqui?"
+  - "Como foi sua \xFAltima excurs\xE3o?"
+  - "Como \xE9 ser uma das \xFAnicas aves que n\xE3o voam?"
+  - "Acho que nunca o ouvi interagindo com os outros agentes. Voc\xEA \xE9 tipo um
+    lobo solit\xE1rio?"
 --- !u!1 &846562676
 GameObject:
   m_ObjectHideFlags: 0
@@ -14430,8 +14442,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Seleciona uma categoria
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3addacc645f52d440b7ad0e3ed68520e, type: 2}
+  m_sharedMaterial: {fileID: 966018488379230746, guid: 3addacc645f52d440b7ad0e3ed68520e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14455,8 +14467,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

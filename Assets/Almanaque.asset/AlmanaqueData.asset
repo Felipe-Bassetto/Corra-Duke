@@ -38,7 +38,7 @@ MonoBehaviour:
     descricao: "Pontas afiadas que causam perfuramento.\nNada de especial, os espinhos
       substitu\xEDram as bombas terrestres por quest\xE3o de diversidade de obst\xE1culos
       (e de investimento)."
-    sprite: {fileID: 2695397407002535339, guid: b62936cbce328c74b8c74c6d5795cfd3, type: 3}
+    sprite: {fileID: 8352057719663572248, guid: 357fb40d024d3be46a12f0c2351a8ed8, type: 3}
   - nome: Arma
     categoria: Inventory
     descricao: "Atire nas bombas e inimigos para destru\xED-los.\nA arma de estima\xE7\xE3o,
