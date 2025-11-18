@@ -50,19 +50,19 @@ public class GameOverManager : MonoBehaviour
 
         switch (player.deadReason)
             {
-            case "Bomb":
+            case "bomb":
                 deathImage.sprite = arrMorteFinal[0];
                 break;
-            case "Laser":
+            case "laser":
                 deathImage.sprite = arrMorteFinal[1];
                 break;
-            case "Enemy Bullet":
+            case "enemy bullet":
                 deathImage.sprite = arrMorteFinal[2];
                 break;
-            case "Spike":
+            case "spike":
                 deathImage.sprite = arrMorteFinal[3];
                 break;
-            case "Downfall":
+            case "fall":
                 deathImage.sprite = arrMorteFinal[3];
                 break;
         }

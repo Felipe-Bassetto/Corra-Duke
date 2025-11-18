@@ -28,7 +28,7 @@ public class UiManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        coinText.text = "Moedas: " + player.coinRound;
-        scoreText.text = "Pontuação: " + scoreMs.scoreMs;
+        coinText.text = "coins: " + player.coinRound;
+        scoreText.text = "score: " + scoreMs.scoreMs;
     }
 }
