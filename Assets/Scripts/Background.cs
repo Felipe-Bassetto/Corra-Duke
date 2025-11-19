@@ -29,7 +29,8 @@ public class Background : MonoBehaviour
 
             if (positionBackgroundX <= -28f)
             {
-                transform.position = new Vector3(28f, 0, 0);
+                if (gameObject.tag == "Piramide") transform.position = new Vector3(28f, -1.5f, 0);
+                else transform.position = new Vector3(28f, 0, 0);
             }
         }   
         

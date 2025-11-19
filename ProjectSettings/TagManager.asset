@@ -19,6 +19,7 @@ TagManager:
   - Infos
   - OpenedInfos
   - Spike
+  - Piramide
   layers:
   - Default
   - TransparentFX
