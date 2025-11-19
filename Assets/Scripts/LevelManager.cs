@@ -143,7 +143,7 @@ public class LevelManager : MonoBehaviour
         }
 
         Instantiate(arrGroupsObs[indexArr], new Vector3(22f,-4f,0), Quaternion.identity); // Gera o obstaculo
-        Instantiate(soloGround, new Vector3(44,-4f,0), Quaternion.identity); // Gera o ch�o vazio ap�s o conjunto
+        Instantiate(soloGround, new Vector3(44f,-4f,0), Quaternion.identity); // Gera o ch�o vazio ap�s o conjunto
 
         if(canSpawnPowerUp)
         {

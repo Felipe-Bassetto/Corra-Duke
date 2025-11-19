@@ -229,13 +229,12 @@ public class Player : MonoBehaviour
        if(record < finalScore) record = finalScore;  
        coins += coinRound;
 
-       db.SalvarProgresso(config.Id, record, coins);
-       Destroy(gameObject); 
+       db.SalvarProgresso(config.Id, record, coins); 
     }
 
     void OnBecameInvisible()
     {
-        deadReason = "Downfall";
+        deadReason = "fall";
         dead = true;
         Die();
     }
@@ -276,21 +275,21 @@ public class Player : MonoBehaviour
                 switch (obj.tag)
                 {
                     case "EnemyBullet":
-                        deadReason = "Enemy Bullet";
+                        deadReason = "enemy bullet";
                         dead = true;
                         break;
                     case "Laser":
-                        deadReason = "Laser";
+                        deadReason = "laser";
                         dead = true;
                         StartCoroutine(morteLaser());
                         break;
                     case "Bomb":
-                        deadReason = "Bomb";
+                        deadReason = "bomb";
                         dead = true;
                         StartCoroutine(morteBomba());
                         break;
                     case "Spike":
-                        deadReason = "Spike";
+                        deadReason = "spike";
                         dead = true;
                         StartCoroutine(morteEspinho());
                         break;

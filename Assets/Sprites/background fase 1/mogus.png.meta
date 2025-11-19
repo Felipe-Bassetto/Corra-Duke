@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 36eb019e924f56d4d941792396483d2c
+guid: 7eeb06f10955a8f4b85e12b3cb1fb870
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -669314115828907621
-    second: category button0003_0
+      213: -3226998825234367760
+    second: mogus_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: category button0003_0
+      name: mogus_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 281
-        height: 152
+        width: 111
+        height: 119
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b910dda9b5e16b6f0800000000000000
-      internalID: -669314115828907621
+      spriteID: 0fa7d437aa56733d0800000000000000
+      internalID: -3226998825234367760
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      category button0003_0: -669314115828907621
+      mogus_0: -3226998825234367760
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

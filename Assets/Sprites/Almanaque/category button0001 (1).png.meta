@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 1047511bedb87204296c588eca402ca6
+guid: 7e4932317e40eec449355a86ac2b28b9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7706360285038468399
-    second: piramides novas_0
-  - first:
-      213: -6320063988947774673
-    second: piramides novas_1
-  - first:
-      213: -8807323593559972426
-    second: piramides novas_2
+      213: -6324294061457568969
+    second: category button0001 (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: piramides novas_1
-      rect:
-        serializedVersion: 2
-        x: 930
-        y: 0
-        width: 1424
-        height: 1506
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f239705894f9a48a0800000000000000
-      internalID: -6320063988947774673
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: piramides novas_2
+      name: category button0001 (1)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 67
-        width: 841
-        height: 660
+        y: 0
+        width: 281
+        height: 152
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b5e0f7dad916c580800000000000000
-      internalID: -8807323593559972426
+      spriteID: 73b85b30f089b38a0800000000000000
+      internalID: -6324294061457568969
       vertices: []
       indices: 
       edges: []
@@ -153,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ca260ae773240784986d5f5d5c99d302
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -163,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      piramides novas_0: -7706360285038468399
-      piramides novas_1: -6320063988947774673
-      piramides novas_2: -8807323593559972426
+      category button0001 (1)_0: -6324294061457568969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
