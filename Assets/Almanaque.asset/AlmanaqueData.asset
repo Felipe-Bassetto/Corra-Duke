@@ -68,3 +68,10 @@ MonoBehaviour:
       que cruzam seu caminho. Criar \"la\xE7os indesejados\" \xE9 uma fraqueza que
       ele n\xE3o admitir\xE1 facilmente"
     sprite: {fileID: -5821396405706876437, guid: b4ec82e26835a3346bb69efef5b63544, type: 3}
+  - nome: Naves de ganso
+    categoria: Foes
+    descricao: "Desvie no momento certo para evitar virar panqueca.\r\n\rApesar da
+      tecnologia avan\xE7ada, os gansos n\xE3o se preparam t\xE3o bem. Eles at\xE9
+      esqueceram de instalar assentos ejetores nas naves, e \xE9 por isso que sempre
+      est\xE3o de mochila \xE0 jato.\r\n"
+    sprite: {fileID: -6302563758487680414, guid: 61b6859a3ffbd3740abb993ba18f5099, type: 3}
