@@ -10,6 +10,10 @@ public class SobreManager : MonoBehaviour
     [SerializeField] private RawImage notes;
     public Texture[] arrNotes;
 
+    [Header("Notas")]
+    [SerializeField] private RawImage titles;
+    public Texture[] arrTitles;
+
     [Header ("Botões")]
     public GameObject next;
     public GameObject back;
@@ -18,6 +22,7 @@ public class SobreManager : MonoBehaviour
     public void GoNext()
     {
         notes.texture = arrNotes[1];
+        titles.texture = arrTitles[1];
         next.SetActive(false);
         back.SetActive(true);
     }
@@ -25,6 +30,7 @@ public class SobreManager : MonoBehaviour
     public void GoBack()
     {
         notes.texture = arrNotes[0];
+        titles.texture = arrTitles[0];
         next.SetActive(true);
         back.SetActive(false);
     }

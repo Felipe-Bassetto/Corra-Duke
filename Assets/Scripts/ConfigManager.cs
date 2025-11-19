@@ -28,6 +28,19 @@ public class ConfigManager : MonoBehaviour
         SetMusicVolume(volumeMusicaAtual);
         SetSoundVolume(volumeEfeitosAtual);
         
+        if (configs.TelaCheia == 1)
+        {
+            Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+            Screen.fullScreen = true;
+            Screen.SetResolution(1920, 1080, true);
+        }
+        else
+        {
+            Screen.fullScreenMode = FullScreenMode.Windowed;
+            Screen.fullScreen = false;
+            Screen.SetResolution(1280, 720, false);
+        }
+
     }
 
     public void SetMusicVolume(float volume)
@@ -60,7 +73,15 @@ public class ConfigManager : MonoBehaviour
     {
         if (fullScreen.isOn)
         {
+            Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
             Screen.fullScreen = true;
+            Screen.SetResolution(1920, 1080, true);
+        }
+        else
+        {
+            Screen.fullScreenMode = FullScreenMode.Windowed;
+            Screen.fullScreen = false;
+            Screen.SetResolution(1280, 720, false);
         }
 
         float volumeMusica = musicSlider.value;
