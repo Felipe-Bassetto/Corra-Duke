@@ -46,10 +46,9 @@ MonoBehaviour:
     sprite: {fileID: -5544336463580313496, guid: 262fa3862af199b49998c0969917e5fd, type: 3}
   - nome: Bomba de Circuito
     categoria: Inventory
-    descricao: "Causa circuito e destr\xF3i obst\xE1culos pr\xF3ximos.\nEm sua primeira
-      produ\xE7\xE3o, nenhuma m\xE1quina escapava de seu circuito, nem mesmo Duke.
-      Com v\xE1rias corre\xE7\xF5es, a Bomba-circuito agora \xE9 uma pe\xE7a valiosa
-      que qualquer agente cobi\xE7a."
+    descricao: "Uma escolha \xF3bvia, apesar dos gansos j\xE1 pensarem em reformular
+      para que a bomba acionasse ao captar movimento pr\xF3ximo. A ideia nunca foi
+      pra frente"
     sprite: {fileID: 313477896007496386, guid: d26bcd9187a1da745bf6a5c226bcf75c, type: 3}
   - nome: Desodorante Multiplicador
     categoria: Inventory
@@ -63,3 +62,9 @@ MonoBehaviour:
       valor maior do dinheiro ap\xF3s compreender Devina, e hoje tem uma raz\xE3o
       para usar a pulseira."
     sprite: {fileID: 9158323321849259581, guid: d1cbb67d37252004ca31b8630530c1ed, type: 3}
+  - nome: Duke The Duck
+    categoria: Fellas
+    descricao: "O agente mais letal da Snynth, Duke aprendeu a lidar com eventos
+      que cruzam seu caminho. Criar \"la\xE7os indesejados\" \xE9 uma fraqueza que
+      ele n\xE3o admitir\xE1 facilmente"
+    sprite: {fileID: -5821396405706876437, guid: b4ec82e26835a3346bb69efef5b63544, type: 3}
