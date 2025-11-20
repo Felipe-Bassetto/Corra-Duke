@@ -19,59 +19,76 @@ MonoBehaviour:
       j\xE1 pensarem em reformular a bomba para que ela explodisse s\xF3 de uma ave
       passar por perto. Deveria se perguntar como seria se a ideia tivesse ido para
       frente.\n"
-    sprite: {fileID: -504037394304821725, guid: e7d2a0b0a7b6bb64ea6fe1e621803c02, type: 3}
+    spriteIcon: {fileID: -504037394304821725, guid: e7d2a0b0a7b6bb64ea6fe1e621803c02, type: 3}
+    spriteGrande: {fileID: 8311211727376325600, guid: 0a966df83935a5a41ba42e43974b2a5f, type: 3}
   - nome: laser
     categoria: Foes
     descricao: "Fontes de luz que causam eletrocutamento.\nA ideia inicial era usar
       as fontes como decora\xE7\xE3o, mas n\xE3o demorou muito para perceberem o
       potencial que correntes el\xE9tricas expostas continham."
-    sprite: {fileID: 7564344017161124760, guid: 0769e0ee9f1912a46af660a6ac565cfe, type: 3}
+    spriteIcon: {fileID: 7564344017161124760, guid: 0769e0ee9f1912a46af660a6ac565cfe, type: 3}
+    spriteGrande: {fileID: 6646040609148739139, guid: ec5f0a9df334f714daccf04dff1b6254, type: 3}
   - nome: plataformas
     categoria: Foes
     descricao: "Usado para evitar quedas.\nCom a quantidade de buracos deixados pela
       destrui\xE7\xE3o, os gansos necessitavam de uma forma de se locomover. A ideia
       foi rapidamente substitu\xEDda pelos Jetpacks ap\xF3s se tocarem que qualquer
       um pode usar as plataformas."
-    sprite: {fileID: -236099107382947994, guid: 83465431a41df6e4482d053a0b11efca, type: 3}
+    spriteIcon: {fileID: -236099107382947994, guid: 83465431a41df6e4482d053a0b11efca, type: 3}
+    spriteGrande: {fileID: 2695397407002535339, guid: b62936cbce328c74b8c74c6d5795cfd3, type: 3}
   - nome: espinhos
     categoria: Foes
     descricao: "Pontas afiadas que causam perfuramento.\nNada de especial, os espinhos
       substitu\xEDram as bombas terrestres por quest\xE3o de diversidade de obst\xE1culos
       (e de investimento)."
-    sprite: {fileID: -2045824144313080652, guid: f4c803741c76f53469a380ad9b71e398, type: 3}
+    spriteIcon: {fileID: -2045824144313080652, guid: f4c803741c76f53469a380ad9b71e398, type: 3}
+    spriteGrande: {fileID: 8352057719663572248, guid: 357fb40d024d3be46a12f0c2351a8ed8, type: 3}
   - nome: arma
     categoria: Inventory
     descricao: "Atire nas bombas e inimigos para destru\xED-los.\nA arma de estima\xE7\xE3o,
       ela est\xE1 presente desde o dia que se cruzou com o olhar de Duke."
-    sprite: {fileID: 42663613839402574, guid: 4afd7e2d962a1da409b3add2051ca689, type: 3}
+    spriteIcon: {fileID: 42663613839402574, guid: 4afd7e2d962a1da409b3add2051ca689, type: 3}
+    spriteGrande: {fileID: -5544336463580313496, guid: 262fa3862af199b49998c0969917e5fd, type: 3}
   - nome: bomba de circuito
     categoria: Inventory
     descricao: "Uma escolha \xF3bvia, apesar dos gansos j\xE1 pensarem em reformular
       para que a bomba acionasse ao captar movimento pr\xF3ximo. A ideia nunca foi
       pra frente"
-    sprite: {fileID: -332276434774384340, guid: 3b433a42be931df45a8892daf606f7f8, type: 3}
+    spriteIcon: {fileID: -332276434774384340, guid: 3b433a42be931df45a8892daf606f7f8, type: 3}
+    spriteGrande: {fileID: 313477896007496386, guid: d26bcd9187a1da745bf6a5c226bcf75c, type: 3}
   - nome: desodorante multiplicador
     categoria: Inventory
     descricao: "Dobra a quantidade de pontos e moedas coletadas.\nUm antitranspirante
       que tira o mau cheiro e duplica seus status?! Caramba\u2026"
-    sprite: {fileID: 5355477397677884965, guid: 78927c9ee2255fd44a703cd8d3e593d5, type: 3}
+    spriteIcon: {fileID: 5355477397677884965, guid: 78927c9ee2255fd44a703cd8d3e593d5, type: 3}
+    spriteGrande: {fileID: 8378282653388505158, guid: c470b11ac8fa59d4185bfac35609ec52, type: 3}
   - nome: "pulseira magn\xE9tica"
     categoria: Inventory
     descricao: "Atrai e coleta moedas pr\xF3ximas.\nA riqueza nunca foi de interesse
       do Duke, mesmo com a Snynth tentando convenc\xEA-lo. Ele come\xE7ou a ver um
       valor maior do dinheiro ap\xF3s compreender Devina, e hoje tem uma raz\xE3o
       para usar a pulseira."
-    sprite: {fileID: -1694870919302344507, guid: 8ba5f328c6e92114abca426a81a9c6cf, type: 3}
+    spriteIcon: {fileID: -1694870919302344507, guid: 8ba5f328c6e92114abca426a81a9c6cf, type: 3}
+    spriteGrande: {fileID: 9158323321849259581, guid: d1cbb67d37252004ca31b8630530c1ed, type: 3}
   - nome: duke the duck
     categoria: Fellas
     descricao: "O agente mais letal da Snynth, Duke aprendeu a lidar com eventos
       que cruzam seu caminho. Criar \"la\xE7os indesejados\" \xE9 uma fraqueza que
       ele n\xE3o admitir\xE1 facilmente"
-    sprite: {fileID: -5821396405706876437, guid: b4ec82e26835a3346bb69efef5b63544, type: 3}
+    spriteIcon: {fileID: -5821396405706876437, guid: b4ec82e26835a3346bb69efef5b63544, type: 3}
+    spriteGrande: {fileID: 7017408932031646475, guid: e42e68c05976f804daa1eadf57045bb6, type: 3}
   - nome: naves de ganso
     categoria: Foes
     descricao: "Desvie no momento certo para evitar virar panqueca.\r\n\rApesar da
       tecnologia avan\xE7ada, os gansos n\xE3o se preparam t\xE3o bem. Eles at\xE9
       esqueceram de instalar assentos ejetores nas naves, e \xE9 por isso que sempre
       est\xE3o de mochila \xE0 jato.\r\n"
-    sprite: {fileID: 2733330389760213010, guid: 721282075bec3fb4fbc5a694036b9549, type: 3}
+    spriteIcon: {fileID: 2733330389760213010, guid: 721282075bec3fb4fbc5a694036b9549, type: 3}
+    spriteGrande: {fileID: -6302563758487680414, guid: 61b6859a3ffbd3740abb993ba18f5099, type: 3}
+  - nome: Gansos
+    categoria: Foes
+    descricao: "Atiradores que usam mochila \xE0 jato para se movimentar.\r\n\r\nAs
+      aves respons\xE1veis desse apocalipse ca\xF3tico. Armadilhas nas ruas, aves
+      desabrigadas, era esse o futuro que a Goose Gear sonhava em conquistar?\r\n"
+    spriteIcon: {fileID: 3432110777425222033, guid: cbaa6c139c68a634a8958aae3b2a03e5, type: 3}
+    spriteGrande: {fileID: 3266054973253543325, guid: 1e7951524625ebb4aa806b078d5dbe60, type: 3}

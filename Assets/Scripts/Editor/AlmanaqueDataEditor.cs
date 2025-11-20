@@ -26,14 +26,20 @@ public class AlmanaqueDataEditor : Editor
                 SerializedProperty nome = item.FindPropertyRelative("nome");
                 SerializedProperty categoria = item.FindPropertyRelative("categoria");
                 SerializedProperty descricao = item.FindPropertyRelative("descricao");
-                SerializedProperty sprite = item.FindPropertyRelative("sprite");
+
+                // NOVOS CAMPOS
+                SerializedProperty spriteIcon = item.FindPropertyRelative("spriteIcon");
+                SerializedProperty spriteGrande = item.FindPropertyRelative("spriteGrande");
 
                 EditorGUILayout.BeginVertical("box");
                 EditorGUILayout.LabelField($"Item {i + 1}", EditorStyles.boldLabel);
 
                 EditorGUILayout.PropertyField(nome);
                 EditorGUILayout.PropertyField(categoria);
-                EditorGUILayout.PropertyField(sprite);
+
+                // EXIBE ÍCONE E IMAGEM GRANDE
+                EditorGUILayout.PropertyField(spriteIcon, new GUIContent("Ícone"));
+                EditorGUILayout.PropertyField(spriteGrande, new GUIContent("Imagem Grande"));
 
                 EditorGUILayout.LabelField("Descrição:");
                 descricao.stringValue = EditorGUILayout.TextArea(descricao.stringValue, GUILayout.MinHeight(60));
@@ -56,4 +62,3 @@ public class AlmanaqueDataEditor : Editor
         serializedObject.ApplyModifiedProperties();
     }
 }
-

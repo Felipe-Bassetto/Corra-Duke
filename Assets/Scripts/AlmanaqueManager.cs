@@ -10,6 +10,9 @@ public class AlmanaqueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI mensagemInicialText;
     [SerializeField] private Image[] quadrados;
 
+    [Header("Imagem Grande do Item")]
+    [SerializeField] private Image imagemGrande;
+
     [Header("Categorias")]
     [SerializeField] private Button categoriaFellas;
     [SerializeField] private Button categoriaFoes;
@@ -30,7 +33,6 @@ public class AlmanaqueManager : MonoBehaviour
         categoriaFoes.onClick.AddListener(() => SelecionarCategoria("Foes"));
         categoriaInventory.onClick.AddListener(() => SelecionarCategoria("Inventory"));
 
-        // comportamento dos quadrados
         for (int i = 0; i < quadrados.Length; i++)
         {
             int index = i;
@@ -39,10 +41,8 @@ public class AlmanaqueManager : MonoBehaviour
                 btn.onClick.AddListener(() => MostrarDescricaoItem(index));
         }
 
-        // inicial
         nomeItemText.text = "";
 
-        //  FRASE ALEATÓRIA
         if (frasesAleatorias != null && frasesAleatorias.Length > 0)
         {
             mensagemInicialText.text = frasesAleatorias[Random.Range(0, frasesAleatorias.Length)];
@@ -51,12 +51,26 @@ public class AlmanaqueManager : MonoBehaviour
         {
             mensagemInicialText.text = "Selecione uma categoria";
         }
+
+        // Esconde o quadrado branco no início
+        if (imagemGrande != null)
+        {
+            imagemGrande.sprite = null;
+            imagemGrande.gameObject.SetActive(false);
+        }
     }
 
     private void SelecionarCategoria(string categoria)
     {
         nomeItemText.text = "";
         mensagemInicialText.text = "Selecione um item";
+
+        // Esconde a imagem grande ao mudar de categoria
+        if (imagemGrande != null)
+        {
+            imagemGrande.sprite = null;
+            imagemGrande.gameObject.SetActive(false);
+        }
 
         foreach (var img in imagensItens)
         {
@@ -71,7 +85,7 @@ public class AlmanaqueManager : MonoBehaviour
         {
             Image quadrado = quadrados[i];
 
-            if (i < itensCategoriaAtual.Count && itensCategoriaAtual[i].sprite != null)
+            if (i < itensCategoriaAtual.Count && itensCategoriaAtual[i].spriteIcon != null)
             {
                 quadrado.gameObject.SetActive(true);
 
@@ -79,10 +93,9 @@ public class AlmanaqueManager : MonoBehaviour
                 itemGO.transform.SetParent(quadrado.transform, false);
 
                 Image itemImg = itemGO.GetComponent<Image>();
-                itemImg.sprite = itensCategoriaAtual[i].sprite;
+                itemImg.sprite = itensCategoriaAtual[i].spriteIcon; // usa o ícone!
                 itemImg.preserveAspect = true;
                 itemImg.type = Image.Type.Simple;
-                itemImg.color = new Color(1, 1, 1, 1);
 
                 RectTransform rect = itemGO.GetComponent<RectTransform>();
                 rect.anchorMin = new Vector2(0.5f, 0.5f);
@@ -108,6 +121,14 @@ public class AlmanaqueManager : MonoBehaviour
         var item = itensCategoriaAtual[index];
         nomeItemText.text = item.nome;
         mensagemInicialText.text = item.descricao;
+
+        //  Mostra a imagem colorida 
+        if (imagemGrande != null)
+        {
+            imagemGrande.sprite = item.spriteGrande; // imagem colorida!
+            imagemGrande.preserveAspect = true;
+            imagemGrande.gameObject.SetActive(true); 
+        }
     }
 
     private void LimparQuadrados()
