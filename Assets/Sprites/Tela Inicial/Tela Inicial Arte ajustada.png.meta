@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 27145834a6610e64a9dc0007765576bb
+guid: 5771c0ea54f837e4b99d6cf6fca2da47
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 610741306476979240
-    second: duke go!_0
+      213: -5588931178887954413
+    second: Tela Inicial Arte ajustada_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: duke go!_0
+      name: Tela Inicial Arte ajustada_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 3510
-        height: 2550
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 824e73e7bf9c97800800000000000000
-      internalID: 610741306476979240
+      spriteID: 310474844b02072b0800000000000000
+      internalID: -5588931178887954413
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      duke go!_0: 610741306476979240
+      Tela Inicial Arte ajustada_0: -5588931178887954413
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

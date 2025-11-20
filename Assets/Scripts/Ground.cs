@@ -49,13 +49,13 @@ public class Ground : MonoBehaviour
         {
             if (level.timeSpawn > 0)
             {
-                Instantiate(cloneGround, new Vector3(22f, -4.5f, 0), Quaternion.identity);
+                Instantiate(cloneGround, new Vector3(22f, -4f, 0), Quaternion.identity);
             }
             else
             {
                 level.nomeConjunto = "nothing";
-                Instantiate(soloGround, new Vector3(22f, -4.5f, 0), Quaternion.identity);
-                Instantiate(cloneGround, new Vector3(44, -4.5f, 0), Quaternion.identity);
+                Instantiate(soloGround, new Vector3(22f, -4f, 0), Quaternion.identity);
+                Instantiate(cloneGround, new Vector3(44, -4f, 0), Quaternion.identity);
             }
         }
 

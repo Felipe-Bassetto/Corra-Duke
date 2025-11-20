@@ -150,6 +150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4272f1159c01db143ad225f5ad97b9d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soloGround: {fileID: 0}
-  cloneGround: {fileID: 0}
+  soloGround: {fileID: 5422496667972467440}
+  cloneGround: {fileID: 6078784526603657552, guid: 417dba9413b31f34c90341aa414fca13, type: 3}
   level: {fileID: 0}
