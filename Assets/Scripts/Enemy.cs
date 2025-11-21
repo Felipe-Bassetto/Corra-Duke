@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int maxShots = 2; //número máximo de disparos
-    public float speed = 3f;
-    public float moveDuration = 1.5f;    
+    [Header("Animation")]
+    private Animator anim;
+
+    public int maxShots; //número máximo de disparos
+    public float speed;
+    public float moveDuration;    
     public GameObject bulletPrefab;
     public Transform shootPoint;
     public float shootInterval = 2.5f;
@@ -15,7 +18,13 @@ public class Enemy : MonoBehaviour
     private float moveTimer = 0f;
     private float shootTimer = 0f;
     private bool isMoving = true;
-    private bool isAlive = true; 
+    private bool isAlive = true;
+    private bool isQuiting = false;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -23,13 +32,21 @@ public class Enemy : MonoBehaviour
 
         if (isMoving)
         {
-            transform.Translate(Vector2.left * speed * Time.deltaTime);
-            moveTimer += Time.deltaTime;
-
-            if (moveTimer >= moveDuration)
+            if (isQuiting)
             {
-                isMoving = false;
+                transform.Translate(Vector2.up * speed * Time.deltaTime);
             }
+            else
+            {
+                transform.Translate(Vector2.left * speed * Time.deltaTime);
+                moveTimer += Time.deltaTime;
+
+                if (moveTimer >= moveDuration)
+                {
+                    isMoving = false;
+                }
+            }
+                
         }
         else
         {
@@ -46,12 +63,15 @@ public class Enemy : MonoBehaviour
     {
         if (bulletPrefab != null && shootPoint != null)
         {
+            anim.Play("Ganso Atirando");
             Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
             shotCount++; // conta mais um disparo
             
             if(shotCount >= maxShots)
             {
-                LeaveScene(); // chama a função para sair da cena 
+                Debug.Log("Saindo");
+                isMoving = true;
+                StartCoroutine(LeaveScene()); // chama a função para sair da cena 
             }
         }
     }
@@ -63,27 +83,25 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("PlayerBullet"))
         {
             Destroy(collision.gameObject);
-            Die();
+            StartCoroutine(Die());
         }
     }
 
-    public void TakeDamage()
-    {
-        if (!isAlive) return;
-        Die();
-    }
-
-    private void Die()
+    private IEnumerator Die()
     {
         isAlive = false;
+        anim.Play("Ganso Morrendo");
+        yield return new WaitForSeconds(1f);
         Destroy(gameObject);
     }
 
-    void LeaveScene()
-    {   // faz o inimigo sair andando pela direita
-        isMoving = true;
-        speed = Mathf.Abs(speed); // garante que a velocidade seja positiva
-        Destroy(gameObject, 2f); // destrói o inimigo depois de x segundos
+    public IEnumerator LeaveScene()
+    {   // faz o inimigo sair andando pra cima
+        isQuiting = true;
+        anim.Play("Ganso Saindo");
+        //speed = Mathf.Abs(speed); // garante que a velocidade seja positiva
+        yield return new WaitForSeconds(3f);
+        Destroy(gameObject); // destrói o inimigo depois de x segundos
     }
 }
 

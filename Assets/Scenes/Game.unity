@@ -477,6 +477,10 @@ PrefabInstance:
       propertyPath: 'arrayPowerUps.Array.data[0]'
       value: Gunner
       objectReference: {fileID: 0}
+    - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
+      propertyPath: 'arrTimePowerUps.Array.data[0]'
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4566,7 +4570,7 @@ MonoBehaviour:
   timePowerUp: 0
   counterSpawnPowerUp: 10
   arrGroupsObs:
-  - {fileID: 6078784526603657552, guid: 51f8d9b31032cf74ba16a35a2ac9ef0e, type: 3}
+  - {fileID: 6078784526603657552, guid: 8e42465ebd399b84bafaf6c3313f44c2, type: 3}
   soloGround: {fileID: 3623353307232672489, guid: 417dba9413b31f34c90341aa414fca13, type: 3}
   powerUpPrefeb: {fileID: 3367540434247220356, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
   player: {fileID: 0}
