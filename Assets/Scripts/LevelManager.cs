@@ -132,11 +132,12 @@ public class LevelManager : MonoBehaviour
 
         switch (nomeConjunto)
         {
-            case "Conjunto8":
+            case "Conjunto8": // Nave
+                Instantiate(spawner, new Vector3(44, -4f, 0), Quaternion.identity);
                 timeSpawn = 15f;
                 break;
 
-            case "Conjunto9":
+            case "Conjunto9": // Ganso
                 Instantiate(spawner, new Vector3(44, -4f, 0), Quaternion.identity);
                 timeSpawn = 15f;
                 break;
