@@ -63,7 +63,7 @@ public class GameOverManager : MonoBehaviour
                 deathImage.sprite = arrMorteFinal[3];
                 break;
             case "fall":
-                deathImage.sprite = arrMorteFinal[3];
+                deathImage.sprite = arrMorteFinal[4];
                 break;
         }
 

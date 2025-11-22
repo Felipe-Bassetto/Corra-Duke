@@ -293,6 +293,11 @@ public class Player : MonoBehaviour
                         dead = true;
                         StartCoroutine(morteEspinho());
                         break;
+                    case "Nave":
+                        deadReason = "Geese Ship";
+                        dead = true;
+                        StartCoroutine(morteEspinho());
+                        break;
                 }
             }
         }

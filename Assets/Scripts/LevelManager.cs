@@ -62,7 +62,7 @@ public class LevelManager : MonoBehaviour
         countMs += Time.deltaTime * velocidade; 
 
         // Enquanto tiver pelo menos 1 ms acumulado, d� pontos
-        while (countMs >= 1f)
+        if (countMs >= 1f)
         {
             if (player.doubleScoreActive)
                 scoreMs += 2 * multScore; // dobra pontuação
