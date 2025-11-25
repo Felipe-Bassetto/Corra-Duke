@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class Player : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
     public GameDb db;
     public GameObject pauseMenu;
     public GameOverManager gameOver;
+    public WaveControl centro;
     
     [Header("Pulo")]
     public float distance = 2f;
@@ -43,7 +45,7 @@ public class Player : MonoBehaviour
     public string playerStatus = "Basic";
     public bool dead = false;
     public List<string> listPlayerVunerable = new List<string>();
-    public string statusEspinho = "nothing";
+    public string statusMorte = "nothing";
 
     [Header("PowerUps")]
     private bool powerUpdActive = false;
@@ -78,19 +80,27 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if (statusEspinho == "subindo") transform.Translate(Vector3.up * Time.deltaTime * 8f);
-        else if (statusEspinho == "descendo") transform.Translate(Vector3.down * Time.deltaTime * 10f);
-
-        if (!dead)
+        if (statusMorte == "subindo") transform.Translate(Vector3.up * Time.deltaTime * 8f);
+        else if (statusMorte == "descendo") transform.Translate(Vector3.down * Time.deltaTime * 10f);
+        else if (statusMorte == "centro")
         {
-            isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayer);
-
-            pausePressed = Input.GetKeyDown(KeyCode.Escape);
-            jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);
-            jumpHeld = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W);
-            jumpRelease = Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.W);
+            Vector3 target = new Vector3(0f, 0f, transform.position.z);
+            transform.position = Vector3.MoveTowards(transform.position,target, 10f * Time.deltaTime);
         }
-         
+
+        if (dead) return;
+
+        if (playerStatus == "Basic")
+        {
+            centro.StopAnimation();
+        }
+
+        isGrounded = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckDistance, groundLayer);
+
+        pausePressed = Input.GetKeyDown(KeyCode.Escape);
+        jumpPressed = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);
+        jumpHeld = Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W);
+        jumpRelease = Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.W);         
 
         if (pausePressed)
         {
@@ -143,6 +153,7 @@ public class Player : MonoBehaviour
                 break;
 
             case "Destroyer":
+                centro.StartAnimation();
                 Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position + Vector3.right * 5f, new Vector2(10f, 10f), 0f);
                 foreach (Collider2D col in hits)
                     if (col.CompareTag("Bomb")) Destroy(col.gameObject);
@@ -259,10 +270,19 @@ public class Player : MonoBehaviour
     {
         rb.simulated = false;
         anim.Play("Morte Espinho");
-        statusEspinho = "subindo";
+        statusMorte = "subindo";
         yield return new WaitForSeconds(0.4f);
-        statusEspinho = "descendo";
+        statusMorte = "descendo";
         yield return new WaitForSeconds(3f);
+        Die();
+    }
+
+    IEnumerator morteNave()
+    {
+        rb.simulated = false;
+        anim.Play("Morte Nave");
+        statusMorte = "centro";
+        yield return new WaitForSeconds(1f);
         Die();
     }
 
@@ -296,7 +316,7 @@ public class Player : MonoBehaviour
                     case "Nave":
                         deadReason = "Geese Ship";
                         dead = true;
-                        StartCoroutine(morteEspinho());
+                        StartCoroutine(morteNave());
                         break;
                 }
             }
