@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     public GameObject pauseMenu;
     public GameOverManager gameOver;
     public WaveControl centro;
+    private SoundManager soundManager;
     
     [Header("Pulo")]
     public float distance = 2f;
@@ -71,6 +72,11 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
         state = PlayerState.Running;
         ChangeState(state); // Garante animação inicial
+
+        if (soundManager == null)
+        {
+            soundManager = FindFirstObjectByType<SoundManager>();
+        }
     }
 
     void FixedUpdate()
@@ -112,6 +118,7 @@ public class Player : MonoBehaviour
         {
             if (isGrounded)
             {
+                soundManager.SoundPlay(9);
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 state = PlayerState.Jumping; 
             }
@@ -119,6 +126,7 @@ public class Player : MonoBehaviour
             {
                 jumpTimeCounter = 50f;
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+                soundManager.SoundPlay(9);
                 rb.AddForce(Vector2.up * secondJump, ForceMode2D.Impulse);
                 jumpUp = false;
                 state = PlayerState.DoubleJumping;
@@ -149,7 +157,10 @@ public class Player : MonoBehaviour
         {
             case "Gunner":
                 if (Input.GetMouseButtonDown(0))
+                {
                     Instantiate(Bala, posicaoSpawn.position, Quaternion.identity);
+                    soundManager.SoundPlay(8);
+                }
                 break;
 
             case "Destroyer":
@@ -225,27 +236,29 @@ public class Player : MonoBehaviour
     }
 
     private void Die()
-    {       
-       gameOverPanel.SetActive(true);
-       gameOver.ShowGameOver();
+    {  
+        
+        gameOverPanel.SetActive(true);
+        gameOver.ShowGameOver();
+        finalScore = level.scoreMs;
 
-       finalScore = level.scoreMs;
+        Configuracoes config = db.CarregarConfiguracoes();
+        Progresso save = db.CarregarProgresso(config.Id);
 
-       Configuracoes config = db.CarregarConfiguracoes();
-       Progresso save = db.CarregarProgresso(config.Id);
+        int record = save.ScoreRecord;
+        int coins = save.Coins;
 
-       int record = save.ScoreRecord;
-       int coins = save.Coins;
+        if(record < finalScore) record = finalScore;  
+        coins += coinRound;
 
-       if(record < finalScore) record = finalScore;  
-       coins += coinRound;
-
-       db.SalvarProgresso(config.Id, record, coins); 
+        db.SalvarProgresso(config.Id, record, coins);
+        gameObject.GetComponent<SpriteRenderer>().sortingOrder = -1;
     }
 
     void OnBecameInvisible()
     {
         deadReason = "fall";
+        soundManager.SoundPlay(6);
         dead = true;
         Die();
     }
@@ -285,6 +298,13 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Die();
     }
+    IEnumerator morteTiro()
+    {
+        rb.simulated = false;
+        anim.Play("Morte Tiro");
+        yield return new WaitForSeconds(2f);
+        Die();
+    }
 
     void OnTriggerEnter2D(Collider2D obj)
     {
@@ -297,10 +317,12 @@ public class Player : MonoBehaviour
                     case "EnemyBullet":
                         deadReason = "enemy bullet";
                         dead = true;
+                        StartCoroutine(morteTiro());
                         break;
                     case "Laser":
                         deadReason = "laser";
                         dead = true;
+                        soundManager.SoundPlay(10);
                         StartCoroutine(morteLaser());
                         break;
                     case "Bomb":
@@ -324,6 +346,7 @@ public class Player : MonoBehaviour
         else 
         {
             if (obj.CompareTag("Coin"))
+                soundManager.SoundPlay(5);
                 coinRound++;
         }
     }

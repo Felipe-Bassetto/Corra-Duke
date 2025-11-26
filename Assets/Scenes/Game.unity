@@ -874,6 +874,14 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b069260453259c045b422516e644a7a3, type: 3}
   - {fileID: 8300000, guid: 3989ce581441b8345b557a450fe344eb, type: 3}
   - {fileID: 8300000, guid: 0dfbe50fb162b0c468343437292b9bf5, type: 3}
+  - {fileID: 8300000, guid: f1f4a5583a219d148ae90c8f55e0af6a, type: 3}
+  - {fileID: 8300000, guid: 9dd26d05a313a5e499342826e28bcc9a, type: 3}
+  - {fileID: 8300000, guid: 31d9bc6bd31694c4bb098107a7de7cb6, type: 3}
+  - {fileID: 8300000, guid: cc9e7cc6a79c80b42accf410d2cde11e, type: 3}
+  - {fileID: 8300000, guid: 1ae5506286ca80541b5acb6f0c2e3c0b, type: 3}
+  - {fileID: 8300000, guid: b98388b8f97d7a744bc0fed533411510, type: 3}
+  - {fileID: 8300000, guid: 41679e3cda78fa34884d5910e9947671, type: 3}
+  - {fileID: 8300000, guid: c85b3ed0c4f9b934ca3bbd0de152c78c, type: 3}
   audioSource: {fileID: 537184332}
   audioMixer: {fileID: 24100000, guid: cfe6de6a10ed7da4398e8bc2bce324e5, type: 2}
 --- !u!82 &537184332
@@ -1288,79 +1296,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1001 &801637294
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.059060454
-      objectReference: {fileID: 0}
-    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.8764305
-      objectReference: {fileID: 0}
-    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 686778969225736032, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3367540434247220356, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: m_Name
-      value: PowerUps
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: arrayPowerUps.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: 'arrayPowerUps.Array.data[0]'
-      value: Destroyer
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: 'arrayPowerUps.Array.data[1]'
-      value: CoinMagnet
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858866383062662203, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
-      propertyPath: 'arrayPowerUps.Array.data[2]'
-      value: CoinMagnet
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
 --- !u!1 &804565289
 GameObject:
   m_ObjectHideFlags: 0
@@ -4779,7 +4714,7 @@ MonoBehaviour:
   timePowerUp: 0
   counterSpawnPowerUp: 10
   arrGroupsObs:
-  - {fileID: 6078784526603657552, guid: 51f8d9b31032cf74ba16a35a2ac9ef0e, type: 3}
+  - {fileID: 6078784526603657552, guid: 8e42465ebd399b84bafaf6c3313f44c2, type: 3}
   soloGround: {fileID: 3623353307232672489, guid: 417dba9413b31f34c90341aa414fca13, type: 3}
   powerUpPrefeb: {fileID: 3367540434247220356, guid: 4bc8160dfc9343240a5671efcd663c6f, type: 3}
   player: {fileID: 0}
@@ -5277,4 +5212,3 @@ SceneRoots:
   - {fileID: 1776526071}
   - {fileID: 2134750502}
   - {fileID: 874617993}
-  - {fileID: 801637294}

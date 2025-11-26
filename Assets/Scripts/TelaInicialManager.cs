@@ -17,6 +17,7 @@ public class TelaInicialManager : MonoBehaviour
     [SerializeField] private AudioSource musicSource;  
     [SerializeField] private AudioClip musicTelaInicial;
     [SerializeField] private AudioClip musicUpgrades;
+    [SerializeField] private AudioClip musicAlmanaque;
     [SerializeField] private GameDb mDb;
     [SerializeField] private TextMeshProUGUI record;
     [SerializeField] private TextMeshProUGUI shopCoins;
@@ -105,6 +106,8 @@ public class TelaInicialManager : MonoBehaviour
 
     public void AbrirAlmanaque()
     {
+        musicSource.clip = musicAlmanaque;
+        musicSource.Play();
         painelMenuInicial.SetActive(false);
         painelAlmanaque.SetActive(true);
         nomeJogo.SetActive(false);
@@ -112,6 +115,8 @@ public class TelaInicialManager : MonoBehaviour
 
     public void FecharAlmanaque()
     {
+        musicSource.clip = musicTelaInicial;
+        musicSource.Play();
         painelAlmanaque.SetActive(false);
         painelMenuInicial.SetActive(true);
         nomeJogo.SetActive(true);

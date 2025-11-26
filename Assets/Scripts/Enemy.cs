@@ -20,14 +20,28 @@ public class Enemy : MonoBehaviour
     private bool isMoving = true;
     private bool isAlive = true;
     private bool isQuiting = false;
+    private SoundManager soundManager;
+    private Player player;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+
+        if (soundManager == null)
+        {
+            soundManager = FindFirstObjectByType<SoundManager>();
+        }
+
+        if (player == null)
+        {
+            player = FindFirstObjectByType<Player>();
+        }
     }
 
     void Update()
     {
+        if (player.dead) return;
+
         if (!isAlive) return; // não deixa que a lógica rode após a morte
 
         if (isMoving)
@@ -64,6 +78,7 @@ public class Enemy : MonoBehaviour
         if (bulletPrefab != null && shootPoint != null)
         {
             anim.Play("Ganso Atirando");
+            soundManager.SoundPlay(8);
             Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
             shotCount++; // conta mais um disparo
             
@@ -83,6 +98,7 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("PlayerBullet"))
         {
             Destroy(collision.gameObject);
+            soundManager.SoundPlay(7);
             StartCoroutine(Die());
         }
     }

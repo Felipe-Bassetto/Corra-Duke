@@ -35,7 +35,7 @@ public class Objetos : MonoBehaviour
            switch (gameObject.tag)
            {
                case "Bomb":
-                    soundManagerScript.SoundPlay(0);
+                    soundManagerScript.SoundPlay(4);
                     anim.Play("Bomba");
                     break;
                case "Coin":
@@ -48,7 +48,7 @@ public class Objetos : MonoBehaviour
            switch (gameObject.tag)
            {
                case "Bomb":
-                    soundManagerScript.SoundPlay(0);
+                    soundManagerScript.SoundPlay(4);
                     Destroy(gameObject);
                     break;
            }

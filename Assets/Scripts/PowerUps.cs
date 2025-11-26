@@ -11,6 +11,7 @@ public class PowerUps : MonoBehaviour
     public Player player;
     public LevelManager levelManager;
     public GameObject letreiroPrefab;
+    private SoundManager soundManager;
 
     [Header("Gerenciamento")]
     private int indexArray;
@@ -26,6 +27,10 @@ public class PowerUps : MonoBehaviour
         if (player == null)
         {
             player = FindFirstObjectByType<Player>();
+        }
+        if (soundManager == null)
+        {
+            soundManager = FindFirstObjectByType<SoundManager>();
         }
     }
 
@@ -43,6 +48,7 @@ public class PowerUps : MonoBehaviour
     {
         if(obj.tag == "Player")
         {
+            soundManager.SoundPlay(3);
             indexArray = rnd.Next(arrayPowerUps.Length); // Pega o numero referente ao power up
             player.alterStatus(arrayPowerUps[indexArray]); // Altera o status do player para o power up
             levelManager.SetPowerUpTime(arrTimePowerUps[indexArray]); // Define a contagem de tempo no level manager
