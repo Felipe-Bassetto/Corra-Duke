@@ -33,6 +33,10 @@ public class AlmanaqueManager : MonoBehaviour
         categoriaFoes.onClick.AddListener(() => SelecionarCategoria("Foes"));
         categoriaInventory.onClick.AddListener(() => SelecionarCategoria("Inventory"));
 
+        // Esconde todos os quadrados ao abrir 
+        foreach (var quad in quadrados)
+            quad.gameObject.SetActive(false);
+
         for (int i = 0; i < quadrados.Length; i++)
         {
             int index = i;
@@ -44,34 +48,26 @@ public class AlmanaqueManager : MonoBehaviour
         nomeItemText.text = "";
 
         if (frasesAleatorias != null && frasesAleatorias.Length > 0)
-        {
             mensagemInicialText.text = frasesAleatorias[Random.Range(0, frasesAleatorias.Length)];
-        }
         else
-        {
             mensagemInicialText.text = "Selecione uma categoria";
-        }
 
-        // Esconde o quadrado branco no início
         if (imagemGrande != null)
-        {
-            imagemGrande.sprite = null;
             imagemGrande.gameObject.SetActive(false);
-        }
     }
 
     private void SelecionarCategoria(string categoria)
     {
         nomeItemText.text = "";
-        mensagemInicialText.text = "Selecione um item";
+        mensagemInicialText.text = "O que deseja consultar hoje ?";
 
-        // Esconde a imagem grande ao mudar de categoria
         if (imagemGrande != null)
         {
             imagemGrande.sprite = null;
             imagemGrande.gameObject.SetActive(false);
         }
 
+        // remove imagens antigas 
         foreach (var img in imagensItens)
         {
             if (img != null)
@@ -85,6 +81,7 @@ public class AlmanaqueManager : MonoBehaviour
         {
             Image quadrado = quadrados[i];
 
+            // usa spriteIcon 
             if (i < itensCategoriaAtual.Count && itensCategoriaAtual[i].spriteIcon != null)
             {
                 quadrado.gameObject.SetActive(true);
@@ -93,14 +90,12 @@ public class AlmanaqueManager : MonoBehaviour
                 itemGO.transform.SetParent(quadrado.transform, false);
 
                 Image itemImg = itemGO.GetComponent<Image>();
-                itemImg.sprite = itensCategoriaAtual[i].spriteIcon; // usa o ícone!
+                itemImg.sprite = itensCategoriaAtual[i].spriteIcon; //  Icon
                 itemImg.preserveAspect = true;
                 itemImg.type = Image.Type.Simple;
 
                 RectTransform rect = itemGO.GetComponent<RectTransform>();
-                rect.anchorMin = new Vector2(0.5f, 0.5f);
-                rect.anchorMax = new Vector2(0.5f, 0.5f);
-                rect.pivot = new Vector2(0.5f, 0.5f);
+                rect.anchorMin = rect.anchorMax = rect.pivot = new Vector2(0.5f, 0.5f);
                 rect.anchoredPosition = Vector2.zero;
                 rect.sizeDelta = quadrado.GetComponent<RectTransform>().sizeDelta * 0.7f;
 
@@ -119,15 +114,15 @@ public class AlmanaqueManager : MonoBehaviour
             return;
 
         var item = itensCategoriaAtual[index];
+
         nomeItemText.text = item.nome;
         mensagemInicialText.text = item.descricao;
 
-        //  Mostra a imagem colorida 
         if (imagemGrande != null)
         {
-            imagemGrande.sprite = item.spriteGrande; // imagem colorida!
+            imagemGrande.sprite = item.spriteGrande; 
             imagemGrande.preserveAspect = true;
-            imagemGrande.gameObject.SetActive(true); 
+            imagemGrande.gameObject.SetActive(true);
         }
     }
 
