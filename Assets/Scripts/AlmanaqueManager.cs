@@ -1,134 +1,143 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class AlmanaqueManager : MonoBehaviour
 {
-    [Header("Fonte de Dados")]
-    public AlmanaqueData data;
+    [Header("Referências de UI")]
+    [SerializeField] private TextMeshProUGUI nomeItemText;
+    [SerializeField] private TextMeshProUGUI mensagemInicialText;
+    [SerializeField] private Image[] quadrados;
 
-    [Header("Containers (UI)")]
-    public Transform categoryButtonContainer; 
-    public Transform itemSlotContainer;       
+    [Header("Imagem Grande do Item")]
+    [SerializeField] private Image imagemGrande;
 
-    [Header("Prefabs")]
-    public Button categoryButtonPrefab;  
-    public Button itemSlotButtonPrefab; 
+    [Header("Categorias")]
+    [SerializeField] private Button categoriaFellas;
+    [SerializeField] private Button categoriaFoes;
+    [SerializeField] private Button categoriaInventory;
 
-    [Header("Detalhes Centro")]
-    public TMP_Text centralText;        // texto do meio
-    public TMP_Text itemNameText;       // nome do item 
-    public TMP_Text itemDescriptionText; // descrição do item 
+    [Header("Banco de Dados")]
+    [SerializeField] private AlmanaqueData almanaqueData;
 
-    private string currentCategory = "";
-    private List<Button> spawnedCategoryButtons = new List<Button>();
-    private List<Button> spawnedItemSlots = new List<Button>();
+    [Header("Frases Aleatórias")]
+    [SerializeField] private string[] frasesAleatorias;
 
-    void Start()
-    {
-        if (data == null)
+    private List<AlmanaqueItem> itensCategoriaAtual = new List<AlmanaqueItem>();
+    private List<Image> imagensItens = new List<Image>();
+
+    private void Start()
+    { 
+        categoriaFellas.onClick.AddListener(() => SelecionarCategoria("Fellas"));
+        categoriaFoes.onClick.AddListener(() => SelecionarCategoria("Foes"));
+        categoriaInventory.onClick.AddListener(() => SelecionarCategoria("Inventory"));
+
+        for (int i = 0; i < quadrados.Length; i++)
         {
-            Debug.LogError("AlmanaqueManager: arraste referência do AlmanaqueData no Inspector.");
-            return;
+            int index = i;
+            Button btn = quadrados[i].GetComponent<Button>();
+            if (btn != null)
+                btn.onClick.AddListener(() => MostrarDescricaoItem(index));
         }
 
-        // mensagem inicial e limpar slots
-        centralText.text = "Selecione uma categoria";
-        LimparItemSlots();
+        nomeItemText.text = "";
 
-        CriarBotoesDeCategoria();
-    }
-
-    void CriarBotoesDeCategoria()
-    {
-        // destrói antigos
-        foreach (var b in spawnedCategoryButtons) Destroy(b.gameObject);
-        spawnedCategoryButtons.Clear();
-
-        var cats = data.GetCategorias();
-        for (int i = 0; i < cats.Count; i++)
+        if (frasesAleatorias != null && frasesAleatorias.Length > 0)
         {
-            var cat = cats[i];
-            var btn = Instantiate(categoryButtonPrefab, categoryButtonContainer);
-            var txt = btn.GetComponentInChildren<TMP_Text>();
-            if (txt != null) txt.text = cat.nomeCategoria;
+            mensagemInicialText.text = frasesAleatorias[Random.Range(0, frasesAleatorias.Length)];
+        }
+        else
+        {
+            mensagemInicialText.text = "Selecione uma categoria";
+        }
 
-            string nomeCat = cat.nomeCategoria; 
-            btn.onClick.AddListener(() => OnCategoriaClicada(nomeCat));
-            spawnedCategoryButtons.Add(btn);
+        // Esconde o quadrado branco no início
+        if (imagemGrande != null)
+        {
+            imagemGrande.sprite = null;
+            imagemGrande.gameObject.SetActive(false);
         }
     }
 
-    void OnCategoriaClicada(string categoria)
+    private void SelecionarCategoria(string categoria)
     {
-        currentCategory = categoria;
-        centralText.text = "Selecione um item";
-        PreencherItemSlots(categoria);
-    }
+        nomeItemText.text = "";
+        mensagemInicialText.text = "Selecione um item";
 
-    void PreencherItemSlots(string categoria)
-    {
-        // limpa antigos
-        foreach (var b in spawnedItemSlots) Destroy(b.gameObject);
-        spawnedItemSlots.Clear();
-
-        // encontra categoria
-        var cat = data.categorias.Find(c => c.nomeCategoria == categoria);
-        if (cat == null)
+        // Esconde a imagem grande ao mudar de categoria
+        if (imagemGrande != null)
         {
-            Debug.LogWarning("Categoria não encontrada: " + categoria);
-            return;
+            imagemGrande.sprite = null;
+            imagemGrande.gameObject.SetActive(false);
         }
 
-        // Preenche os slots: 
-        int slotCount = 6;
-        for (int i = 0; i < slotCount; i++)
+        foreach (var img in imagensItens)
         {
-            var btn = Instantiate(itemSlotButtonPrefab, itemSlotContainer);
-            spawnedItemSlots.Add(btn);
+            if (img != null)
+                Destroy(img.gameObject);
+        }
+        imagensItens.Clear();
 
-            Image img = btn.GetComponent<Image>();
-            Button bcomp = btn.GetComponent<Button>();
+        itensCategoriaAtual = almanaqueData.ObterItensPorCategoria(categoria);
 
-            if (i < cat.itens.Count)
+        for (int i = 0; i < quadrados.Length; i++)
+        {
+            Image quadrado = quadrados[i];
+
+            if (i < itensCategoriaAtual.Count && itensCategoriaAtual[i].spriteIcon != null)
             {
-                var item = cat.itens[i];
-                if (img != null) img.sprite = item.icon != null ? item.icon : data.defaultIcon;
+                quadrado.gameObject.SetActive(true);
 
-                // mostra detalhes no centro quando clicado
-                bcomp.onClick.AddListener(() => MostrarDescricao(item));
-                bcomp.interactable = true;
+                GameObject itemGO = new GameObject("ItemImage", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
+                itemGO.transform.SetParent(quadrado.transform, false);
+
+                Image itemImg = itemGO.GetComponent<Image>();
+                itemImg.sprite = itensCategoriaAtual[i].spriteIcon; // usa o ícone!
+                itemImg.preserveAspect = true;
+                itemImg.type = Image.Type.Simple;
+
+                RectTransform rect = itemGO.GetComponent<RectTransform>();
+                rect.anchorMin = new Vector2(0.5f, 0.5f);
+                rect.anchorMax = new Vector2(0.5f, 0.5f);
+                rect.pivot = new Vector2(0.5f, 0.5f);
+                rect.anchoredPosition = Vector2.zero;
+                rect.sizeDelta = quadrado.GetComponent<RectTransform>().sizeDelta * 0.7f;
+
+                imagensItens.Add(itemImg);
             }
             else
             {
-                // slot vazio: mantém sprite padrão
-                if (img != null) img.sprite = data.defaultIcon;
-                bcomp.onClick.RemoveAllListeners();
-                bcomp.interactable = false;
+                quadrado.gameObject.SetActive(false);
             }
         }
     }
 
-    void MostrarDescricao(ItemData item)
+    private void MostrarDescricaoItem(int index)
     {
-        if (item == null)
-        {
-            centralText.text = "Espaço vazio";
+        if (index < 0 || index >= itensCategoriaAtual.Count)
             return;
+
+        var item = itensCategoriaAtual[index];
+        nomeItemText.text = item.nome;
+        mensagemInicialText.text = item.descricao;
+
+        //  Mostra a imagem colorida 
+        if (imagemGrande != null)
+        {
+            imagemGrande.sprite = item.spriteGrande; // imagem colorida!
+            imagemGrande.preserveAspect = true;
+            imagemGrande.gameObject.SetActive(true); 
         }
-
-        // Atualiza textos centrais 
-        centralText.text = item.nome + "\n\n" + item.descricao;
-
-        // Pode mostrar nome/descrição em campos separados
-        if (itemNameText != null) itemNameText.text = item.nome;
-        if (itemDescriptionText != null) itemDescriptionText.text = item.descricao;
     }
 
-    void LimparItemSlots()
+    private void LimparQuadrados()
     {
-        foreach (var b in spawnedItemSlots) Destroy(b.gameObject);
-        spawnedItemSlots.Clear();
+        foreach (var img in quadrados)
+        {
+            img.sprite = null;
+            img.color = Color.white;
+            img.GetComponent<RectTransform>().localScale = Vector3.one;
+        }
     }
 }

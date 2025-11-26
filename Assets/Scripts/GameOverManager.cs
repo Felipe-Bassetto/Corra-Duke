@@ -1,8 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 
 public class GameOverManager : MonoBehaviour
 {
@@ -12,9 +11,11 @@ public class GameOverManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI coinHud;
     [SerializeField] private TextMeshProUGUI scoreHud;
     [SerializeField] private TextMeshProUGUI deadHud;
+    [SerializeField] private GameObject HudGame;
     public GameController gameController;
     private string newScene;
     public string deadBy;
+    public Image deathImage;
 
     System.Random rnd = new System.Random();
 
@@ -23,7 +24,8 @@ public class GameOverManager : MonoBehaviour
 
     [SerializeField] private RawImage postIt;
     public Texture[] arrPostIt;
-    private Sprite spritePostIt;
+
+    public Sprite[] arrMorteFinal;
 
     void Start()
     {
@@ -33,30 +35,52 @@ public class GameOverManager : MonoBehaviour
 
         indexArray = rnd.Next(arrPostIt.Length);
         postIt.texture = arrPostIt[indexArray];
+        
     }
 
     public void ShowGameOver()
     {
         Debug.Log("morreu");
         gameOverPanel.SetActive(true);
-        Time.timeScale = 0f; // pausa o jogo
+        //Time.timeScale = 0f; // pausa o jogo
 
         coinHud.text = "x" + player.coinRound;
         scoreHud.text = "" + scoreMs.scoreMs;
         deadHud.text = "" + player.deadReason;
+
+        switch (player.deadReason)
+            {
+            case "bomb":
+                deathImage.sprite = arrMorteFinal[0];
+                break;
+            case "laser":
+                deathImage.sprite = arrMorteFinal[1];
+                break;
+            case "enemy bullet":
+                deathImage.sprite = arrMorteFinal[2];
+                break;
+            case "spike":
+                deathImage.sprite = arrMorteFinal[3];
+                break;
+            case "fall":
+                deathImage.sprite = arrMorteFinal[4];
+                break;
+        }
+
+        HudGame.SetActive(false);
     }
 
     public void Retry()
     {
         newScene = "Empty";
         gameController.activatePanel(newScene);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void GoToMenu()
     {
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         SceneManager.LoadScene("MainPage"); // nome exato da cena do menu
     }
 
@@ -64,7 +88,7 @@ public class GameOverManager : MonoBehaviour
     {
         newScene = "PanelUpgrade";
         gameController.activatePanel(newScene);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         SceneManager.LoadScene("MainPage");
     }
 
@@ -72,7 +96,7 @@ public class GameOverManager : MonoBehaviour
     {
         newScene = "PaneInstrucoes";
         gameController.activatePanel(newScene);
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         SceneManager.LoadScene("MainPage");
     }
 

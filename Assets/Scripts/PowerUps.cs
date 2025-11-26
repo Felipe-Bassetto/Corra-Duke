@@ -11,6 +11,7 @@ public class PowerUps : MonoBehaviour
     public Player player;
     public LevelManager levelManager;
     public GameObject letreiroPrefab;
+    private SoundManager soundManager;
 
     [Header("Gerenciamento")]
     private int indexArray;
@@ -27,18 +28,27 @@ public class PowerUps : MonoBehaviour
         {
             player = FindFirstObjectByType<Player>();
         }
+        if (soundManager == null)
+        {
+            soundManager = FindFirstObjectByType<SoundManager>();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.left * levelManager.velocidade * Time.deltaTime);
+        if(!player.dead)
+        {
+            transform.Translate(Vector2.left * levelManager.velocidade * Time.deltaTime);
+        }
+        
     }
 
     void OnTriggerEnter2D (Collider2D obj)
     {
         if(obj.tag == "Player")
         {
+            soundManager.SoundPlay(3);
             indexArray = rnd.Next(arrayPowerUps.Length); // Pega o numero referente ao power up
             player.alterStatus(arrayPowerUps[indexArray]); // Altera o status do player para o power up
             levelManager.SetPowerUpTime(arrTimePowerUps[indexArray]); // Define a contagem de tempo no level manager

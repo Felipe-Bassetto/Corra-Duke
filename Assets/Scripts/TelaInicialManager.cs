@@ -13,10 +13,11 @@ public class TelaInicialManager : MonoBehaviour
     [SerializeField] private GameObject painelSobre;
     [SerializeField] private GameObject nomeJogo;
     [SerializeField] private GameObject painelMelhorias;
-    [SerializeField] private GameObject painelInstrucoes;
+    [SerializeField] private GameObject painelAlmanaque;
     [SerializeField] private AudioSource musicSource;  
     [SerializeField] private AudioClip musicTelaInicial;
     [SerializeField] private AudioClip musicUpgrades;
+    [SerializeField] private AudioClip musicAlmanaque;
     [SerializeField] private GameDb mDb;
     [SerializeField] private TextMeshProUGUI record;
     [SerializeField] private TextMeshProUGUI shopCoins;
@@ -44,7 +45,7 @@ public class TelaInicialManager : MonoBehaviour
                 AbrirMelhorias();
                 break;
             case "PaneInstrucoes":
-                AbrirInstrucoes();
+                AbrirAlmanaque();
                 break;
         }
         
@@ -103,19 +104,24 @@ public class TelaInicialManager : MonoBehaviour
         nomeJogo.SetActive(true);
     }
 
-    public void AbrirInstrucoes()
+    public void AbrirAlmanaque()
     {
-        painelInstrucoes.SetActive(true);
+        musicSource.clip = musicAlmanaque;
+        musicSource.Play();
         painelMenuInicial.SetActive(false);
+        painelAlmanaque.SetActive(true);
         nomeJogo.SetActive(false);
     }
-    
-    public void FecharInstrucoes()
+
+    public void FecharAlmanaque()
     {
-        painelInstrucoes.SetActive(false);
+        musicSource.clip = musicTelaInicial;
+        musicSource.Play();
+        painelAlmanaque.SetActive(false);
         painelMenuInicial.SetActive(true);
         nomeJogo.SetActive(true);
     }
+
 
     public void SairJogo()
     {

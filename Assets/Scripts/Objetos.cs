@@ -22,8 +22,8 @@ public class Objetos : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
-
+    {
+        if (gameObject.tag == "Spike" && gameObject.transform.position.x < -3.5f) anim.Play("Spike");
     }
 
     //Configuração de colisão
@@ -35,7 +35,7 @@ public class Objetos : MonoBehaviour
            switch (gameObject.tag)
            {
                case "Bomb":
-                    soundManagerScript.SoundPlay(0);
+                    soundManagerScript.SoundPlay(4);
                     anim.Play("Bomba");
                     break;
                case "Coin":
@@ -48,7 +48,7 @@ public class Objetos : MonoBehaviour
            switch (gameObject.tag)
            {
                case "Bomb":
-                    soundManagerScript.SoundPlay(0);
+                    soundManagerScript.SoundPlay(4);
                     Destroy(gameObject);
                     break;
            }

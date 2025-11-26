@@ -18,6 +18,9 @@ TagManager:
   - Button
   - Infos
   - OpenedInfos
+  - Spike
+  - Piramide
+  - Nave
   layers:
   - Default
   - TransparentFX

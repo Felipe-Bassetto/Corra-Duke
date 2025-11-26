@@ -26,7 +26,6 @@ public class LevelManager : MonoBehaviour
     // Defini��o de objetos
     System.Random rnd = new System.Random();
     public Ground soloGround;
-    public Ground ground;
     public GameObject powerUpPrefeb;
     public Player player;
     public int multPU; // Multiplicador do power up
@@ -63,7 +62,7 @@ public class LevelManager : MonoBehaviour
         countMs += Time.deltaTime * velocidade; 
 
         // Enquanto tiver pelo menos 1 ms acumulado, d� pontos
-        while (countMs >= 1f)
+        if (countMs >= 1f)
         {
             if (player.doubleScoreActive)
                 scoreMs += 2 * multScore; // dobra pontuação
@@ -133,19 +132,19 @@ public class LevelManager : MonoBehaviour
 
         switch (nomeConjunto)
         {
-            case "Conjunto8":
+            case "Conjunto8": // Nave
+                Instantiate(spawner, new Vector3(44, -4f, 0), Quaternion.identity);
                 timeSpawn = 15f;
                 break;
 
-            case "Conjunto9":
-                Instantiate(spawner, new Vector3(44, -4.5f, 0), Quaternion.identity);
+            case "Conjunto9": // Ganso
+                Instantiate(spawner, new Vector3(44, -4f, 0), Quaternion.identity);
                 timeSpawn = 15f;
                 break;
         }
 
-        Debug.Log("spawn");
-        Instantiate(arrGroupsObs[indexArr], new Vector3(22f,-4.5f,0), Quaternion.identity); // Gera o obstaculo
-        Instantiate(soloGround, new Vector3(44,-4.5f,0), Quaternion.identity); // Gera o ch�o vazio ap�s o conjunto
+        Instantiate(arrGroupsObs[indexArr], new Vector3(22f,-4f,0), Quaternion.identity); // Gera o obstaculo
+        Instantiate(soloGround, new Vector3(44f,-4f,0), Quaternion.identity); // Gera o ch�o vazio ap�s o conjunto
 
         if(canSpawnPowerUp)
         {

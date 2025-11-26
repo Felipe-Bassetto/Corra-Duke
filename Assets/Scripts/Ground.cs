@@ -11,6 +11,7 @@ public class Ground : MonoBehaviour
 
     // Definição de objetos
     public LevelManager level;
+    private Player player;
     
     // Start is called before the first frame update
     void Start()
@@ -20,12 +21,21 @@ public class Ground : MonoBehaviour
             level = FindFirstObjectByType<LevelManager>();
         }
 
+        if (player == null)
+        {
+            player = FindFirstObjectByType<Player>();
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.left * level.velocidade * Time.deltaTime);
+        if(!player.dead)
+        {
+            transform.Translate(Vector2.left * level.velocidade * Time.deltaTime);
+        }
+        
     }
 
     void OnBecameInvisible()
@@ -39,13 +49,13 @@ public class Ground : MonoBehaviour
         {
             if (level.timeSpawn > 0)
             {
-                Instantiate(cloneGround, new Vector3(22f, -4.5f, 0), Quaternion.identity);
+                Instantiate(cloneGround, new Vector3(22f, -4f, 0), Quaternion.identity);
             }
             else
             {
                 level.nomeConjunto = "nothing";
-                Instantiate(soloGround, new Vector3(22f, -4.5f, 0), Quaternion.identity);
-                Instantiate(cloneGround, new Vector3(44, -4.5f, 0), Quaternion.identity);
+                Instantiate(soloGround, new Vector3(22f, -4f, 0), Quaternion.identity);
+                Instantiate(cloneGround, new Vector3(44, -4f, 0), Quaternion.identity);
             }
         }
 
