@@ -11,6 +11,7 @@ public class ShopManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI[] arrText;
     [SerializeField] private RawImage[] arrBars;
     [SerializeField] private string[] arrBarsName;
+    [SerializeField] private TextMeshProUGUI totalCoins;
 
     private Configuracoes config;
     private int idNum;
@@ -113,23 +114,15 @@ public class ShopManager : MonoBehaviour
 
         if (priceUI == null || barra == null)
         {
-            Debug.LogError($"PowerUp '{powerUp}' não reconhecido.");
+            Debug.LogError($"PowerUp '{powerUp}' n o reconhecido.");
             return;
         }
-
-
+        coins = coins - price;
+        totalCoins.text = "" + coins;
         priceUI.text = "" + newPrice;
         barra.texture = arrBarsImage[newLevel];
 
         mDb.SalvarPowerUps(idNum, powerUpName, newLevel, newDuration, newPrice);
-
-        Debug.Log(upgradeTable.Nivel);
-
-        Debug.Log(idNum);
-        Debug.Log(powerUpName);
-        Debug.Log(newLevel);
-        Debug.Log(newDuration);
-        Debug.Log(newPrice);
 
     }
 }
