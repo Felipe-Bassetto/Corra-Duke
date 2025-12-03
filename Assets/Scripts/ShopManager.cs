@@ -8,6 +8,9 @@ public class ShopManager : MonoBehaviour
 {
     [SerializeField] private GameDb mDb;
     [SerializeField] private Texture[] arrBarsImage;
+    [SerializeField] private TextMeshProUGUI[] arrText;
+    [SerializeField] private RawImage[] arrBars;
+    [SerializeField] private string[] arrBarsName;
 
     private Configuracoes config;
     private int idNum;
@@ -26,6 +29,17 @@ public class ShopManager : MonoBehaviour
         idNum = config.Id;
 
         progress = mDb.CarregarProgresso(idNum);
+
+        for(int i = 1; i < 5; i++)
+        {
+            string powerUpName = arrBarsName[i - 1];
+            RawImage objetoBar = arrBars[i - 1];
+            TextMeshProUGUI strPrice = arrText[i - 1];
+            PowerUpsTable upgradeTable = mDb.CarregarPowerUps(idNum, powerUpName);
+            int IndexLevel = upgradeTable.Nivel;
+            strPrice.text = "" + upgradeTable.Price;
+            objetoBar.texture = arrBarsImage[IndexLevel];
+        }
     }
 
     // Update is called once per frame
@@ -108,6 +122,14 @@ public class ShopManager : MonoBehaviour
         barra.texture = arrBarsImage[newLevel];
 
         mDb.SalvarPowerUps(idNum, powerUpName, newLevel, newDuration, newPrice);
-        
+
+        Debug.Log(upgradeTable.Nivel);
+
+        Debug.Log(idNum);
+        Debug.Log(powerUpName);
+        Debug.Log(newLevel);
+        Debug.Log(newDuration);
+        Debug.Log(newPrice);
+
     }
 }

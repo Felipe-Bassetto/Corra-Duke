@@ -77,7 +77,7 @@ public class Enemy : MonoBehaviour
     {
         if (bulletPrefab != null && shootPoint != null)
         {
-            anim.Play("Ganso Atirando");
+            anim.Play("Ganso Atirando", 0, 0f);
             soundManager.SoundPlay(8);
             Instantiate(bulletPrefab, shootPoint.position, Quaternion.identity);
             shotCount++; // conta mais um disparo

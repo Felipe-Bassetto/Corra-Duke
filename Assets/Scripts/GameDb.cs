@@ -120,7 +120,7 @@ public class GameDb : MonoBehaviour
     // ---------------- POWER UPS ----------------
     public void SalvarPowerUps(int idSave, string name, int nivel, float duracao, int price)
     {
-        db.Execute("UPDATE PowerUpsTable SET Nivel = ?, Duracao = ?, Price = ? WHERE IdSave = ? AND NamePower = ?", nivel, duracao, idSave, name, price);
+        db.Execute("UPDATE PowerUpsTable SET Nivel = ?, Duracao = ?, Price = ? WHERE IdSave = ? AND NamePower = ?", nivel, duracao, price, idSave, name);
     }
 
     // ------------ CARREGAR POWER UPS --------------

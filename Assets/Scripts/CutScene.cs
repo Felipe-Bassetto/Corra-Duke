@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.Video;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
+using System.Collections;
 
 public class CutScene : MonoBehaviour
 {
@@ -16,6 +15,7 @@ public class CutScene : MonoBehaviour
     void Start()
     {
         vp.Play();
+        Debug.Log(vp.length);
     }
 
     // Update is called once per frame
@@ -35,13 +35,29 @@ public class CutScene : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) & canSkip)
         {
-            SceneManager.LoadScene("MainPage");
+            if (SceneManager.GetActiveScene().name == "Cutscene") SceneManager.LoadScene("MainPage");
+            else SceneManager.LoadScene("Game");
         }
 
         if (Input.anyKeyDown)
         {
             activeMessage();
         }
+
+        Debug.Log(vp.time);
+        if (vp.time >= vp.length - 0.5f)
+        {
+            Debug.Log("Cabo");
+            StartCoroutine(GoToScene());
+        }
+    }
+
+    IEnumerator GoToScene()
+    {
+        Debug.Log("cena");
+        yield return new WaitForSeconds(1f);
+        if (SceneManager.GetActiveScene().name == "Cutscene") SceneManager.LoadScene("MainPage");
+        else SceneManager.LoadScene("Game");
     }
 
     void activeMessage()

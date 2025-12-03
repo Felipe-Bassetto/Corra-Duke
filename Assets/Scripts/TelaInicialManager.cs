@@ -22,6 +22,7 @@ public class TelaInicialManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI record;
     [SerializeField] private TextMeshProUGUI shopCoins;
     [SerializeField] private GameController gameController;
+    [SerializeField] private int recordValue;
 
     public string activePanel;
 
@@ -34,7 +35,9 @@ public class TelaInicialManager : MonoBehaviour
 
         Progresso progress = mDb.CarregarProgresso(idNum);
 
-        record.text = "Record: " + progress.ScoreRecord;
+        recordValue = progress.ScoreRecord;
+
+        record.text = "Record: " + recordValue;
         shopCoins.text = "$" + progress.Coins;
 
         gameController = FindFirstObjectByType<GameController>();
@@ -55,7 +58,14 @@ public class TelaInicialManager : MonoBehaviour
     public void Jogar()
     {
         gameController.activatePanel(null);
-        SceneManager.LoadScene(Game);
+        if (recordValue == 1)
+        {
+            SceneManager.LoadScene("Prologue");
+        }
+        else
+        {
+            SceneManager.LoadScene(Game);
+        }
     }
 
     public void AbrirOpcoes()

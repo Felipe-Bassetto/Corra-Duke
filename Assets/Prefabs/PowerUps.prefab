@@ -113,7 +113,7 @@ MonoBehaviour:
   arrTimePowerUps:
   - 5
   - 5
-  - 1
+  - 5
   - 5
   arrLetreiros:
   - {fileID: 21300000, guid: c64de1b38e365b3449ecb9c007c0f680, type: 3}
