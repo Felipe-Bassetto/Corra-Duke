@@ -58,7 +58,7 @@ public class TelaInicialManager : MonoBehaviour
     public void Jogar()
     {
         gameController.activatePanel(null);
-        if (recordValue == 1)
+        if (recordValue <= 1)
         {
             SceneManager.LoadScene("Prologue");
         }
